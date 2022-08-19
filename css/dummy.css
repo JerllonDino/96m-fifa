@@ -1,0 +1,58 @@
+.shape-container {
+    width: 1000px;
+    height: 1000px;
+    overflow-y: hidden;
+    /* transform: rotate(-50deg); */
+    border-radius: 10%;
+    position: absolute;
+    /* top: -400px;
+    right: -520px; */
+    top: -500px;
+    left: 500px;
+    transform: skew(15deg, 15deg) rotate(-50deg);
+}
+
+.shape-bg {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 8%;
+    background-color: #0156ff;
+}
+
+.shape-bg img {
+    width: 100%;
+    transform: rotate(50deg);
+    position: absolute;
+    left: -20%;
+    top: -65%;
+}
+
+.section-1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #091577;
+    overflow: hidden;
+}
+
+body {
+    overflow-x: hidden !important;
+    background-color: #091577;
+}
+
+.triangle-cont {
+    position: absolute;
+    transform: rotate(270deg);
+    top: -15rem;
+    right: -514px;
+    width: 100rem;
+    height: 100rem;
+}
+
+.triangle {
+    fill: #0156ff;
+    stroke: #0156ff;
+    stroke-width: 12;
+}
