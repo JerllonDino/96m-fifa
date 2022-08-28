@@ -7,7 +7,6 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href="./images/Logo.svg" />
-    <!-- <link href="./css/style.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" /> -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
@@ -24,44 +23,35 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="stylesheet" href="./css/carousel.css" />
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/carousel.css" /> -->
     <link rel="stylesheet" href="./css/media-queries.css" />
-
-    <link rel="stylesheet" href="./css/dummy.css" />
   </head>
 
   <body>
-    <div class="sections">
-      <div id="absolute-background">
-        <img src="./images/Lighting-Background.jpg" id="section-1-background" />
-        <div id="gradient-background"></div>
-      </div>
+    <div id="fifa-wrapper">
+      <div class="sections">
+        <div id="absolute-background">
+          <img
+            src="./images/Lighting-Background.jpg"
+            id="section-1-background"
+          />
+          <div id="gradient-background">
+            <img id="pattern-1" src="./images/Pattern-1.png" alt="" />
+          </div>
+        </div>
 
-      <!-- <div class="container" id="main-container""> -->
-
-      <img
-        data-aos="fade-left"
-        src="./images/Jackywu.png"
-        alt="Jackywu"
-        id="actor-1"
-        srcset=""
-      />
-
-      <div
-        id="section-1"
-        class="section pt-3 d-flex flex-column"
-        data-anchor="section1"
-      >
-        <nav class="navbar navbar-expand-md">
+        <!-- <div class="container" id="main-container""> -->
+        <nav class="navbar navbar-expand mt-3">
           <div class="container">
             <a
               href="http://"
               target="_blank"
               rel="noopener noreferrer"
-              style="width: 8%"
               class="me-auto"
+              id="nav-logo"
             >
               <img src="./images/Logo.svg" alt="" />
             </a>
@@ -96,15 +86,143 @@
             </div>
           </div>
         </nav>
-        <div class="my-auto container" data-aos="fade-right">
+        <img
+          data-aos="fade-left"
+          src="./images/Jackywu.png"
+          alt="Jackywu"
+          id="actor-1"
+          srcset=""
+        />
+
+        <div
+          id="section-1"
+          class="section d-flex flex-column"
+          data-anchor="section1"
+        >
+          <div class="my-auto container" data-aos="fade-right">
+            <h1 class="display-1 text-light header-text main-header-text">
+              ASIA <span class="orange-theme">NO.1</span>
+            </h1>
+            <h1
+              class="display-1 text-light mb-4 header-text"
+              style="font-weight: 750"
+            >
+              TRUSTED BRAND
+            </h1>
+
+            <h6
+              class="display-6 text-light header-text"
+              style="margin-bottom: 7rem"
+            >
+              SOME CHINESE TEXT
+            </h6>
+
+            <button
+              type="button"
+              id="watch-video"
+              class="d-flex align-self-start align-items-center"
+            >
+              <h5 class="mb-0 me-3">WATCH VIDEO</h5>
+              <img src="./images/play-button.png" style="width: 55px" alt="" />
+            </button>
+          </div>
+        </div>
+        <div
+          id="section-2"
+          data-anchor="section2"
+          class="section d-flex flex-column my-5"
+        >
+          <h3 class="text-light mb-5 container">
+            Three simple steps and the bonus is yours!
+          </h3>
+          <div id="section-nav" class="d-flex flex-row justify-content-between container">
+            <a href="#section-3"
+              ><img src="./images/Step-banner-1.png" alt=""
+            /></a>
+            <a href="#section-4"
+              ><img src="./images/Step-banner-2.png" alt=""
+            /></a>
+            <a href="#spacer-section-5"
+              ><img src="./images/Step-banner-3.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <img
+          data-aos="fade-right"
+          id="dealer"
+          src="./images/Casino-dealer.png"
+          alt=""
+          data-aos-offset="300"
+        />
+        <div
+          id="section-3"
+          data-anchor="section3"
+          class="section container d-flex flex-column justify-content-center"
+        >
+          <!-- <div class="container d-flex flex-column justify-content-center"> -->
+          <div class="row">
+            <div class="col col-6 col-lg-7"></div>
+            <div class="col col-6 col-lg-5">
+              <h1 class="display-1 text-light header-text main-header-text">
+                <span class="orange-theme">LUCKY</span> SPIN
+              </h1>
+              <h1
+                class="display-1 text-light header-text mb-4"
+                style="font-weight: 750"
+              >
+                WAITING YOU
+              </h1>
+
+              <h6
+                class="display-6 text-light header-text"
+                style="margin-bottom: 3rem"
+              >
+                SOME CHINESE TEXT
+              </h6>
+
+              <a href="#" id="free-spin-banner">
+                <img src="./images/Free-spin-banner.png" alt="" />
+              </a>
+
+              <button
+                type="button"
+                class="text-light align-self-start orange-theme-btn"
+                style="
+                  padding: 1.3rem 4.5em;
+                  border-radius: 25px;
+                  margin-top: 7em;
+                "
+              >
+                <h5 class="mb-0">SPIN WHEEL</h5>
+              </button>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="spacer"></div>
+        <img
+          data-aos="fade-left"
+          data-aos-offset="400"
+          data-aos-delay="50"
+          id="football"
+          src="./images/Football-player.png"
+          alt=""
+        />
+        <div
+          id="section-4"
+          data-anchor="section4"
+          class="section d-flex flex-column justify-content-center container"
+          data-aos="fade-left"
+          data-aos-offset="300"
+        >
           <h1 class="display-1 text-light header-text main-header-text">
-            ASIA <span class="orange-theme">NO.1</span>
+            RISK-<span class="orange-theme">FREE</span>
           </h1>
           <h1
             class="display-1 text-light mb-4 header-text"
             style="font-weight: 750"
           >
-            TRUSTED BRAND
+            ON FIRST BET
           </h1>
 
           <h6
@@ -116,75 +234,148 @@
 
           <button
             type="button"
-            id="watch-video"
-            class="d-flex align-self-start align-items-center"
+            class="text-light align-self-start orange-theme-btn"
+            style="padding: 1.3rem 4.5em; border-radius: 25px"
           >
-            <h5 class="mb-0 me-3">WATCH VIDEO</h5>
-            <img src="./images/play-button.png" style="width: 55px" alt="" />
+            <h5 class="mb-0">BET NOW</h5>
           </button>
         </div>
-      </div>
-      <div
-        id="section-2"
-        data-anchor="section2"
-        class="section d-flex flex-column my-5 container"
-        data-aos="fade-up"
-        data-aos-offset="200"
-      >
-        <h3 class="text-light mb-5">
-          Three simple steps and the bonus is yours!
-        </h3>
-        <div class="d-flex flex-row justify-content-between">
-          <a href="#section-3"
-            ><img src="./images/Step-banner-1.png" alt=""
-          /></a>
-          <a href="#section-4"
-            ><img src="./images/Step-banner-2.png" alt=""
-          /></a>
-          <a href="#spacer-section-5"
-            ><img src="./images/Step-banner-3.png" alt=""
-          /></a>
-        </div>
-      </div>
-      <img
-        data-aos="fade-right"
-        id="dealer"
-        src="./images/Casino-dealer.png"
-        alt=""
-        data-aos-offset="300"
-      />
-      <div
-        id="section-3"
-        data-anchor="section3"
-        class="section container d-flex flex-column justify-content-center"
-        data-aos="flip-down"
-        data-aos-offset="300"
-      >
-        <!-- <div class="container d-flex flex-column justify-content-center"> -->
-        <div class="row">
-          <div class="col col-lg-7"></div>
-          <div class="col col-lg-5">
+        <div class="spacer"></div>
+        <img id="pattern-4" src="./images/Pattern-4.png" alt="" />
+        <div id="section-spacer" style="height: 5vh"></div>
+        <div
+          id="spacer-section-5"
+          data-anchor="section5"
+          class="section"
+          style="height: 25vh"
+        ></div>
+        <div
+          id="section-5"
+          class="d-flex flex-column justify-content-center align-items-center container"
+        >
+          <img id="pattern-3" src="./images/Pattern-3.png" alt="" />
+          <div id="timer-head" class="d-flex flex-column align-items-center">
             <h1 class="display-1 text-light header-text main-header-text">
-              <span class="orange-theme">LUCKY</span> SPIN
+              FIFA WORLD CUP
             </h1>
-            <h1
-              class="display-1 text-light header-text mb-4"
-              style="font-weight: 750"
+            <!-- <h1
+            class="display-1 text-light mb-4 header-text"
+            style="font-weight: 750"
+          >
+            Qatar2022
+          </h1> -->
+            <img src="./images/qatar-olympic-logo.png" id="qatar" alt="" />
+            <h5 id="timer-label" class="display-5 text-light mb-4 fw-bold">
+              Tournament starts in
+            </h5>
+          </div>
+          <div id="timer-container" class="d-flex justify-content-center">
+            <img id="fifa-left" src="./images/FIFA element-01.svg" alt="" />
+            <div
+              class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
             >
-              WAITING YOU
-            </h1>
-
-            <h6
-              class="display-6 text-light header-text"
-              style="margin-bottom: 3rem"
+              <h5 class="display-5 fw-bolder">117</h5>
+              <h3 class="fw-normal">DAYS</h3>
+            </div>
+            <img
+              class="fifa-middle"
+              src="./images/FIFA element-02.svg"
+              alt=""
+            />
+            <div
+              class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
             >
-              SOME CHINESE TEXT
-            </h6>
-
-            <a href="#" id="free-spin-banner">
-              <img src="./images/Free-spin-banner.png" alt="" />
-            </a>
-
+              <h5 class="display-5 fw-bolder">09</h5>
+              <h3 class="fw-normal">HOUR</h3>
+            </div>
+            <img
+              class="fifa-middle"
+              src="./images/FIFA element-02.svg"
+              alt=""
+            />
+            <div
+              class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
+            >
+              <h5 class="display-5 fw-bolder">35</h5>
+              <h3 class="fw-normal">MINUTES</h3>
+            </div>
+            <img id="fifa-right" src="./images/FIFA element-01.svg" alt="" />
+          </div>
+        </div>
+        <div id="background-textures">
+          <img
+            class="background-texture"
+            src="./images/Background-texture.png"
+            alt=""
+            srcset=""
+          />
+          <img id="pattern-2" src="./images/Pattern-2.png" alt="" />
+          <img
+            class="background-texture"
+            src="./images/Background-texture-2.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="spacer-sm"></div>
+        <div
+          id="section-6"
+          class="d-flex flex-column align-items-center container"
+        >
+          <h5 class="display-5 fw-normal mb-5" style="color: #ef1550">
+            Final Draw
+          </h5>
+          <div id="country-groups">
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_A.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_B.png" alt="" />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_C.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_D.png" alt="" />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_E.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_F.png" alt="" />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_G.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_H.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <div id="section-7" class="d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col col-6 d-flex flex-column justify-content-center">
+                <h1 class="display-1 text-light mb-4 header-text fw-bold">
+                  MATCHES & NEWS
+                </h1>
+                <div style="width: 80%">
+                  <h2 class="text-light mb-4 header-text">
+                    View all the matches, news and teams ahead of the FIFA World
+                    Cup Qatar 2022
+                  </h2>
+                </div>
+              </div>
+            </div>
             <button
               type="button"
               class="text-light align-self-start orange-theme-btn"
@@ -194,379 +385,211 @@
                 margin-top: 7em;
               "
             >
-              <h5 class="mb-0">SPIN WHEEL</h5>
+              <h5 class="mb-0">BET NOW</h5>
             </button>
           </div>
         </div>
-        <!-- </div> -->
       </div>
-      <div class="spacer"></div>
-      <img data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" id="football" src="./images/Football-player.png" alt="" />
-      <div
-        id="section-4"
-        data-anchor="section4"
-        class="section d-flex flex-column justify-content-center container"
-        data-aos="fade-left"
-        data-aos-offset="300"
-      >
-        <h1 class="display-1 text-light header-text main-header-text">
-          RISK-<span class="orange-theme">FREE</span>
-        </h1>
-        <h1
-          class="display-1 text-light mb-4 header-text"
-          style="font-weight: 750"
-        >
-          ON FIRST BET
-        </h1>
+      <!-- </div> -->
+      <div class="container-7">
+        <div class="container sec-7">
+          <div class="footer-grid">
+            <div class="footer-info socials">
+              <h6>Follow us</h6>
 
-        <h6
-          class="display-6 text-light header-text"
-          style="margin-bottom: 7rem"
-        >
-          SOME CHINESE TEXT
-        </h6>
+              <ol>
+                <li>
+                  <a href="https://www.facebook.com/96m.official"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/fb.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/fb-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/fb.png'"
+                  /></a>
+                </li>
 
-        <button
-          type="button"
-          class="text-light align-self-start orange-theme-btn"
-          style="padding: 1.3rem 4.5em; border-radius: 25px"
-        >
-          <h5 class="mb-0">BET NOW</h5>
-        </button>
-      </div>
-      <div class="spacer"></div>
-      <img id="pattern-4" src="./images/Pattern-4.png" alt="" />
-      <div id="section-spacer" style="height: 5vh"></div>
-      <div
-        id="spacer-section-5"
-        data-anchor="section5"
-        class="section"
-        style="height: 25vh"
-      ></div>
-      <div
-        id="section-5"
-        class="d-flex flex-column justify-content-center align-items-center container"
-      >
-        <img id="pattern-3" src="./images/Pattern-3.png" alt="" />
-        <div id="timer-head" class="d-flex flex-column align-items-center">
-          <h1 class="display-1 text-light header-text main-header-text">
-            FIFA WORLD CUP
-          </h1>
-          <h1
-            class="display-1 text-light mb-4 header-text"
-            style="font-weight: 750"
-          >
-            Qatar2022
-          </h1>
-          <h5 id="timer-label" class="display-5 text-light mb-4 fw-bold">
-            Tournament starts in
-          </h5>
-        </div>
-        <div id="timer-container" class="d-flex justify-content-center">
-          <img id="fifa-left" src="./images/FIFA element-01.svg" alt="" />
-          <div
-            class="d-flex flex-column text-light justify-content-center align-items-center"
-          >
-            <h5 class="display-5 fw-bolder">117</h5>
-            <h3 class="fw-normal">DAYS</h3>
-          </div>
-          <img class="fifa-middle" src="./images/FIFA element-02.svg" alt="" />
-          <div
-            class="d-flex flex-column text-light justify-content-center align-items-center"
-          >
-            <h5 class="display-5 fw-bolder">09</h5>
-            <h3 class="fw-normal">HOUR</h3>
-          </div>
-          <img class="fifa-middle" src="./images/FIFA element-02.svg" alt="" />
-          <div
-            class="d-flex flex-column text-light justify-content-center align-items-center"
-          >
-            <h5 class="display-5 fw-bolder">35</h5>
-            <h3 class="fw-normal">MINUTES</h3>
-          </div>
-          <img id="fifa-right" src="./images/FIFA element-01.svg" alt="" />
-        </div>
-      </div>
-      <div id="background-textures">
-        <img
-          class="background-texture"
-          src="./images/Background-texture.png"
-          alt=""
-          srcset=""
-        />
-        <img
-        class="background-texture"
-        src="./images/Background-texture-2.png"
-        alt=""
-        srcset=""
-      />
-      </div>
-      <div class="spacer-sm"></div>
-      <div
-        id="section-6"
-        class="d-flex flex-column align-items-center container"
-      >
-        <h5 class="display-5 fw-normal mb-5" style="color: #ef1550">
-          Final Draw
-        </h5>
-        <div id="country-groups">
-          <div class="row mt-3">
-            <div class="col col-6">
-              <img src="./images/FIFA-group_A.png" alt="" />
+                <li>
+                  <a href="https://twitter.com/96m_official"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/twitter.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/twitter-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/twitter.png'"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/96m.official/"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/instagram.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/instagram-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/instagram.png'"
+                  /></a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/youtube.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/youtube-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/youtube.png'"
+                  /></a>
+                </li>
+              </ol>
             </div>
-            <div class="col col-6">
-              <img src="./images/FIFA-group_B.png" alt="" />
+
+            <div class="footer-info responsible-links">
+              <h6>Responsible Gaming</h6>
+
+              <ol>
+                <li><img src="./images/Footer/18plus-icon.svg" /></li>
+
+                <li><img src="./images/Footer/gamcare-icon.svg" /></li>
+
+                <li><img src="./images/Footer/bga-icon.svg" /></li>
+              </ol>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col col-6">
-              <img src="./images/FIFA-group_C.png" alt="" />
-            </div>
-            <div class="col col-6">
-              <img src="./images/FIFA-group_D.png" alt="" />
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col col-6">
-              <img src="./images/FIFA-group_E.png" alt="" />
-            </div>
-            <div class="col col-6">
-              <img src="./images/FIFA-group_F.png" alt="" />
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col col-6">
-              <img src="./images/FIFA-group_G.png" alt="" />
-            </div>
-            <div class="col col-6">
-              <img src="./images/FIFA-group_H.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="spacer"></div>
-      <div id="section-7" class="d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col col-6 d-flex flex-column justify-content-center">
-              <h1 class="display-1 text-light mb-4 header-text fw-bold">
-                MATCHES & NEWS
-              </h1>
-              <div style="width: 80%">
-                <h2 class="text-light mb-4 header-text">
-                  View all the matches, news and teams ahead of the FIFA World
-                  Cup Qatar 2022
-                </h2>
-              </div>
-            </div>
-          </div>
-          <button
-            type="button"
-            class="text-light align-self-start orange-theme-btn"
-            style="padding: 1.3rem 4.5em; border-radius: 25px; margin-top: 7em"
-          >
-            <h5 class="mb-0">BET NOW</h5>
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- </div> -->
-    <div class="container-7">
-      <div class="container sec-7">
-        <div class="footer-grid">
-          <div class="footer-info socials">
-            <h6>Follow us</h6>
 
-            <ol>
-              <li>
-                <a href="https://www.facebook.com/96m.official"
-                  ><img
-                    src="./images/Footer/Social Media/Desktop/fb.png"
-                    onmouseover="this.src='./images/Footer/Social Media/Desktop/fb-on.png'"
-                    onmouseout="this.src='./images/Footer/Social Media/Desktop/fb.png'"
-                /></a>
-              </li>
+          <!-- <hr id="footer_style"> -->
 
-              <li>
-                <a href="https://twitter.com/96m_official"
-                  ><img
-                    src="./images/Footer/Social Media/Desktop/twitter.png"
-                    onmouseover="this.src='./images/Footer/Social Media/Desktop/twitter-on.png'"
-                    onmouseout="this.src='./images/Footer/Social Media/Desktop/twitter.png'"
-                /></a>
-              </li>
-
-              <li>
-                <a href="https://www.instagram.com/96m.official/"
-                  ><img
-                    src="./images/Footer/Social Media/Desktop/instagram.png"
-                    onmouseover="this.src='./images/Footer/Social Media/Desktop/instagram-on.png'"
-                    onmouseout="this.src='./images/Footer/Social Media/Desktop/instagram.png'"
-                /></a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
-                  ><img
-                    src="./images/Footer/Social Media/Desktop/youtube.png"
-                    onmouseover="this.src='./images/Footer/Social Media/Desktop/youtube-on.png'"
-                    onmouseout="this.src='./images/Footer/Social Media/Desktop/youtube.png'"
-                /></a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="footer-info responsible-links">
-            <h6>Responsible Gaming</h6>
-
-            <ol>
-              <li><img src="./images/Footer/18plus-icon.svg" /></li>
-
-              <li><img src="./images/Footer/gamcare-icon.svg" /></li>
-
-              <li><img src="./images/Footer/bga-icon.svg" /></li>
-            </ol>
-          </div>
-        </div>
-
-        <!-- <hr id="footer_style"> -->
-
-        <div class="footer-grid" style="margin-top: 1.5rem">
-          <div class="footer-nav nav-links">
-            <!-- <ol>
+          <div class="footer-grid" style="margin-top: 1.5rem">
+            <div class="footer-nav nav-links">
+              <!-- <ol>
                       <li><a href="https://www.96m.com/">Home</a> &nbsp; |</li>
                       <li><a href="https://www.96m.com/en-my/info-centre/faq#general">About</a> &nbsp; |</li>
                       <li><a href="https://www.96m.com/en-my/contact">Contact Us</a> &nbsp; |</li>
                   </ol> -->
-          </div>
-
-          <div class="footer-nav responsible-nav">
-            <p>Copyright 96M © 2022. All rights reserved</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sec-7-m">
-        <div class="row">
-          <div class="col">
-            <h6>Follow us</h6>
-
-            <div class="social-icons">
-              <a href="https://www.facebook.com/96m.official"
-                ><img src="./images/Footer/Social Media/Desktop/fb.png"
-              /></a>
-
-              <a href="https://twitter.com/96m_official"
-                ><img src="./images/Footer/Social Media/Desktop/twitter.png"
-              /></a>
-
-              <a href="https://www.instagram.com/96m.official/"
-                ><img src="./images/Footer/Social Media/Desktop/instagram.png"
-              /></a>
-
-              <a href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
-                ><img src="./images/Footer/Social Media/Desktop/youtube.png"
-              /></a>
             </div>
-          </div>
 
-          <div class="col">
-            <h6>Responsible Gaming</h6>
-
-            <div class="responsible-icons">
-              <img src="./images/Footer/18plus-icon.svg" />
-
-              <img src="./images/Footer/gamcare-icon.svg" />
-
-              <img src="./images/Footer/bga-icon.svg" />
+            <div class="footer-nav responsible-nav">
+              <p>Copyright 96M © 2022. All rights reserved</p>
             </div>
           </div>
         </div>
 
-        <hr id="footer_style" />
+        <div class="sec-7-m">
+          <div class="row">
+            <div class="col">
+              <h6>Follow us</h6>
 
-        <p>Copyright 96M © 2021. All rights reserved</p>
-      </div>
-    </div>
-    <div class="container-8 fixed-footer">
-      <div class="sec-8">
-        <p>96<span>M</span> accept e-wallet payment method</p>
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/TnG.png"
-          alt="TouchNGo"
-        />
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/GrabPay.png"
-          alt="Grabpay"
-        />
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/Shopee.png"
-          alt="Shopee"
-        />
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/Boost.png"
-          alt="Boost"
-        />
-        <div class="nav-content">
-          <nav role="navigation" id="nav">
-            <ul id="lang-list">
-              <li onclick="replaceLabelVal('English')">English</li>
-              <li onclick="replaceLabelVal('Chinese')">中文</li>
-            </ul>
-            <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
-            <label
-              for="mainNavButton"
-              id="selected-lang"
-              onclick="toggleListDisplay()"
-              >English</label
-            >
-            <span class="green-dot"></span>
-          </nav>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/96m.official"
+                  ><img src="./images/Footer/Social Media/Desktop/fb.png"
+                /></a>
+
+                <a href="https://twitter.com/96m_official"
+                  ><img src="./images/Footer/Social Media/Desktop/twitter.png"
+                /></a>
+
+                <a href="https://www.instagram.com/96m.official/"
+                  ><img
+                    src="./images/Footer/Social Media/Desktop/instagram.png"
+                /></a>
+
+                <a
+                  href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
+                  ><img src="./images/Footer/Social Media/Desktop/youtube.png"
+                /></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <h6>Responsible Gaming</h6>
+
+              <div class="responsible-icons">
+                <img src="./images/Footer/18plus-icon.svg" />
+
+                <img src="./images/Footer/gamcare-icon.svg" />
+
+                <img src="./images/Footer/bga-icon.svg" />
+              </div>
+            </div>
+          </div>
+
+          <hr id="footer_style" />
+
+          <p>Copyright 96M © 2021. All rights reserved</p>
         </div>
       </div>
-    </div>
-    <div class="container-8 clone">
-      <div class="sec-8">
-        <p>96<span>M</span> accept e-wallet payment method</p>
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/TnG.png"
-          alt="TouchNGo"
-        />
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/GrabPay.png"
-          alt="Grabpay"
-        />
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/Shopee.png"
-          alt="Shopee"
-        />
-        <img
-          src="./images/Footer/Sticky Footer/eWallet/Boost.png"
-          alt="Boost"
-        />
-        <div class="nav-content">
-          <nav role="navigation" id="nav">
-            <ul id="lang-list">
-              <li onclick="replaceLabelVal('English')">English</li>
-              <li onclick="replaceLabelVal('Chinese')">中文</li>
-            </ul>
-            <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
-            <label
-              for="mainNavButton"
-              id="selected-lang"
-              onclick="toggleListDisplay()"
-              >English</label
-            >
-            <span class="green-dot"></span>
-          </nav>
+      <div class="container-8 fixed-footer">
+        <div class="sec-8">
+          <p>96<span>M</span> accept e-wallet payment method</p>
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/TnG.png"
+            alt="TouchNGo"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/GrabPay.png"
+            alt="Grabpay"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Shopee.png"
+            alt="Shopee"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Boost.png"
+            alt="Boost"
+          />
+          <div class="nav-content">
+            <nav role="navigation" id="nav">
+              <ul id="lang-list">
+                <li onclick="replaceLabelVal('English')">English</li>
+                <li onclick="replaceLabelVal('Chinese')">中文</li>
+              </ul>
+              <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
+              <label
+                for="mainNavButton"
+                id="selected-lang"
+                onclick="toggleListDisplay()"
+                >English</label
+              >
+              <span class="green-dot"></span>
+            </nav>
+          </div>
         </div>
-        <!-- <select>
+      </div>
+      <div class="container-8 clone">
+        <div class="sec-8">
+          <p>96<span>M</span> accept e-wallet payment method</p>
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/TnG.png"
+            alt="TouchNGo"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/GrabPay.png"
+            alt="Grabpay"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Shopee.png"
+            alt="Shopee"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Boost.png"
+            alt="Boost"
+          />
+          <div class="nav-content">
+            <nav role="navigation" id="nav">
+              <ul id="lang-list">
+                <li onclick="replaceLabelVal('English')">English</li>
+                <li onclick="replaceLabelVal('Chinese')">中文</li>
+              </ul>
+              <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
+              <label
+                for="mainNavButton"
+                id="selected-lang"
+                onclick="toggleListDisplay()"
+                >English</label
+              >
+              <span class="green-dot"></span>
+            </nav>
+          </div>
+          <!-- <select>
                 <option value="0"><a href="">English</a></option>
                 <option value="1"><a href="">Chinese</a></option>
                 <option value="2"><a href="">Malay</a></option>
             </select>
             <span class="green-dot"></span> -->
+        </div>
       </div>
     </div>
 

@@ -1,59 +1,494 @@
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
 
-@media (min-width: 992px) and (max-width: 1199px) {
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 5 breakpoints
+*/
 
-	.section-1-box .section-1-box-icon { width: 60px; height: 60px; font-size: 32px; line-height: 60px; }
-	
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Extra small devices (landscape phones, 0px to 576px) */
+@media (max-width: 575px) {
+  .navbar-nav {
+	display: none;
+  }
+  .navbar-collapse > button {
+	border-radius: 18px;
+	font-weight: 450;
+	font-size: xx-small;
+	margin-left: auto !important;
+  }
+  #nav-logo {
+    width: 20%;
+  }
+
+  #actor-1 {
+    top: 1%;
+    width: 110%;
+    right: -15%;
+  }
+
+  #section-1 {
+    height: 85vh;
+  }
+
+  #section-1 > div {
+    margin-bottom: 10px !important;
+    margin-top: auto !important;
+  }
+
+  .header-text {
+    letter-spacing: 0.2px;
+    font-size: 1.8em !important;
+  }
+
+  #section-1 > div > h6 {
+    font-size: x-large !important;
+    margin-bottom: 1.3em !important;
+  }
+
+  #section-1 > div > .mb-4 {
+    margin-bottom: 0.4em !important;
+  }
+
+  #watch-video {
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 1.3em;
+  }
+
+  #watch-video h6 {
+    margin-bottom: 3em;
+  }
+
+  #watch-video img {
+    width: 40px !important;
+  }
+
+  #watch-video h5 {
+    font-size: small;
+    margin-right: 1em;
+  }
+
+  #section-2 {
+	height: 40vh;
+	margin-bottom: 0 !important;
+  }
+
+  #section-2 #section-nav {
+	/* width: 100%; */
+	padding-right: 0;
+	justify-content: unset;
+	overflow-x: auto;
+  }
+
+  #section-2 a {
+	width: 100% !important;
+	margin-right: 1em;
+  }
+
+  #section-2 a img {
+	max-width: 55vw;
+  }
+
+  #section-2 > h3 {	
+	margin-bottom: 2em !important;
+	font-size: 4vw;
+  }
+
+  #dealer {
+	width: 110%;
+	margin-top: 1em;
+	left: -20%;
+  }
+
+  #section-3 {
+	margin-top: 1em;
+	/* justify-content: flex-end !important; */
+  }
+
+  #section-3 .row {
+	margin-top: 50vh !important;
+  }
+
+  #section-3 .header-text {
+	font-size: 7vw !important;
+  }
+
+  #section-3 .mb-4 {
+	font-size: 6vw !important;
+	margin-bottom: 10px !important;
+  }
+
+  #section-3 .display-6 {
+	font-size: 4vw !important;
+	margin-bottom: 1em !important;
+  }
+
+  #section-3 #free-spin-banner img {
+	width: 100%;
+  }
+
+  #section-3 button {
+	margin-top: 2em !important;
+	padding: 0.8em 2em !important;
+	border-radius: 18px !important;
+  }
+
+  #section-3 button h5 {
+	font-size: small;
+  }
+
+  #football {
+	width: 115%;
+	right: -20%;
+  }
+
+  .spacer {
+	display: none;
+  }
+
+  #section-4 {
+	padding-top: 60vh !important;
+	justify-content: center !important;
+  }
+
+  #section-4 .display-1 {
+	font-size: 8vw !important;
+  }
+
+  #section-4 .mb-4 {
+	margin-bottom: 2vh !important;
+  }
+
+  #section-4 .display-6 {
+	font-size: 4vw !important;
+	margin-bottom: 5vh !important;
+  }
+
+  #section-4 button {
+	border-radius: 18px !important;
+	padding: 0.8em 3em !important;
+  }
+
+  #section-4 button h5 {
+	font-size: small;
+  }
+
+  #pattern-4 {
+	width: 40%;
+	left: -20%;
+  }
+
+  #pattern-3 {
+	width: 40%;
+	right: -20% !important;
+  }
+
+  #timer-container .display-5{
+	font-size: 3vh !important;
+  }
+
+  #timer-container .fw-normal {
+	font-size: 2vh !important;
+  }
+
+  #timer-container #fifa-right {
+	margin-left: 1vw;
+  }
+
+  #timer-label {
+	font-weight: 450 !important;
+	font-size: 5vw !important;
+  }
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  #nav-logo {
+    width: 8%;
+  }
+  #actor-1 {
+    width: 0%;
+    right: -15%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) and (max-width: 991px) {
-	
-	.navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
+  #nav-logo {
+    width: 10%;
+  }
+  #actor-1 {
+    width: 90%;
+    right: -15%;
+  }
 
-	.section-description p { padding: 0; }
-	
-	.section-1-box .section-1-box-icon { width: 50px; height: 50px; font-size: 26px; line-height: 50px; }
-	
-	.section-3-box .section-3-box-icon { width: 50px; height: 50px; font-size: 26px; line-height: 50px; }
+  #section-1 > div {
+    margin-bottom: 10px !important;
+    margin-top: auto !important;
+  }
+
+  .header-text {
+    letter-spacing: 0.2px;
+    font-size: 6vw !important;
+  }
+
+  #section-1 > div > h6 {
+    font-size: 5vw !important;
+    margin-bottom: 1.3em !important;
+  }
+
+  #section-1 > div > .mb-4 {
+    margin-bottom: 0.4em !important;
+  }
+
+  #watch-video {
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 1.3em;
+  }
+
+  #watch-video h6 {
+    margin-bottom: 3em;
+  }
+
+  #watch-video img {
+    width: 40px !important;
+  }
+
+  #watch-video h5 {
+    font-size: small;
+    margin-right: 1em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
 }
 
-@media (max-width: 767px) {
-
-	.navbar-dark .navbar-toggler { border-color: #444; }
-	.navbar-dark .navbar-toggler:focus { background: #333; outline: 0; }
-	.navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
-	
-	.section-description p { padding: 0; }
-	
-	.section-1-container { padding-bottom: 60px; }
-	.section-1-box { text-align: center; }
-	.section-1-box h3 { margin-top: 20px; padding-top: 10px; }
-	
-	.section-3-box { text-align: center; }
-	.section-3-box h3 { margin-top: 20px; padding-top: 10px; }
-	
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
 
-@media (max-width: 415px) {
-	
-	h1, h2 { font-size: 32px; }
-
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
 
-/* Retina-ize images/icons */
+/* Set width to make card deck cards 100% width */
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-	
-	/* logo */
-    .navbar-brand {
-    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 123px 34px !important;
-    }
-	
+@media screen and (max-width: 320px) {
+  .sec-8 p {
+    font-size: 7px;
+  }
+
+  .sec-8 img {
+    width: 15px;
+    margin: 0 0px;
+  }
+  #nav ul {
+    /* display: block; */
+    bottom: 25px;
+    width: 70px;
+  }
+
+  #nav ul li {
+    font-size: 10px;
+  }
+
+  #selected-lang {
+    width: 70px;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+
+  .container-7 {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .sec-7-m > div > div:nth-child(2) h6 {
+    text-align: right;
+  }
+
+  .sec-7-m > div > div:nth-child(2) > div {
+    justify-content: end;
+  }
+
+  .sec-7-m > div > div:first-child img {
+    width: 16%;
+  }
+
+  .sec-7-m {
+    display: block;
+  }
+
+  .sec-7 {
+    display: none;
+  }
+
+  .sec-7-m > p {
+    font-size: 10px;
+    font-family: "SFProDisplay-Regular";
+    color: #f8f8f8;
+    margin-bottom: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    direction: rtl;
+  }
+  .responsible-links {
+    text-align: left;
+  }
+
+  .footer-info h6 {
+    font-size: 7px;
+  }
+
+  .footer-info ol {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .footer-info img {
+    width: 75%;
+  }
+  .responsible-icons img,
+  .social-icons > a img {
+    width: 20%;
+  }
+
+  .responsible-icons img {
+    margin-right: 5px;
+  }
+
+  #footer_style {
+    height: 1px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 321px) {
+  .sec-8 {
+    position: relative;
+    justify-content: unset;
+  }
+
+  .sec-8 p {
+    font-size: 9px;
+    margin-left: 20px;
+  }
+
+  .sec-8 img {
+    width: 20px;
+    margin: 0 0px;
+  }
+
+  .sec-8 .nav-content {
+    position: absolute;
+    right: 30px;
+  }
+  #nav ul {
+    /* display: block; */
+    bottom: 30px;
+    width: 80px;
+  }
+
+  #nav ul li {
+    font-size: 12px;
+  }
+
+  #selected-lang {
+    width: 80px;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .container-7 {
+    padding: 1.5rem 20px 1rem 20px;
+  }
+
+  .sec-7-m > div > div:nth-child(2) > h6 {
+    text-align: end;
+  }
+  .sec-7-m > div > div:first-child img {
+    width: 16%;
+  }
+
+  .sec-7-m {
+    display: block;
+  }
+
+  .sec-7 {
+    display: none;
+  }
+
+  .sec-7-m > p {
+    font-size: 10px;
+    font-family: "SFProDisplay-Regular";
+    color: #f8f8f8;
+    margin-bottom: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    direction: rtl;
+  }
+  .responsible-links {
+    text-align: left;
+  }
+
+  .footer-info h6 {
+    font-size: 7px;
+  }
+
+  .footer-info ol {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .footer-info img {
+    width: 75%;
+  }
+  .responsible-icons img,
+  .social-icons > a img {
+    width: 20%;
+  }
+
+  .responsible-icons img {
+    margin-right: 5px;
+  }
+
+  #footer_style {
+    height: 1px;
+    margin-top: 1rem;
+  }
+
+  #nav-top {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .up-arrow {
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+  }
+  #lang-list {
+    display: none;
+  }
 }
