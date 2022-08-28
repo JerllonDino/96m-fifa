@@ -23,8 +23,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    
-    <link href="./css/style.css" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/carousel.css" /> -->
     <link rel="stylesheet" href="./css/media-queries.css" />
@@ -32,7 +32,7 @@
 
   <body>
     <div id="fifa-wrapper">
-      <div class="sections">
+      <div class="section-wrapper">
         <div id="absolute-background">
           <img
             src="./images/Lighting-Background.jpg"
@@ -135,7 +135,10 @@
           <h3 class="text-light mb-5 container">
             Three simple steps and the bonus is yours!
           </h3>
-          <div id="section-nav" class="d-flex flex-row justify-content-between container">
+          <div
+            id="section-nav"
+            class="d-flex flex-row justify-content-between container"
+          >
             <a href="#section-3"
               ><img src="./images/Step-banner-1.png" alt=""
             /></a>
@@ -145,6 +148,24 @@
             <a href="#spacer-section-5"
               ><img src="./images/Step-banner-3.png" alt=""
             /></a>
+          </div>
+          <div id="section-nav-m" class="d-flex">
+            <img
+              onclick="jumpToNextSection('section-3')"
+              src="./images/Step-banner-1.png"
+              alt=""
+            />
+            <img
+              onclick="jumpToNextSection('section-4')"
+              src="./images/Step-banner-2.png"
+              alt=""
+            />
+            <img
+              onclick="jumpToNextSection('section-5')"
+              id="section-nav-end"
+              src="./images/Step-banner-3.png"
+              alt=""
+            />
           </div>
         </div>
         <img
@@ -161,8 +182,8 @@
         >
           <!-- <div class="container d-flex flex-column justify-content-center"> -->
           <div class="row">
-            <div class="col col-6 col-lg-7"></div>
-            <div class="col col-6 col-lg-5">
+            <div class="col col-6 col-md-7 col-lg-7"></div>
+            <div class="col col-6 col-md-5 col-lg-5">
               <h1 class="display-1 text-light header-text main-header-text">
                 <span class="orange-theme">LUCKY</span> SPIN
               </h1>
@@ -212,8 +233,7 @@
           id="section-4"
           data-anchor="section4"
           class="section d-flex flex-column justify-content-center container"
-          data-aos="fade-left"
-          data-aos-offset="300"
+          data-aos="fade-right"
         >
           <h1 class="display-1 text-light header-text main-header-text">
             RISK-<span class="orange-theme">FREE</span>
@@ -304,6 +324,7 @@
         </div>
         <div id="background-textures">
           <img
+            id="background-texture-1"
             class="background-texture"
             src="./images/Background-texture.png"
             alt=""
@@ -312,20 +333,18 @@
           <img id="pattern-2" src="./images/Pattern-2.png" alt="" />
           <img
             class="background-texture"
+            id="background-texture-2"
             src="./images/Background-texture-2.png"
             alt=""
             srcset=""
           />
         </div>
         <div class="spacer-sm"></div>
-        <div
-          id="section-6"
-          class="d-flex flex-column align-items-center container"
-        >
+        <div id="section-6" class="d-flex flex-column align-items-center">
           <h5 class="display-5 fw-normal mb-5" style="color: #ef1550">
             Final Draw
           </h5>
-          <div id="country-groups">
+          <div id="country-groups" class="container">
             <div class="row mt-3">
               <div class="col col-6">
                 <img src="./images/FIFA-group_A.png" alt="" />
@@ -359,12 +378,28 @@
               </div>
             </div>
           </div>
+          <div id="country-groups-m">
+            <img src="./images/FIFA-group_A.png" alt="" />
+            <img src="./images/FIFA-group_B.png" alt="" />
+            <img src="./images/FIFA-group_C.png" alt="" />
+            <img src="./images/FIFA-group_D.png" alt="" />
+            <img src="./images/FIFA-group_E.png" alt="" />
+            <img src="./images/FIFA-group_F.png" alt="" />
+            <img src="./images/FIFA-group_G.png" alt="" />
+            <img
+              id="country-group-last"
+              src="./images/FIFA-group_H.png"
+              alt=""
+            />
+          </div>
         </div>
         <div class="spacer"></div>
         <div id="section-7" class="d-flex align-items-center">
           <div class="container">
             <div class="row">
-              <div class="col col-6 d-flex flex-column justify-content-center">
+              <div
+                class="col col-8 col-md-7 col-lg-6 d-flex flex-column justify-content-center"
+              >
                 <h1 class="display-1 text-light mb-4 header-text fw-bold">
                   MATCHES & NEWS
                 </h1>
@@ -450,7 +485,7 @@
             </div>
           </div>
 
-          <!-- <hr id="footer_style"> -->
+          <hr id="footer_style" />
 
           <div class="footer-grid" style="margin-top: 1.5rem">
             <div class="footer-nav nav-links">
@@ -467,32 +502,8 @@
           </div>
         </div>
 
-        <div class="sec-7-m">
+        <div class="container sec-7-m">
           <div class="row">
-            <div class="col">
-              <h6>Follow us</h6>
-
-              <div class="social-icons">
-                <a href="https://www.facebook.com/96m.official"
-                  ><img src="./images/Footer/Social Media/Desktop/fb.png"
-                /></a>
-
-                <a href="https://twitter.com/96m_official"
-                  ><img src="./images/Footer/Social Media/Desktop/twitter.png"
-                /></a>
-
-                <a href="https://www.instagram.com/96m.official/"
-                  ><img
-                    src="./images/Footer/Social Media/Desktop/instagram.png"
-                /></a>
-
-                <a
-                  href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
-                  ><img src="./images/Footer/Social Media/Desktop/youtube.png"
-                /></a>
-              </div>
-            </div>
-
             <div class="col">
               <h6>Responsible Gaming</h6>
 
@@ -502,6 +513,28 @@
                 <img src="./images/Footer/gamcare-icon.svg" />
 
                 <img src="./images/Footer/bga-icon.svg" />
+              </div>
+            </div>
+            <div class="col">
+              <h6>Follow us</h6>
+
+              <div class="social-icons">
+                <a href="https://www.facebook.com/96m.official"
+                  ><img src="./images/Footer/Social Media/Mobile/fb.png"
+                /></a>
+
+                <a href="https://twitter.com/96m_official"
+                  ><img src="./images/Footer/Social Media/Mobile/twitter.png"
+                /></a>
+
+                <a href="https://www.instagram.com/96m.official/"
+                  ><img src="./images/Footer/Social Media/Mobile/ig.png"
+                /></a>
+
+                <a
+                  href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
+                  ><img src="./images/Footer/Social Media/Mobile/youtube.png"
+                /></a>
               </div>
             </div>
           </div>
@@ -593,6 +626,19 @@
       </div>
     </div>
 
+    <div id="myModal" class="custom-modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="custom-modal-content" src="./images/Pop-up_fifa.png" id="modal-desktop" />
+
+      <img class="custom-modal-content" src="./images/Pop-up_fifa-mobile.png" id="modal-mobile" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
     <!-- <img src="./images/up-arrow.svg" alt="Scroll to Top" style="opacity: 0;" class="up-arrow" id="up-arrow"
         onclick="jumpToNextSection('container-2')" /> -->
 
@@ -647,6 +693,8 @@
       ];
       var currentSection = 0;
       var delayTimer;
+
+      var modalClaimLink = "http://stackoverflow.com/"; // Some link
 
       // $('#custCarousel').on('slid.bs.carousel', function () {
 
@@ -737,6 +785,23 @@
           $("#up-arrow").fadeOut(300);
         }
       });
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      // var img = document.getElementById("myImg");
+      $(".custom-modal-content").click(() => {
+        window.open(modalClaimLink, '_blank')
+      });
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
 
       // $(window).on("wheel", (e) => {
       //   if(delayTimer) clearTimeout(delayTimer);

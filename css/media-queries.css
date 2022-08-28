@@ -17,14 +17,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Extra small devices (landscape phones, 0px to 576px) */
 @media (max-width: 575px) {
   .navbar-nav {
-	display: none;
+    display: none;
   }
+
   .navbar-collapse > button {
-	border-radius: 18px;
-	font-weight: 450;
-	font-size: xx-small;
-	margin-left: auto !important;
+    border-radius: 18px;
+    font-weight: 450;
+    font-size: xx-small;
+    margin-left: auto !important;
   }
+
   #nav-logo {
     width: 20%;
   }
@@ -33,6 +35,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     top: 1%;
     width: 110%;
     right: -15%;
+  }
+
+  #pattern-1 {
+    display: none;
+  }
+
+  #gradient-background {
+    height: 450vh;
   }
 
   #section-1 {
@@ -77,157 +87,260 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-2 {
-	height: 40vh;
-	margin-bottom: 0 !important;
+    height: 40vh;
+    margin-bottom: 0 !important;
   }
 
   #section-2 #section-nav {
-	/* width: 100%; */
-	padding-right: 0;
-	justify-content: unset;
-	overflow-x: auto;
+    /* width: 100%; */
+    display: none !important;
+  }
+
+  #section-2 #section-nav-m {
+    display: flex !important;
   }
 
   #section-2 a {
-	width: 100% !important;
-	margin-right: 1em;
+    width: 100% !important;
+    margin-right: 1em;
   }
 
   #section-2 a img {
-	max-width: 55vw;
+    width: 100%;
   }
 
-  #section-2 > h3 {	
-	margin-bottom: 2em !important;
-	font-size: 4vw;
+  #section-2 > h3 {
+    margin-bottom: 2em !important;
+    font-size: 4vw;
   }
 
   #dealer {
-	width: 110%;
-	margin-top: 1em;
-	left: -20%;
+    width: 110%;
+    margin-top: 1em;
+    left: -20%;
   }
 
   #section-3 {
-	margin-top: 1em;
-	/* justify-content: flex-end !important; */
+    margin-top: 1em;
+    /* justify-content: flex-end !important; */
   }
 
   #section-3 .row {
-	margin-top: 50vh !important;
+    margin-top: 50vh !important;
   }
 
   #section-3 .header-text {
-	font-size: 7vw !important;
+    font-size: 7vw !important;
   }
 
   #section-3 .mb-4 {
-	font-size: 6vw !important;
-	margin-bottom: 10px !important;
+    font-size: 6vw !important;
+    margin-bottom: 10px !important;
   }
 
   #section-3 .display-6 {
-	font-size: 4vw !important;
-	margin-bottom: 1em !important;
+    font-size: 4vw !important;
+    margin-bottom: 1em !important;
   }
 
   #section-3 #free-spin-banner img {
-	width: 100%;
+    width: 100%;
   }
 
   #section-3 button {
-	margin-top: 2em !important;
-	padding: 0.8em 2em !important;
-	border-radius: 18px !important;
+    margin-top: 2em !important;
+    padding: 0.8em 2em !important;
+    border-radius: 18px !important;
   }
 
   #section-3 button h5 {
-	font-size: small;
+    font-size: small;
   }
 
   #football {
-	width: 115%;
-	right: -20%;
+    width: 115%;
+    right: -20%;
   }
 
   .spacer {
-	display: none;
+    display: none;
   }
 
   #section-4 {
-	padding-top: 60vh !important;
-	justify-content: center !important;
+    padding-top: 60vh !important;
+    justify-content: center !important;
   }
 
   #section-4 .display-1 {
-	font-size: 8vw !important;
+    font-size: 8vw !important;
   }
 
   #section-4 .mb-4 {
-	margin-bottom: 2vh !important;
+    margin-bottom: 2vh !important;
   }
 
   #section-4 .display-6 {
-	font-size: 4vw !important;
-	margin-bottom: 5vh !important;
+    font-size: 4vw !important;
+    margin-bottom: 5vh !important;
   }
 
   #section-4 button {
-	border-radius: 18px !important;
-	padding: 0.8em 3em !important;
+    border-radius: 18px !important;
+    padding: 0.8em 3em !important;
   }
 
   #section-4 button h5 {
-	font-size: small;
+    font-size: small;
+  }
+
+  #section-5 {
+    height: auto;
+    margin-top: 10vh;
   }
 
   #pattern-4 {
-	width: 40%;
-	left: -20%;
+    width: 40%;
+    left: -20%;
   }
 
   #pattern-3 {
-	width: 40%;
-	right: -20% !important;
+    width: 40%;
+    margin-top: 5vh;
+    right: -20% !important;
   }
 
-  #timer-container .display-5{
-	font-size: 3vh !important;
+  #timer-container .display-5 {
+    font-size: 3vh !important;
   }
 
   #timer-container .fw-normal {
-	font-size: 2vh !important;
+    font-size: 2vh !important;
   }
 
   #timer-container #fifa-right {
-	margin-left: 1vw;
+    margin-left: 1vw;
   }
 
   #timer-label {
-	font-weight: 450 !important;
-	font-size: 5vw !important;
+    font-weight: 450 !important;
+    font-size: 5vw !important;
   }
+
+  #spacer-section-5 {
+    height: 10vh !important;
+  }
+
+  .spacer-sm {
+    display: none;
+  }
+
+  #section-6 {
+    margin-top: 11vh;
+  }
+
+  #section-6 > h5{
+    font-size: 5vw;
+    font-weight: 600 !important;
+    margin-bottom: 5vh !important;
+  }
+
+  #background-textures #background-texture-1 {
+    width: 200vw;
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+
+  #background-textures #background-texture-2 {
+    display: none;
+  }
+
+  #background-textures #pattern-2 {
+    display: none;
+  }
+
+  #section-6 #country-groups {
+    display: none;
+  }
+
+  #section-6 #country-groups-m {
+    display: flex;
+  }
+
+  #section-7 {
+    min-height: 300px; 
+    background-position: 65%;
+  }
+
+  #section-7 h1 {
+    margin-bottom: 2vh !important;
+  }
+
+  #section-7 h2 {
+    font-size: small !important;
+  }
+
+  #section-7 button {
+    margin-top: 2vh !important;
+    padding: 2vh 10vw !important;
+    border-radius: 18px !important;
+  }
+
+  #section-7 button h5 {
+    font-size: smaller !important;
+    font-weight: 400 !important;
+  }
+
+  #modal-desktop {
+    display: none;
+  }
+
+  #modal-mobile {
+    display: block;
+    width: 95%;
+  }
+
+  .custom-modal {
+    padding-top: unset;
+  }
+  
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-  #nav-logo {
-    width: 8%;
+  .navbar-nav {
+    display: none;
   }
-  #actor-1 {
-    width: 0%;
-    right: -15%;
-  }
-}
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width: 991px) {
-  #nav-logo {
-    width: 10%;
+  .navbar-collapse > button {
+    border-radius: 18px;
+    font-weight: 450;
+    font-size: xx-small;
+    margin-left: auto !important;
   }
+
+  #nav-logo {
+    width: 20%;
+  }
+
   #actor-1 {
-    width: 90%;
+    top: 1%;
+    width: 110%;
     right: -15%;
+  }
+
+  #pattern-1 {
+    display: none;
+    /* margin-top: 10vh; */
+  }
+
+  #gradient-background {
+    height: 500vh;
+  }
+
+  #section-1 {
+    height: 85vh;
   }
 
   #section-1 > div {
@@ -237,11 +350,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   .header-text {
     letter-spacing: 0.2px;
-    font-size: 6vw !important;
+    font-size: 1.8em !important;
   }
 
   #section-1 > div > h6 {
-    font-size: 5vw !important;
+    font-size: x-large !important;
     margin-bottom: 1.3em !important;
   }
 
@@ -266,11 +379,415 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: small;
     margin-right: 1em;
   }
+
+  #section-2 {
+    overflow-y: visible;
+    margin-bottom: 0 !important;
+  }
+
+  #section-2 #section-nav {
+    /* width: 100%; */
+    display: none !important;
+  }
+
+  #section-2 #section-nav-m {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  #section-2 a {
+    width: 100% !important;
+    margin-right: 1em;
+  }
+
+  #section-2 a img {
+    width: 100%;
+  }
+
+  #section-2 > h3 {
+    margin-bottom: 2em !important;
+    font-size: 4vw;
+  }
+
+  #dealer {
+    width: 110%;
+    margin-top: 1em;
+    left: -20%;
+  }
+
+  #section-3 {
+    margin-top: 1em;
+    /* justify-content: flex-end !important; */
+  }
+
+  #section-3 .row {
+    margin-top: 90vh !important;
+  }
+
+  #section-3 .header-text {
+    font-size: 7vw !important;
+  }
+
+  #section-3 .mb-4 {
+    font-size: 6vw !important;
+    margin-bottom: 10px !important;
+  }
+
+  #section-3 .display-6 {
+    font-size: 4vw !important;
+    margin-bottom: 1em !important;
+  }
+
+  #section-3 #free-spin-banner img {
+    width: 100%;
+  }
+
+  #section-3 button {
+    margin-top: 2em !important;
+    padding: 0.8em 2em !important;
+    border-radius: 18px !important;
+  }
+
+  #section-3 button h5 {
+    font-size: small;
+  }
+
+  #football {
+    width: 115%;
+    right: -20%;
+  }
+
+  /* .spacer {
+    display: none;
+  } */
+
+  #section-4 {
+    padding-top: 100vh !important;
+    justify-content: center !important;
+  }
+
+  #section-4 .display-1 {
+    font-size: 8vw !important;
+  }
+
+  #section-4 .mb-4 {
+    margin-bottom: 2vh !important;
+  }
+
+  #section-4 .display-6 {
+    font-size: 4vw !important;
+    margin-bottom: 5vh !important;
+  }
+
+  #section-4 button {
+    border-radius: 18px !important;
+    padding: 0.8em 3em !important;
+  }
+
+  #section-4 button h5 {
+    font-size: small;
+  }
+
+  #section-5 {
+    height: auto;
+    margin-top: 10vh;
+  }
+
+  #pattern-4 {
+    width: 40%;
+    left: -20%;
+  }
+
+  #pattern-3 {
+    width: 40%;
+    margin-top: 5vh;
+    right: -20% !important;
+  }
+
+  #timer-container .display-5 {
+    font-size: 3vh !important;
+  }
+
+  #timer-container .fw-normal {
+    font-size: 2vh !important;
+  }
+
+  #timer-container #fifa-right {
+    margin-left: 1vw;
+  }
+
+  #timer-label {
+    font-weight: 450 !important;
+    font-size: 5vw !important;
+  }
+
+  #spacer-section-5 {
+    height: 10vh !important;
+  }
+
+  .spacer-sm {
+    display: none;
+  }
+
+  #section-6 {
+    margin-top: 11vh;
+  }
+
+  #section-6 > h5{
+    font-size: 5vw;
+    font-weight: 600 !important;
+    margin-bottom: 5vh !important;
+  }
+
+  #background-textures #background-texture-1 {
+    width: 200vw;
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+
+  #background-textures #background-texture-2 {
+    display: none;
+  }
+
+  #background-textures #pattern-2 {
+    display: none;
+  }
+
+  #section-6 #country-groups {
+    display: none;
+  }
+
+  #section-6 #country-groups-m {
+    display: flex;
+    margin-bottom: unset;
+  }
+
+  #section-7 {
+    min-height: 300px; 
+    background-position: 65%;
+  }
+
+  #section-7 h1 {
+    margin-bottom: 2vh !important;
+  }
+
+  #section-7 h2 {
+    font-size: small !important;
+  }
+
+  #section-7 button {
+    margin-top: 2vh !important;
+    padding: 2vh 10vw !important;
+    border-radius: 18px !important;
+  }
+
+  #section-7 button h5 {
+    font-size: smaller !important;
+    font-weight: 400 !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-logo {
+    width: 10%;
+  }
+  #actor-1 {
+    width: 90%;
+    right: -15%;
+  }
+
+  #gradient-background {
+    height: 490vh;
+  }
+
+  #pattern-1 {
+    display: none;
+  }
+
+  #section-1 > div {
+    /* margin-bottom: 10px !important;
+    margin-top: auto !important; */
+    margin-top: 20vh !important;
+  }
+
+  .header-text {
+    letter-spacing: 0.2px;
+    font-size: 6vw !important;
+  }
+
+  #section-1 h1 {
+    font-size: 5vw !important;
+  }
+
+  #section-1 > div > h6 {
+    font-size: 3vw !important;
+    margin-bottom: 1.3em !important;
+  }
+
+  #section-1 > div > .mb-4 {
+    margin-bottom: 0.4em !important;
+  }
+
+  #watch-video {
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 1.3em;
+  }
+
+  #watch-video h6 {
+    margin-bottom: 3em;
+  }
+
+  #watch-video img {
+    width: 40px !important;
+  }
+
+  #watch-video h5 {
+    font-size: small;
+    margin-right: 1em;
+  }
+
+  #section-nav a img {
+    width: 90%;
+  }
+
+  #dealer {
+    left: -30vw;
+    width: 90%;
+  }
+
+  #section-3 {
+    justify-content: start !important;
+    margin-top: 20vh !important;
+  }
+
+  #section-3 h1{
+    font-size: 5vw !important;
+  }
+
+  #section-3 h6{
+    font-size: 3vw !important;
+    margin-bottom: 3vw !important;
+  }
+
+  #section-3 .mb-4{
+    font-size: 4.5vw !important;
+    margin-bottom: 3vh !important;
+  }
+
+  #section-3 button {
+    font-size: smaller !important;
+    margin-top: 5vh !important;
+    padding: 1em 3.5em !important;
+  }
+
+  #football {
+    width: 90%;
+    right: -20vw !important;
+  }
+
+  #section-4 {
+    justify-content: start !important;
+    margin-top: 20vh !important;
+  }
+
+  #section-4 h1 {
+    font-size: 5vw !important;
+  }
+
+  #section-4 h6 {
+    font-size: 3vw !important;
+    margin-bottom: 5vh !important;
+  }
+
+  #section-4 button {
+    font-size: smaller !important;
+    border-radius: 18px !important;
+    padding: 1em 3em !important;
+  }
+
+  #pattern-4 {
+    width: 35%;
+    left: -5vw;
+  }
+
+  #pattern-3 {
+    width: 40%;
+  }
+
+  .spacer-sm {
+    display: none;
+  }
+
+  #section-6 {
+    margin-top: 11vh;
+    margin-bottom: 11vh;
+  }
+
+  #section-6 > h5{
+    font-size: 5vw;
+    font-weight: 600 !important;
+    margin-bottom: 5vh !important;
+  }
+
+  #background-textures #background-texture-1 {
+    width: 150vw;
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+
+  #background-textures #background-texture-2 {
+    display: none;
+  }
+
+  #background-textures #pattern-2 {
+    display: none;
+  }
+
+  #section-6 #country-groups {
+    display: none;
+  }
+
+  #section-6 #country-groups-m {
+    display: flex;
+    margin-bottom: unset;
+  }
+
+  #section-7 {
+    min-height: 400px; 
+    background-position: 50% !important;
+  }
+
+  #section-7 h1 {
+    margin-bottom: 2vh !important;
+  }
+
+  #section-7 h2 {
+    font-size: small !important;
+  }
+
+  #section-7 button {
+    margin-top: 2vh !important;
+    padding: 2vh 10vw !important;
+    border-radius: 18px !important;
+  }
+
+  #section-7 button h5 {
+    font-size: smaller !important;
+    font-weight: 400 !important;
+  }
+
+  .spacer {
+    display: none;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -421,7 +938,7 @@ Custom media queries
   }
 
   .sec-7-m > div > div:nth-child(2) > h6 {
-    text-align: end;
+    text-align: start;
   }
   .sec-7-m > div > div:first-child img {
     width: 16%;
