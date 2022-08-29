@@ -1,503 +1,686 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="icon" href="./images/96m-blue-icon.svg">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="./images/Logo.svg" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" /> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <title>96M</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/carousel.css">
-    <link rel="stylesheet" href="./css/media-queries.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<body>
+    <link href="./css/style.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./css/animate.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/carousel.css" /> -->
+    <link rel="stylesheet" href="./css/media-queries.css" />
+  </head>
 
-    <div class="container-1" id="container-1">
-
-        <div class="sec-1">
-            <img src="./images/96m-white-icon.svg" alt="96m" class="icon-96m" />
-            <p>“亚洲<span style="color: #f47920;">第一</span>信任品牌”</p>
-            <p>Asia's No. 1 Trusted Brand</p>
-            <div class="select-lang">
-                <div>
-                    <div onclick="window.location.href='https://www.my96m.com';">
-                        <img src="./images/my-icon.svg" alt="Malaysia" />
-                        <p>Malaysia</p>
-                    </div>
-                </div>
-                <div>
-                    <div onclick="window.location.href='https://www.sg96m.com';">
-                        <img src="./images/sg-icon.svg" alt="Singapore" />
-                        <p>Singapore</p>
-                    </div>
-                </div>
-            </div>
-            <img src="./images/dotted-arrow.svg" alt="Down Arrow" class="down_arrow white"
-                onclick="jumpToNextSection('container-2')" />
-        </div>
-        <video id="bg-vid" muted autoplay playsinline loop type='video/mp4'>
-            <source src="./vids/96M_MV_BG.mp4" type="video/mp4" />
-        </video>
-        <video id="bg-vid-m" muted autoplay playsinline loop type='video/mp4'>
-            <source src="./vids/96M_MV_BG-M.mp4" type="video/mp4" />
-        </video>
-        <!-- <div class="triangle-top"></div>
-        <div class="triangle-bot" onclick="jumpToNextSection('container-2')"></div> -->
-    </div>
-    <div class="outer-bg">
-        <div class="container-2" id="container-2">
-            <div class="join-content">
-                <div><img src="./images/96m-blue-icon.svg" alt="Wu Zongxian" class="ambassador" />
-                    <p>X</p>
-                    <p>吳宗憲</p>
-                </div>
-                <p>96M Ambassador <span>品牌代言大使</span> 2022/23</p>
-                <iframe class="yt-video" width="420" height="230"
-                    src="https://www.youtube.com/embed/kDTygtM2bUM?autoplay=0" frameBorder="0" allowfullscreen>
-                </iframe>
-                <p>96M诚信得到名人认证！亚洲综艺天王吴宗宪与亚洲第一信赖品牌96M达成合作，担任全球品牌代言人。现在就加入96M，与宪哥一起体验绝对安全安心的 “宪” 上娱乐！</p>
-                <div class="join-btn-con">
-                    <button class="join-btn" onclick="register()">Join Now</button>
-                    <p>领取100%迎新彩金</p>
-                </div>
-            </div>
-            <div class="jacky-content">
-                <img src="./images/Jacky-Wu_v2.png" alt="Jacky Wu" class="jacky_wu" />
-                <!-- <div>
-                    <p>JACKY WU <span>吳宗憲</span></p>
-                    <p>台湾综艺天王</p>
-                </div> -->
-            </div>
-            <div class="sec-2">
-                <div class="join-content-m">
-                    <div><img src="./images/96m-blue-icon.svg" alt="Wu Zongxian" class="ambassador" />
-                        <p>X</p>
-                        <p>吳宗憲</p>
-                    </div>
-                    <p>96M Ambassador <span>品牌代言大使</span> 2022/23</p>
-                    <p>96M诚信得到名人认证！亚洲综艺天王吴宗宪与亚洲第一信赖品牌96M达成合作，担任全球品牌代言人。现在就加入96M，与宪哥一起体验绝对安全安心的 “宪” 上娱乐！</p>
-                    <div class="join-btn-con">
-                        <button class="join-btn-m" onclick="register()">Join Now</button>
-                        <p>领取100%迎新彩金</p>
-                    </div>
-                </div>
-                <div class="jacky-content-m">
-                    <img src="./images/Jacky-Wu_v2.png" alt="Jacky Wu" class="jacky_wu" />
-                    <!-- <div>
-                        <p>JACKY WU <span>吳宗憲</span></p>
-                        <p>台湾综艺天王</p>
-                    </div> -->
-                </div>
-
-            </div>
-            <iframe class="yt-video mob" width="420" height="230"
-                src="https://www.youtube.com/embed/kDTygtM2bUM?muted=1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                frameBorder="0" allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-    <div class="container-3">
-        <div class="sec-3">
-            <div class="register-con">
-                <p>WHY CHOOSE</p>
-                <img src="./images/96m-blue-icon.svg" alt="96m" />
-                <p>我们只提供私隐和安全等级最高的绝佳服务给我们的玩家。</p>
-                <button class="register" onclick="register()">Register</button>
-                <img class="coins" src="./images/coins.png" />
-            </div>
-            <div>
-                <div class="spacer_75"></div>
-                <div class="perks">
-                    <div>
-                        <img src="./images/security-icon.svg" alt="Lock" data-aos="flip-up" data-aos-duration="2000" />
-                        <p data-aos="zoom-out" data-aos-duration="2000">私隐和安全</p>
-                        <p data-aos="zoom-out" data-aos-duration="2000">
-                            我们把玩家的私隐放在第一位。在96M，我们着重看待并处理玩家的私隐和安全以确保您能无忧玩翻博彩娱乐。</p>
-                    </div>
-                    <div>
-                        <img src="./images/percent-icon.svg" alt="Percent" data-aos="flip-up"
-                            data-aos-duration="2000" />
-                        <p data-aos="zoom-out" data-aos-duration="2000">优惠和彩金</p>
-                        <p data-aos="zoom-out" data-aos-duration="2000">我们提供最棒的优惠和彩金给所有玩家。新会员现可领取高达100%的奖金和返水！</p>
-                    </div>
-                    <div>
-                        <img src="./images/cs-icon.svg" alt="Headphone" data-aos="flip-up" data-aos-duration="2000" />
-                        <p data-aos="zoom-out" data-aos-duration="2000">世界级服务</p>
-                        <p data-aos="zoom-out" data-aos-duration="2000">我们的客服人员24/7全天候为您守候以协助您解决所有问题。
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./images/dollar-icon.svg" alt="Money" data-aos="flip-up" data-aos-duration="2000" />
-                        <p data-aos="zoom-out" data-aos-duration="2000">快速提款</p>
-                        <p data-aos="zoom-out" data-aos-duration="2000">安全又快捷的存提款服务提高您的游玩体验。</p>
-                    </div>
-                    <div>
-                        <img src="./images/phone-icon.svg" alt="Phone" data-aos="flip-up" data-aos-duration="2000" />
-                        <p data-aos="zoom-out" data-aos-duration="2000">最新游戏</p>
-                        <p data-aos="zoom-out" data-aos-duration="2000">我们定时与国际游戏开发商和合作伙伴进行交涉，以更新平台上的游戏让您能预先享受最新颖的游戏。
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./images/medal-icon.svg" alt="Medal" data-aos="flip-up" data-aos-duration="2000" />
-                        <p data-aos="zoom-out" data-aos-duration="2000">执照运营并获得监管</p>
-                        <p data-aos="zoom-out" data-aos-duration="2000">
-                            我们创建并提供一个百分百安全和公平的游戏环境给所有玩家。玩家可以在这里安心游戏，无须担心任何违规行为的发生。所有余额皆可被提取。</p>
-                    </div>
-                </div>
-            </div>
-            <button class="register-m" onclick="register()">Register</button>
-        </div>
-    </div>
-
-    <div class="outer-bg">
-        <div class="container-4">
-            <p>LICENSING</p>
-            <div class="license-grid">
-                <div>
-                    <img src="./images/gc-icon.svg" class="license-img" alt="Gaming Curacao" data-aos="zoom-out"
-                        data-aos-duration="2000" />
-                    <p data-aos="zoom-out" data-aos-duration="2000">96M是由库拉索Gaming颁发执照并监管</p>
-                    <p data-aos="zoom-out" data-aos-duration="2000">
-                        库拉索Gaming运营执照是世界上最著名的运营执照。目前全世界有450家线上博彩运营商在库拉索Gaming的监控下运营中。库拉索Gaming是由库拉索政府所成立，并致力于确保所有线上博彩运营商都依法运营并遵守条规。
-                    </p>
-                </div>
-                <div>
-                    <img src="./images/godaddy-icon.svg" class="license-img" alt="GoDaddy.com" data-aos="zoom-out"
-                        data-aos-duration="2000" />
-                    <p data-aos="zoom-out" data-aos-duration="2000">我们的域名获得 <span
-                            class="orange-link">GoDaddy.com</span>的认证和保护</p>
-                    <p data-aos="zoom-out" data-aos-duration="2000"><span class="orange-link">GoDaddy</span>
-                        是世界上最大的提供SSL证书的域名供应商。SSL证书确保网页获得SSL保护。其意思是，当用户到访该网站时，SSL证书会自动跟用户的浏览器生成一个安全和加密的链接来保护玩家的安全。
-                    </p>
-                </div>
-                <div>
-                    <img src="./images/bmm-icon.svg" class="license-img" alt="BMM testlabs" data-aos="zoom-out"
-                        data-aos-duration="2000" />
-                    <p data-aos="zoom-out" data-aos-duration="2000">96M获得著名游戏测试室，如 <span class="orange-link">BMM
-                            Testlabs</span> 和
-                        <span class="orange-link">iTech Labs.</span>的监管和测试
-                    </p>
-                    <p data-aos="zoom-out" data-aos-duration="2000"><span class="orange-link">BMM testlabs</span> 和
-                        <span class="orange-link">iTech
-                            Labs</span>已对96M展开了一系列的严格测试，以确保96M的游戏提供顺畅和合格的游戏体验给所有玩家。它们是一家成立于1981年，在13个国家拥有14个办公地点并获得超过400个司法机构承认的私人独立游戏测试机构。
-                    </p>
-                </div>
-                <div>
-                    <!-- <div class="global-con" data-aos="zoom-out" data-aos-duration="2000">
-                    <img src="./images/itech-icon.svg" alt="iTech Labs" />
-                    <img src="./images/gli-icon.svg" alt="Gaming Laboratories International" />
-                    <img src="./images/tst-icon.svg" class="tst-icon" alt="Payout Review by TST GLOBAL" />
-                </div> -->
-                    <img src="./images/license-icon.svg" class="license-img" alt="Licenses" data-aos="zoom-out"
-                        data-aos-duration="2000" />
-                    <p data-aos="zoom-out" data-aos-duration="2000">96M通过了系统认证、质量保证和安全测试等一系列的测试并获得iTech Labs所颁发的证书</p>
-                    <p data-aos="zoom-out" data-aos-duration="2000">96M上的全部游戏都获得TST
-                        Global的测试、审核并认证。所有游戏都是由中立的运营单位所提供，玩家可以安心畅玩。</p>
-                </div>
-            </div>
-            <!-- <img src="./images/up-arrow.svg" alt="Scroll to Top" class="up-arrow"
-            onclick="jumpToNextSection('container-1')" /> -->
-        </div>
-    </div>
-
-    <div class="container-5">
-        <div class="sec-5">
-            <p>RECOMMEND GAME PROVIDERS</p>
-            <div>
-                <div>
-                    <img src="./images/96msport-icon.svg" alt="96M Sport" />
-                </div>
-                <div>
-                    <img src="./images/evolution-icon.svg" alt="Evolution" />
-                </div>
-                <div>
-                    <img src="./images/nextspin-icon.svg" alt="Nextspin" />
-                </div>
-                <div>
-                    <img src="./images/spadegaming-icon.svg" alt="Spadegaming" />
-                </div>
-                <div>
-                    <img src="./images/mega888-icon.svg" alt="Mega 888" />
-                </div>
-                <div>
-                    <img src="./images/918kiss-icon.svg" alt="918 Kiss" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-6">
-        <div class="sec-6">
-            <p>TESTIMONIALS</p>
-            <div>
-                <div class="top-content">
-                    <div class="container-fluid">
-                        <div id="carousel-example" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner row mx-auto" role="listbox">
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 active">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>我的最佳选择</p>
-                                        <p>96M是我线上博彩的最佳选择，因为它们的游戏很棒很多样话，在这里玩你从来不会觉得无聊。非常建议新手或者是老手玩96M。
-                                        </p>
-                                        <!-- <p>- 958917977 eas****</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>玩过一次就爱上96M</p>
-                                        <p>我不会忘记第一次在96M玩的情况。因为它的客服非常专业。由你注册账户那一刻开始，它们就会为你提供服务并帮助你解决任何问题。在其他平台你根本找不到这种一流的服务。
-                                        </p>
-                                        <!-- <p>- 891306785 mi******</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>真正意义上的赢钱</p>
-                                        <p>如果你想要从网络赌博赢大钱的话，96M是你唯一的选择。我并没有胡说，因此96M的赔率真的很高，高过其他平台。尤其是它的Evolution
-                                            Gaming独家赌桌，不仅是最先进的游戏，而且还提供最高的赔率。我个人曾单靠RM100从这个赌桌赢到RM30,000，非常值得！
-                                        </p>
-                                        <!-- <p>- 246424059 ak*****</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>博彩的真正去处</p>
-                                        <p>自从我玩过96M后，我再也没有去过实体赌场了。96M的博彩服务非常地方便，只要你有电脑或手机，你就可以随时随地的博彩。而且它们的VIP制度非常棒，一般来说云顶只会提供旅游积分，但96M的VIP制度会送你无限返水和豪华奖品，是博彩的真正去处。
-                                        </p>
-                                        <!-- <p>- 246424059 ak*****</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>超高赔率和一流服务</p>
-                                        <p>我个人觉得96M应该将“玩小赢大”这个元素放在它们的口号里面，它们的赔率是真正意义上能够让你一夜暴富。我本身在上个星期从96M的老虎机游戏赢得了RM7,801。如果放在其他的平台的话，我最多只能赢到RM5,000多而已。所以如果你想要“玩小赢大”，你就一定要试下96M。
-                                        </p>
-                                        <!-- <p>- 246424059 ak*****</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>最优质的优惠活动</p>
-                                        <p>96M的优惠活动真的是一级棒，我借着它的优惠在一个月内单靠RM100打天下。虽然这听起来不可能，但是真的可行的。因为我从它们的优惠活动领到了免费的RM300，并借着这个钱赢到RM6,200！谢谢96M！
-                                        </p>
-                                        <!-- <p>- 246424059 ak*****</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>迅雷般的存提款速度</p>
-                                        <p>存提款速度一直以来就是线上博彩的硬伤，因此很多平台的交易速度很慢很慢。但在我转玩96M后就不一样了，我再也没有遇到这种问题，它们的客户服务和交易系统做得很棒，只需5分钟，你的钱就到账了。
-                                        </p>
-                                        <!-- <p>- 246424059 ak*****</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>游戏种类繁多</p>
-                                        <p>如果你跟我一样是一名博彩爱好者，喜欢玩尽各种博彩游戏的话，96M就是你的最佳选择。96M上除了优惠繁多，游戏也很多。在这里你可以找到来自著名游戏供应商如Spade
-                                            gaming、Evolution
-                                            Gaming、Mega888、Livescore等所提供的老虎机游戏、真人娱乐、积宝、体育博彩等等的游戏。非常适合喜欢玩各种游戏的玩家。
-                                        </p>
-                                        <!-- <p>- 246424059 ak*****</p> -->
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                                    <div class="cr-item-content mx-auto d-block">
-                                        <img src="./images/quotation-icon.svg" alt="Quotation Mark" />
-                                        <p>赢钱的好地方</p>
-                                        <p>96M是我第一且唯一的博彩选择。因为它们的赔率真的很高，而且还提供多种优惠派送免费奖金给所以玩家。我每每在这里玩都会感觉到自己有被重视，就如一个皇帝。不瞒你说，我在这里已经累积赢得了超过RM170,000的奖金！
-                                        </p>
-                                        <!-- <p>- 246424059 ak*****</p> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-7">
-
-        <div class="sec-7">
-
-            <div class="footer-grid">
-
-                <div class="footer-info">
-
-                    <h6>Follow us</h6>
-
-                    <ol>
-                        <li><a href="https://www.facebook.com/96m.official"><img src="./images/fb-icon.svg"></a></li>
-                        <li><a href="https://twitter.com/96m_official"><img src="./images/twitter-icon.svg"></a></li>
-                        <li><a href="https://www.instagram.com/96m.official/"><img
-                                    src="./images/instagram-icon.svg"></a>
-                        </li>
-                        <li><a href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"><img
-                                    src="./images/youtube-icon.svg"></a>
-                        </li>
-                    </ol>
-
-
-                </div>
-
-                <div class="footer-info responsible-links">
-
-                    <h6>Responsible Gaming</h6>
-
-                    <ol>
-                        <li><img src="./images/18plus-icon.svg"></li>
-                        <li><img src="./images/gamcare-icon.svg"></li>
-                        <li><img src="./images/bga-icon.svg"></li>
-                    </ol>
-
-
-                </div>
-
-            </div>
-
-            <hr id="footer_style">
-
-            <div class="footer-grid">
-
-                <div class="footer-nav nav-links">
-
-                    <ol>
-                        <li><a href="https://www.96m.com/">Home</a> &nbsp; |</li>
-                        <li><a href="https://www.96m.com/en-my/info-centre/faq#general">About</a> &nbsp; |</li>
-                        <li><a href="https://www.96m.com/en-my/contact">Contact Us</a> &nbsp; |</li>
-                    </ol>
-
-
-                </div>
-
-                <div class="footer-nav responsible-nav">
-
-                    <p>Copyright 96M © 2021. All rights reserved</p>
-
-                </div>
-
-            </div>
-
+  <body>
+    <div id="fifa-wrapper">
+      <div id="sticky-note">
+        <img
+          onclick="console.log('close')"
+          id="sticky-note-close"
+          src="./images/close-button.png"
+          alt=""
+        />
+        <img
+          onclick="jumpToNextSection('section-5')"
+          id="sticky-image"
+          src="./images/Sticky-note_animation.gif"
+          alt=""
+        />
+      </div>
+      <div class="section-wrapper">
+        <div id="absolute-background">
+          <img
+            src="./images/Lighting-Background.jpg"
+            id="section-1-background"
+          />
+          <div id="gradient-background">
+            <img id="pattern-1" src="./images/Pattern-1.png" alt="" />
+          </div>
         </div>
 
-        <div class="sec-7-m">
+        <!-- <div class="container" id="main-container""> -->
+        <nav class="navbar navbar-expand mt-3">
+          <div class="container">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="me-auto"
+              id="nav-logo"
+            >
+              <img src="./images/Logo.svg" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contact</a>
+                </li>
+              </ul>
+              <button type="button" class="text-white ms-5 orange-theme-btn">
+                JOIN NOW
+              </button>
+            </div>
+          </div>
+        </nav>
+        <img
+          data-aos="fade-left"
+          src="./images/Jackywu.png"
+          alt="Jackywu"
+          id="actor-1"
+          srcset=""
+        />
 
+        <div
+          id="section-1"
+          class="section d-flex flex-column"
+          data-anchor="section1"
+        >
+          <div class="my-auto container" data-aos="fade-right">
+            <h1 class="display-1 text-light header-text main-header-text">
+              ASIA <span class="orange-theme">NO.1</span>
+            </h1>
+            <h1
+              class="display-1 text-light mb-4 header-text"
+              style="font-weight: 750"
+            >
+              TRUSTED BRAND
+            </h1>
+
+            <h6
+              class="display-6 text-light"
+              style="margin-bottom: 7rem"
+            >
+              亚洲第一信任品牌
+            </h6>
+
+            <button
+              type="button"
+              id="watch-video"
+              class="d-flex align-self-start align-items-center"
+            >
+              <h5 class="mb-0 me-3">WATCH VIDEO</h5>
+              <img src="./images/play-button.png" style="width: 55px" alt="" />
+            </button>
+          </div>
+        </div>
+        <div
+          id="section-2"
+          data-anchor="section2"
+          class="section d-flex flex-column my-5"
+        >
+          <h3 class="text-light mb-5 container" data-aos="fade-up">
+            Three simple steps and the bonus is yours!
+          </h3>
+          <div
+            id="section-nav"
+            class="d-flex flex-row justify-content-between container"
+            data-aos="fade-up"
+          >
+            <a href="#section-3"
+              ><img src="./images/Step-banner-1.png" alt=""
+            /></a>
+            <a href="#section-4"
+              ><img src="./images/Step-banner-2.png" alt=""
+            /></a>
+            <a href="#spacer-section-5"
+              ><img src="./images/Step-banner-3.png" alt=""
+            /></a>
+          </div>
+          <div id="section-nav-m" class="d-flex">
+            <img
+              onclick="jumpToNextSection('section-3')"
+              src="./images/Step-banner-1.png"
+              alt=""
+            />
+            <img
+              onclick="jumpToNextSection('section-4')"
+              src="./images/Step-banner-2.png"
+              alt=""
+            />
+            <img
+              onclick="jumpToNextSection('section-5')"
+              id="section-nav-end"
+              src="./images/Step-banner-3.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <img
+          id="dealer"
+          src="./images/Casino-dealer.png"
+          alt=""
+          data-aos="fade-right"
+          data-aos-offset="300"
+        />
+        <div
+          id="section-3"
+          data-anchor="section3"
+          class="section container d-flex flex-column justify-content-center"
+          data-aos="fade-left"
+        >
+          <!-- <div class="container d-flex flex-column justify-content-center"> -->
+          <div class="row">
+            <div class="col col-6 col-md-7 col-lg-7"></div>
+            <div class="col col-6 col-md-5 col-lg-5">
+              <h1 class="display-1 text-light header-text main-header-text">
+                <span class="orange-theme">LUCKY</span> SPIN
+              </h1>
+              <h1
+                class="display-1 text-light header-text mb-4"
+                style="font-weight: 750"
+              >
+                WAITING YOU
+              </h1>
+
+              <h6
+                class="display-6 text-light"
+                style="margin-bottom: 3rem"
+              >
+                时来运转, 等你哟!
+              </h6>
+
+              <a href="#" id="free-spin-banner">
+                <img src="./images/Free-spin-banner.png" alt="" />
+              </a>
+
+              <button
+                type="button"
+                class="text-light align-self-start orange-theme-btn"
+                style="
+                  padding: 1.3rem 4.5em;
+                  border-radius: 25px;
+                  margin-top: 7em;
+                "
+              >
+                <h5 class="mb-0">SPIN WHEEL</h5>
+              </button>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="spacer"></div>
+        <img
+          data-aos="fade-left"
+          data-aos-offset="400"
+          data-aos-delay="50"
+          id="football"
+          src="./images/Football-player.png"
+          alt=""
+        />
+        <div
+          id="section-4"
+          data-anchor="section4"
+          class="section d-flex flex-column justify-content-center container"
+          data-aos="fade-right"
+        >
+          <h1 class="display-1 text-light header-text main-header-text">
+            RISK-<span class="orange-theme">FREE</span>
+          </h1>
+          <h1
+            class="display-1 text-light mb-4 header-text"
+            style="font-weight: 750"
+          >
+            ON FIRST BET
+          </h1>
+
+          <h6
+            class="display-6 text-light"
+            style="margin-bottom: 7rem"
+          >
+            您的首投绝无风险
+          </h6>
+
+          <button
+            type="button"
+            class="text-light align-self-start orange-theme-btn"
+            style="padding: 1.3rem 4.5em; border-radius: 25px"
+          >
+            <h5 class="mb-0">BET NOW</h5>
+          </button>
+        </div>
+        <div class="spacer"></div>
+        <img id="pattern-4" src="./images/Pattern-4.png" alt="" />
+        <div id="section-spacer" style="height: 5vh"></div>
+        <div
+          id="spacer-section-5"
+          data-anchor="section5"
+          class="section"
+          style="height: 25vh"
+        ></div>
+        <div
+          id="section-5"
+          class="d-flex flex-column justify-content-center align-items-center container"
+        >
+          <img id="pattern-3" src="./images/Pattern-3.png" alt="" />
+          <div
+            id="timer-head"
+            class="d-flex flex-column align-items-center"
+            data-aos="fade-down"
+          >
+            <h1 class="display-1 text-light header-text main-header-text">
+              FIFA WORLD CUP
+            </h1>
+            <!-- <h1
+            class="display-1 text-light mb-4 header-text"
+            style="font-weight: 750"
+          >
+            Qatar2022
+          </h1> -->
+            <img src="./images/qatar-olympic-logo.png" id="qatar" alt="" />
+            <h5
+              id="timer-label"
+              class="display-5 text-light mb-4 fw-bold"
+              data-aos="fade-down"
+            >
+              Tournament starts in
+            </h5>
+          </div>
+          <div
+            id="timer-container"
+            class="d-flex justify-content-center"
+            data-aos="flip-up"
+          >
+            <img id="fifa-left" src="./images/FIFA element-01.svg" alt="" />
+            <div
+              class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
+            >
+              <h5 class="display-5 fw-bolder" id="fifa-days">00</h5>
+              <h3 class="fw-normal">DAYS</h3>
+            </div>
+            <img
+              class="fifa-middle"
+              src="./images/FIFA element-02.svg"
+              alt=""
+            />
+            <div
+              class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
+            >
+              <h5 class="display-5 fw-bolder" id="fifa-hours">00</h5>
+              <h3 class="fw-normal">HOURS</h3>
+            </div>
+            <img
+              class="fifa-middle"
+              src="./images/FIFA element-02.svg"
+              alt=""
+            />
+            <div
+              class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
+            >
+              <h5 class="display-5 fw-bolder" id="fifa-minutes">00</h5>
+              <h3 class="fw-normal">MINUTES</h3>
+            </div>
+            <img id="fifa-right" src="./images/FIFA element-01.svg" alt="" />
+          </div>
+        </div>
+        <div id="background-textures">
+          <img id="triangle-texture" src="./images/triangle.png" alt="" />
+          <img
+            id="background-texture-1"
+            class="background-texture"
+            src="./images/Background-texture.png"
+            alt=""
+            srcset=""
+          />
+          <img id="pattern-2" src="./images/Pattern-2.png" alt="" />
+          <img
+            class="background-texture"
+            id="background-texture-2"
+            src="./images/Background-texture-2.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="spacer-sm"></div>
+        <div id="section-6" class="d-flex flex-column align-items-center">
+          <h5 class="display-5 fw-normal mb-5" style="color: #ef1550">
+            Final Draw
+          </h5>
+          <div id="country-groups" class="container">
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_A.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_B.png" alt="" />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_C.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_D.png" alt="" />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_E.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_F.png" alt="" />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_G.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_H.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="country-groups-m">
+            <a href="#"></a><img src="./images/FIFA-group_A.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_B.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_C.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_D.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_E.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_F.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_G.png" alt="" /></a>
+            <a href="#"></a><img
+              id="country-group-last"
+              src="./images/FIFA-group_H.png"
+              alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <div id="section-7" class="d-flex align-items-center">
+          <div class="container">
             <div class="row">
-
-                <div class="col">
-
-                    <h6>Follow us</h6>
-
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/96m.official"><img src="./images/fb-icon.svg"></a>
-                        <a href="https://twitter.com/96m_official"><img src="./images/twitter-icon.svg"></a>
-                        <a href="https://www.instagram.com/96m.official/"><img src="./images/instagram-icon.svg"></a>
-                        <a href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"><img
-                                src="./images/youtube-icon.svg"></a>
-                    </div>
-
+              <div
+                class="col col-8 col-md-7 col-lg-6 col-xl-6 d-flex flex-column justify-content-center"
+              >
+                <h1 class="display-1 text-light mb-4 header-text fw-bold">
+                  MATCHES & NEWS
+                </h1>
+                <div style="width: 80%">
+                  <h2 class="text-light mb-4 header-text">
+                    View all the matches, news and teams ahead of the FIFA World
+                    Cup Qatar 2022
+                  </h2>
                 </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="text-light align-self-start orange-theme-btn"
+              style="
+                padding: 1.3rem 4.5em;
+                border-radius: 25px;
+                margin-top: 7em;
+              "
+            >
+              <h5 class="mb-0">BET NOW</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="container-7">
+        <div class="container sec-7">
+          <div class="footer-grid">
+            <div class="footer-info socials">
+              <h6>Follow us</h6>
 
-                <div class="col">
+              <ol>
+                <li>
+                  <a href="https://www.facebook.com/96m.official"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/fb.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/fb-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/fb.png'"
+                  /></a>
+                </li>
 
-                    <h6>Responsible Gaming</h6>
+                <li>
+                  <a href="https://twitter.com/96m_official"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/twitter.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/twitter-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/twitter.png'"
+                  /></a>
+                </li>
 
-                    <div class="responsible-icons">
-                        <img src="./images/18plus-icon.svg">
-                        <img src="./images/gamcare-icon.svg">
-                        <img src="./images/bga-icon.svg">
-                    </div>
+                <li>
+                  <a href="https://www.instagram.com/96m.official/"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/instagram.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/instagram-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/instagram.png'"
+                  /></a>
+                </li>
 
-                </div>
-
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
+                    ><img
+                      src="./images/Footer/Social Media/Desktop/youtube.png"
+                      onmouseover="this.src='./images/Footer/Social Media/Desktop/youtube-on.png'"
+                      onmouseout="this.src='./images/Footer/Social Media/Desktop/youtube.png'"
+                  /></a>
+                </li>
+              </ol>
             </div>
 
-            <hr id="footer_style">
+            <div class="footer-info responsible-links">
+              <h6>Responsible Gaming</h6>
 
-            <p>Copyright 96M © 2021. All rights reserved</p>
+              <ol>
+                <li><img src="./images/Footer/18plus-icon.svg" /></li>
 
+                <li><img src="./images/Footer/gamcare-icon.svg" /></li>
+
+                <li><img src="./images/Footer/bga-icon.svg" /></li>
+              </ol>
+            </div>
+          </div>
+
+          <hr id="footer_style" />
+
+          <div class="footer-grid" style="margin-top: 1.5rem">
+            <div class="footer-nav nav-links">
+              <!-- <ol>
+                      <li><a href="https://www.96m.com/">Home</a> &nbsp; |</li>
+                      <li><a href="https://www.96m.com/en-my/info-centre/faq#general">About</a> &nbsp; |</li>
+                      <li><a href="https://www.96m.com/en-my/contact">Contact Us</a> &nbsp; |</li>
+                  </ol> -->
+            </div>
+
+            <div class="footer-nav responsible-nav">
+              <p>Copyright 96M © 2022. All rights reserved</p>
+            </div>
+          </div>
         </div>
 
-    </div>
+        <div class="container sec-7-m">
+          <div class="row">
+            <div class="col">
+              <h6>Responsible Gaming</h6>
 
-    <div class="container-8 fixed-footer">
-        <div class="sec-8">
-            <p>96<span>M</span> accept crypto payment method</p>
-            <img src="./images/bitcoin-icon.svg" alt="Bitcoin" />
-            <img src="./images/tether-icon.svg" alt="Tether" />
-            <img src="./images/etherium-icon.svg" alt="Etherium" />
-            <div class="nav-content">
-                <nav role="navigation" id="nav">
-                    <ul id="lang-list">
-                        <li onclick="replaceLabelVal('English')">English</li>
-                        <li onclick="replaceLabelVal('Chinese')">中文</li>
-                    </ul>
-                    <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
-                    <label for="mainNavButton" id="selected-lang" onclick="toggleListDisplay()">中文</label>
-                    <span class="green-dot"></span>
-                </nav>
+              <div class="responsible-icons">
+                <img src="./images/Footer/18plus-icon.svg" />
+
+                <img src="./images/Footer/gamcare-icon.svg" />
+
+                <img src="./images/Footer/bga-icon.svg" />
+              </div>
             </div>
-            <!-- <select>
+            <div class="col">
+              <h6>Follow us</h6>
+
+              <div class="social-icons">
+                <a href="https://www.facebook.com/96m.official"
+                  ><img src="./images/Footer/Social Media/Mobile/fb.png"
+                /></a>
+
+                <a href="https://twitter.com/96m_official"
+                  ><img src="./images/Footer/Social Media/Mobile/twitter.png"
+                /></a>
+
+                <a href="https://www.instagram.com/96m.official/"
+                  ><img src="./images/Footer/Social Media/Mobile/ig.png"
+                /></a>
+
+                <a
+                  href="https://www.youtube.com/channel/UC11KCXR6vJC2bGM1x7WvoBw"
+                  ><img src="./images/Footer/Social Media/Mobile/youtube.png"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <hr id="footer_style" />
+
+          <p>Copyright 96M © 2021. All rights reserved</p>
+        </div>
+      </div>
+      <div class="container-8 fixed-footer">
+        <div class="sec-8">
+          <p>96<span>M</span> accept e-wallet payment method</p>
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/TnG.png"
+            alt="TouchNGo"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/GrabPay.png"
+            alt="Grabpay"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Shopee.png"
+            alt="Shopee"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Boost.png"
+            alt="Boost"
+          />
+          <div class="nav-content">
+            <nav role="navigation" id="nav">
+              <ul id="lang-list">
+                <li onclick="replaceLabelVal('English')">English</li>
+                <li onclick="replaceLabelVal('Chinese')">中文</li>
+              </ul>
+              <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
+              <label
+                for="mainNavButton"
+                id="selected-lang"
+                onclick="toggleListDisplay()"
+                >English</label
+              >
+              <span class="green-dot"></span>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container-8 clone">
+        <div class="sec-8">
+          <p>96<span>M</span> accept e-wallet payment method</p>
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/TnG.png"
+            alt="TouchNGo"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/GrabPay.png"
+            alt="Grabpay"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Shopee.png"
+            alt="Shopee"
+          />
+          <img
+            src="./images/Footer/Sticky Footer/eWallet/Boost.png"
+            alt="Boost"
+          />
+          <div class="nav-content">
+            <nav role="navigation" id="nav">
+              <ul id="lang-list">
+                <li onclick="replaceLabelVal('English')">English</li>
+                <li onclick="replaceLabelVal('Chinese')">中文</li>
+              </ul>
+              <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
+              <label
+                for="mainNavButton"
+                id="selected-lang"
+                onclick="toggleListDisplay()"
+                >English</label
+              >
+              <span class="green-dot"></span>
+            </nav>
+          </div>
+          <!-- <select>
                 <option value="0"><a href="">English</a></option>
                 <option value="1"><a href="">Chinese</a></option>
                 <option value="2"><a href="">Malay</a></option>
             </select>
             <span class="green-dot"></span> -->
         </div>
+      </div>
     </div>
-    <div class="container-8 clone">
-        <div class="sec-8">
-            <p>96<span>M</span> accept crypto payment method</p>
-            <img src="./images/bitcoin-icon.svg" alt="Bitcoin" />
-            <img src="./images/tether-icon.svg" alt="Tether" />
-            <img src="./images/etherium-icon.svg" alt="Etherium" />
-            <div class="nav-content">
-                <nav role="navigation" id="nav">
-                    <ul id="lang-list">
-                        <li onclick="replaceLabelVal('English')">English</li>
-                        <li onclick="replaceLabelVal('Chinese')">中文</li>
-                    </ul>
-                    <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
-                    <label for="mainNavButton" id="selected-lang" onclick="toggleListDisplay()">English</label>
-                    <span class="green-dot"></span>
-                </nav>
-            </div>
-            <!-- <select>
-                <option value="0"><a href="">English</a></option>
-                <option value="1"><a href="">Chinese</a></option>
-                <option value="2"><a href="">Malay</a></option>
-            </select>
-            <span class="green-dot"></span> -->
-        </div>
+
+    <div id="myModal" class="custom-modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image Desktop) -->
+      <img
+        class="custom-modal-content my-auto mx-auto"
+        src="./images/Pop-up_fifa.png"
+        id="modal-desktop"
+      />
+
+      <!-- Modal Content (The Image Mobile) -->
+      <img
+        class="custom-modal-content my-auto mx-auto"
+        src="./images/Pop-up_fifa-mobile.png"
+        id="modal-mobile"
+      />
     </div>
-    <img src="./images/up-arrow.svg" alt="Scroll to Top" style="opacity: 0;" class="up-arrow" id="up-arrow"
-        onclick="jumpToNextSection('container-2')" />
+
+    <button
+      class="up-arrow rounded-circle"
+      id="up-arrow"
+      onclick="jumpToNextSection('absolute-background')"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="./js/jquery-3.3.1.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
@@ -507,121 +690,182 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script> -->
     <script src="./js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/jquery.backstretch.min.js"></script>
     <script src="./js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script>
+      var txtsHere = [
+        "HUDDERSFIELD TOWN FC",
+        "VALENCIA CF",
+        "ATHLETIC CLUB",
+        "VILLARREAL CF",
+        "ELCHE CF",
+        "RCD MALLORCA",
+      ];
+      var sections = [
+        "section-1",
+        "section-2",
+        "section-3",
+        "section-4",
+        "spacer-section-5",
+        "section-6",
+      ];
+      var currentSection = 0;
+      var delayTimer;
 
+      var modalClaimLink = "https://google.com/"; // Replaceable link
 
-        var txtsHere = ['HUDDERSFIELD TOWN FC', 'VALENCIA CF', 'ATHLETIC CLUB', 'VILLARREAL CF', 'ELCHE CF', 'RCD MALLORCA']
+      var dateTime = 1664388376; // Countdown Date
 
-        // $('#custCarousel').on('slid.bs.carousel', function () {
+      // $('#custCarousel').on('slid.bs.carousel', function () {
 
-        //     currentIndex = $('div.active').index()
+      //     currentIndex = $('div.active').index()
 
-        //     $('#txtchangehere').text('' + txtsHere[currentIndex])
-        // })
+      //     $('#txtchangehere').text('' + txtsHere[currentIndex])
+      // })
 
-        AOS.init();
-        /*
+      AOS.init({
+        startEvent: "DOMContentLoaded",
+        duration: 800, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+      });
+      /*
             Wow
         */
-        new WOW().init();
+      new WOW().init();
 
-        /*
+      /*
             Carousel
         */
 
-        $('#carousel-example').on('slide.bs.carousel', function (e) {
-            /*
+      $("#country-groups-m").on("slide.bs.carousel", function (e) {
+        /*
                 CC 2.0 License Iatek LLC 2018 - Attribution required
             */
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 3;
-            var totalItems = $('.carousel-item').length;
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 3;
+        var totalItems = $(".carousel-item").length;
 
-            if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-                    // append slides to end
-                    if (e.direction == "left") {
-                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                    }
-                    else {
-                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                    }
-                }
-            }
-        });
-
-        // Toggle list display
-        function toggleListDisplay() {
-            let langList = document.getElementById("lang-list");
-
-            if (getComputedStyle(document.getElementById("lang-list")).display === "none") {
-                langList.style.display = "block";
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+          var it = itemsPerSlide - (totalItems - idx);
+          for (var i = 0; i < it; i++) {
+            // append slides to end
+            if (e.direction == "left") {
+              $(".carousel-item").eq(i).appendTo(".carousel-inner");
             } else {
-                langList.style.display = "none";
+              $(".carousel-item").eq(0).appendTo(".carousel-inner");
             }
+          }
         }
+      });
 
-        function replaceLabelVal(val) {
-            let selectedLang = document.getElementById("selected-lang");
-            selectedLang.innerHTML = val
-            if (val === 'English') {
-                window.location = "en.html";
-            } else {
-                window.location = "cn.html";
-            }
+      // Toggle list display
+      function toggleListDisplay() {
+        let langList = document.getElementById("lang-list");
+
+        if (
+          getComputedStyle(document.getElementById("lang-list")).display ===
+          "none"
+        ) {
+          langList.style.display = "block";
+        } else {
+          langList.style.display = "none";
         }
+      }
 
-        function jumpToNextSection(id) {
-            document.getElementById(id).scrollIntoView({ block: 'start', behavior: 'smooth' });
+      function replaceLabelVal(val) {
+        let selectedLang = document.getElementById("selected-lang");
+        selectedLang.innerHTML = val;
+        if (val === "English") {
+          window.location = "en.html";
+        } else {
+          window.location = "cn.html";
         }
+      }
 
-        // $('document').ready(function () {
-        //     var lastScrollTop = 0;
-        //     $(window).scroll(function (event) {
-        //         var st = $(this).scrollTop();
-        //         if (st > lastScrollTop) {
-        //             console.log("down")
-        //             if (document.documentElement.scrollTop <= 5) {
-        //                 document.getElementById("container-2").scrollIntoView({ block: 'start', behavior: 'auto' });
-        //             }
-        //         }
-        //         else if (st == lastScrollTop) {
-        //             //do nothing 
-        //             //In IE this is an important condition because there seems to be some instances where the last scrollTop is equal to the new one
-        //         }
-        //         else {
-        //             console.log("up")
-        //         }
-        //         lastScrollTop = st;
-        //     });
-        // });
+      function jumpToNextSection(id) {
+        document
+          .getElementById(id)
+          .scrollIntoView({ block: "start", behavior: "smooth" });
+      }
 
-        $(window).scroll(function (event) {
-            var st = $(this).scrollTop();
-            const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-            console.log(vh)
-            if (st > (vh + 100) / 2) {
-                document.getElementById("up-arrow").style.opacity = "1";
-            }
-            else {
-                document.getElementById("up-arrow").style.opacity = "0";
-            }
-        });
+      $("#sticky-note-close").click(function () {
+        $("#sticky-note").fadeOut(300);
+      });
 
-        function register() {
-            window.location = "https://www.my96m.com/en-my/register?affid=215";
+      $("#sticky-image").click(function () {
+        jumpToNextSection("section-5");
+      });
+
+      $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+        const vh = Math.max(
+          document.documentElement.clientHeight || 0,
+          window.innerHeight || 0
+        );
+        console.log(vh);
+        if (st > (vh + 100) / 2) {
+          // document.getElementById("up-arrow").style.display = "block";
+          $("#up-arrow").fadeIn(300);
+        } else {
+          // document.getElementById("up-arrow").style.display = "none";
+          $("#up-arrow").fadeOut(300);
         }
+      });
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      // var img = document.getElementById("myImg");
+      $(".custom-modal-content").click(() => {
+        window.open(modalClaimLink, "_blank");
+      });
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      
+      const getDiff = () => {
+        var now = moment();
+        var expire = moment.unix(dateTime);
+        // get the difference between the moments
+        const diff = expire.diff(now);
+
+        //express as a duration
+        const diffDuration = moment.duration(diff);
+
+        // display
+        $("#fifa-days").text(expire.diff(now, "days"));
+        $("#fifa-hours").text(diffDuration.hours());
+        $("#fifa-minutes").text(diffDuration.minutes());
+      };
+
+      getDiff();
+
+      const repeater = setInterval(() => {
+        getDiff();
+      }, 60000);
     </script>
-</body>
-
+  </body>
 </html>
