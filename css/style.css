@@ -93,15 +93,17 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8e083b",endColorstr="#221a6d",GradientType=1);
 }
 
-#absolute-background #pattern-1 {
+#pattern-1 {
   position: absolute;
+  margin-top: -10em;
+  z-index: -1;
   right: -5em;
-  bottom: 15em;
+  /* bottom: 15em; */
 }
 
 #sticky-note {
   position: fixed;
-  top: 50vh;
+  top: 45%;
   right: 2vw;
   width: 10vw;
   z-index: 5;
@@ -232,7 +234,7 @@ body {
 }
 
 .spacer {
-  height: 30vh;
+  height: 300px;
 }
 
 .spacer-sm {

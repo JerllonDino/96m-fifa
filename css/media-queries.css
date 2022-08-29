@@ -359,7 +359,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #gradient-background {
-    height: 500vh;
+    height: 555vh;
   }
 
   #section-1 {
@@ -851,7 +851,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #gradient-background {
-    height: 600vh;
+    height: 690vh;
   }
 
   #section-1 {
@@ -983,13 +983,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #pattern-4 {
-    width: 20%;
-    left: 5vw;
+    width: 25%;
+    left: 1vw;
   }
 
   #pattern-3 {
     width: 30%;
-    margin-top: -10vw;
+    margin-top: -5vw;
     /* right: -20% !important; */
   }
 
@@ -1045,7 +1045,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #gradient-background {
-    height: 620vh;
+    height: 710vh;
   }
 
   #section-1 {
@@ -1109,12 +1109,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   #dealer {
     width: 80%;
-    margin-top: 1em;
+    margin-top: 5em;
     left: -25%;
   }
 
   #section-3 {
-    margin-top: 5vh;
+    margin-top: 20vh;
     justify-content: center !important;
   }
 
@@ -1145,7 +1145,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* padding: 1em 2em !important; */
     border-radius: 18px !important;
   }
-
 
   #football {
     width: 80%;
@@ -1471,3 +1470,9 @@ Custom media queries
     display: none;
   }
 }
+
+@media screen and ( min-height: 400 ) { 
+  #gradient-background{
+    height: 600vh !important;
+  }
+ }

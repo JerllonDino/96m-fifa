@@ -53,7 +53,7 @@
             id="section-1-background"
           />
           <div id="gradient-background">
-            <img id="pattern-1" src="./images/Pattern-1.png" alt="" />
+            
           </div>
         </div>
 
@@ -422,6 +422,7 @@
             /></a>
           </div>
         </div>
+        <img id="pattern-1" src="./images/Pattern-1.png" alt="" />
         <div class="spacer"></div>
         <div id="section-7" class="d-flex align-items-center">
           <div class="container">
@@ -803,6 +804,10 @@
           .getElementById(id)
           .scrollIntoView({ block: "start", behavior: "smooth" });
       }
+
+      $(document).ready(function() {
+        console.log(this.documentElement.clientHeight);
+      });
 
       $("#sticky-note-close").click(function () {
         $("#sticky-note").fadeOut(300);
