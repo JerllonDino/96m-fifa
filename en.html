@@ -25,13 +25,27 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link href="./css/style.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="stylesheet" href="./css/carousel.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/animate.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/carousel.css" /> -->
     <link rel="stylesheet" href="./css/media-queries.css" />
   </head>
 
   <body>
     <div id="fifa-wrapper">
+      <div id="sticky-note">
+        <img
+          onclick="console.log('close')"
+          id="sticky-note-close"
+          src="./images/close-button.png"
+          alt=""
+        />
+        <img
+          onclick="jumpToNextSection('section-5')"
+          id="sticky-image"
+          src="./images/Sticky-note_animation.gif"
+          alt=""
+        />
+      </div>
       <div class="section-wrapper">
         <div id="absolute-background">
           <img
@@ -111,10 +125,10 @@
             </h1>
 
             <h6
-              class="display-6 text-light header-text"
+              class="display-6 text-light"
               style="margin-bottom: 7rem"
             >
-              SOME CHINESE TEXT
+              亚洲第一信任品牌
             </h6>
 
             <button
@@ -132,12 +146,13 @@
           data-anchor="section2"
           class="section d-flex flex-column my-5"
         >
-          <h3 class="text-light mb-5 container">
+          <h3 class="text-light mb-5 container" data-aos="fade-up">
             Three simple steps and the bonus is yours!
           </h3>
           <div
             id="section-nav"
             class="d-flex flex-row justify-content-between container"
+            data-aos="fade-up"
           >
             <a href="#section-3"
               ><img src="./images/Step-banner-1.png" alt=""
@@ -169,16 +184,17 @@
           </div>
         </div>
         <img
-          data-aos="fade-right"
           id="dealer"
           src="./images/Casino-dealer.png"
           alt=""
+          data-aos="fade-right"
           data-aos-offset="300"
         />
         <div
           id="section-3"
           data-anchor="section3"
           class="section container d-flex flex-column justify-content-center"
+          data-aos="fade-left"
         >
           <!-- <div class="container d-flex flex-column justify-content-center"> -->
           <div class="row">
@@ -195,10 +211,10 @@
               </h1>
 
               <h6
-                class="display-6 text-light header-text"
+                class="display-6 text-light"
                 style="margin-bottom: 3rem"
               >
-                SOME CHINESE TEXT
+                时来运转, 等你哟!
               </h6>
 
               <a href="#" id="free-spin-banner">
@@ -246,10 +262,10 @@
           </h1>
 
           <h6
-            class="display-6 text-light header-text"
+            class="display-6 text-light"
             style="margin-bottom: 7rem"
           >
-            SOME CHINESE TEXT
+            您的首投绝无风险
           </h6>
 
           <button
@@ -274,7 +290,11 @@
           class="d-flex flex-column justify-content-center align-items-center container"
         >
           <img id="pattern-3" src="./images/Pattern-3.png" alt="" />
-          <div id="timer-head" class="d-flex flex-column align-items-center">
+          <div
+            id="timer-head"
+            class="d-flex flex-column align-items-center"
+            data-aos="fade-down"
+          >
             <h1 class="display-1 text-light header-text main-header-text">
               FIFA WORLD CUP
             </h1>
@@ -285,16 +305,24 @@
             Qatar2022
           </h1> -->
             <img src="./images/qatar-olympic-logo.png" id="qatar" alt="" />
-            <h5 id="timer-label" class="display-5 text-light mb-4 fw-bold">
+            <h5
+              id="timer-label"
+              class="display-5 text-light mb-4 fw-bold"
+              data-aos="fade-down"
+            >
               Tournament starts in
             </h5>
           </div>
-          <div id="timer-container" class="d-flex justify-content-center">
+          <div
+            id="timer-container"
+            class="d-flex justify-content-center"
+            data-aos="flip-up"
+          >
             <img id="fifa-left" src="./images/FIFA element-01.svg" alt="" />
             <div
               class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
             >
-              <h5 class="display-5 fw-bolder">117</h5>
+              <h5 class="display-5 fw-bolder" id="fifa-days">00</h5>
               <h3 class="fw-normal">DAYS</h3>
             </div>
             <img
@@ -305,8 +333,8 @@
             <div
               class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
             >
-              <h5 class="display-5 fw-bolder">09</h5>
-              <h3 class="fw-normal">HOUR</h3>
+              <h5 class="display-5 fw-bolder" id="fifa-hours">00</h5>
+              <h3 class="fw-normal">HOURS</h3>
             </div>
             <img
               class="fifa-middle"
@@ -316,13 +344,14 @@
             <div
               class="timer-text d-flex flex-column text-light justify-content-center align-items-center"
             >
-              <h5 class="display-5 fw-bolder">35</h5>
+              <h5 class="display-5 fw-bolder" id="fifa-minutes">00</h5>
               <h3 class="fw-normal">MINUTES</h3>
             </div>
             <img id="fifa-right" src="./images/FIFA element-01.svg" alt="" />
           </div>
         </div>
         <div id="background-textures">
+          <img id="triangle-texture" src="./images/triangle.png" alt="" />
           <img
             id="background-texture-1"
             class="background-texture"
@@ -379,18 +408,18 @@
             </div>
           </div>
           <div id="country-groups-m">
-            <img src="./images/FIFA-group_A.png" alt="" />
-            <img src="./images/FIFA-group_B.png" alt="" />
-            <img src="./images/FIFA-group_C.png" alt="" />
-            <img src="./images/FIFA-group_D.png" alt="" />
-            <img src="./images/FIFA-group_E.png" alt="" />
-            <img src="./images/FIFA-group_F.png" alt="" />
-            <img src="./images/FIFA-group_G.png" alt="" />
-            <img
+            <a href="#"></a><img src="./images/FIFA-group_A.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_B.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_C.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_D.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_E.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_F.png" alt="" /></a>
+            <a href="#"></a><img src="./images/FIFA-group_G.png" alt="" /></a>
+            <a href="#"></a><img
               id="country-group-last"
               src="./images/FIFA-group_H.png"
               alt=""
-            />
+            /></a>
           </div>
         </div>
         <div class="spacer"></div>
@@ -398,7 +427,7 @@
           <div class="container">
             <div class="row">
               <div
-                class="col col-8 col-md-7 col-lg-6 d-flex flex-column justify-content-center"
+                class="col col-8 col-md-7 col-lg-6 col-xl-6 d-flex flex-column justify-content-center"
               >
                 <h1 class="display-1 text-light mb-4 header-text fw-bold">
                   MATCHES & NEWS
@@ -630,17 +659,20 @@
       <!-- The Close Button -->
       <span class="close">&times;</span>
 
-      <!-- Modal Content (The Image) -->
-      <img class="custom-modal-content" src="./images/Pop-up_fifa.png" id="modal-desktop" />
+      <!-- Modal Content (The Image Desktop) -->
+      <img
+        class="custom-modal-content my-auto mx-auto"
+        src="./images/Pop-up_fifa.png"
+        id="modal-desktop"
+      />
 
-      <img class="custom-modal-content" src="./images/Pop-up_fifa-mobile.png" id="modal-mobile" />
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption"></div>
+      <!-- Modal Content (The Image Mobile) -->
+      <img
+        class="custom-modal-content my-auto mx-auto"
+        src="./images/Pop-up_fifa-mobile.png"
+        id="modal-mobile"
+      />
     </div>
-
-    <!-- <img src="./images/up-arrow.svg" alt="Scroll to Top" style="opacity: 0;" class="up-arrow" id="up-arrow"
-        onclick="jumpToNextSection('container-2')" /> -->
 
     <button
       class="up-arrow rounded-circle"
@@ -674,6 +706,7 @@
     ></script>
     <script src="./js/jquery.backstretch.min.js"></script>
     <script src="./js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script>
       var txtsHere = [
         "HUDDERSFIELD TOWN FC",
@@ -694,7 +727,9 @@
       var currentSection = 0;
       var delayTimer;
 
-      var modalClaimLink = "http://stackoverflow.com/"; // Some link
+      var modalClaimLink = "https://google.com/"; // Replaceable link
+
+      var dateTime = 1664388376; // Countdown Date
 
       // $('#custCarousel').on('slid.bs.carousel', function () {
 
@@ -717,7 +752,7 @@
             Carousel
         */
 
-      $("#carousel-example").on("slide.bs.carousel", function (e) {
+      $("#country-groups-m").on("slide.bs.carousel", function (e) {
         /*
                 CC 2.0 License Iatek LLC 2018 - Attribution required
             */
@@ -764,11 +799,18 @@
       }
 
       function jumpToNextSection(id) {
-        console.log("enter");
         document
           .getElementById(id)
           .scrollIntoView({ block: "start", behavior: "smooth" });
       }
+
+      $("#sticky-note-close").click(function () {
+        $("#sticky-note").fadeOut(300);
+      });
+
+      $("#sticky-image").click(function () {
+        jumpToNextSection("section-5");
+      });
 
       $(window).scroll(function (event) {
         var st = $(this).scrollTop();
@@ -792,7 +834,7 @@
       // Get the image and insert it inside the modal - use its "alt" text as a caption
       // var img = document.getElementById("myImg");
       $(".custom-modal-content").click(() => {
-        window.open(modalClaimLink, '_blank')
+        window.open(modalClaimLink, "_blank");
       });
 
       // Get the <span> element that closes the modal
@@ -803,23 +845,27 @@
         modal.style.display = "none";
       };
 
-      // $(window).on("wheel", (e) => {
-      //   if(delayTimer) clearTimeout(delayTimer);
-      //   const direction = e.originalEvent.deltaY;
-      //   if(direction < 0) {
-      //       delayTimer = setTimeout(() => {
-      //           if(currentSection > 0) currentSection--;
-      //           console.log(currentSection);
-      //           jumpToNextSection(sections[currentSection]);
-      //       }, 1000);
-      //   } else {
-      //       delayTimer = setTimeout(() => {
-      //           if(currentSection < 5 && currentSection >= 0) currentSection++;
-      //           console.log(currentSection);
-      //           jumpToNextSection(sections[currentSection]);
-      //       }, 1000);
-      //   }
-      // });
+      
+      const getDiff = () => {
+        var now = moment();
+        var expire = moment.unix(dateTime);
+        // get the difference between the moments
+        const diff = expire.diff(now);
+
+        //express as a duration
+        const diffDuration = moment.duration(diff);
+
+        // display
+        $("#fifa-days").text(expire.diff(now, "days"));
+        $("#fifa-hours").text(diffDuration.hours());
+        $("#fifa-minutes").text(diffDuration.minutes());
+      };
+
+      getDiff();
+
+      const repeater = setInterval(() => {
+        getDiff();
+      }, 60000);
     </script>
   </body>
 </html>
