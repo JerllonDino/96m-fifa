@@ -9,6 +9,35 @@ body {
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
+  background: rgb(142, 8, 59);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(142, 8, 59, 1) 0%,
+    rgba(132, 16, 89, 1) 25%,
+    rgba(70, 22, 105, 1) 50%,
+    rgba(31, 28, 109, 1) 70%,
+    rgba(34, 26, 109, 1) 85%,
+    rgba(19, 28, 120, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(142, 8, 59, 1) 0%,
+    rgba(132, 16, 89, 1) 25%,
+    rgba(70, 22, 105, 1) 50%,
+    rgba(31, 28, 109, 1) 70%,
+    rgba(34, 26, 109, 1) 85%,
+    rgba(19, 28, 120, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(142, 8, 59, 1) 0%,
+    rgba(132, 16, 89, 1) 25%,
+    rgba(70, 22, 105, 1) 50%,
+    rgba(31, 28, 109, 1) 70%,
+    rgba(34, 26, 109, 1) 85%,
+    rgba(19, 28, 120, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8e083b",endColorstr="#131c78",GradientType=1);
 }
 
 @font-face {
@@ -60,7 +89,7 @@ body {
   width: 8%;
 }
 
-#gradient-background {
+/* #gradient-background {
   margin: -1px 0 0 0;
   padding: 0;
   width: 100%;
@@ -91,7 +120,7 @@ body {
     rgba(34, 26, 109, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8e083b",endColorstr="#221a6d",GradientType=1);
-}
+} */
 
 #pattern-1 {
   position: absolute;
@@ -171,6 +200,7 @@ body {
 
 #section-1-background {
   width: 100%;
+  opacity: 0.5;
   height: auto;
 }
 
@@ -189,12 +219,13 @@ body {
 }
 
 #section-2 {
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 #section-2 #section-nav-m {
   display: none;
   overflow-x: auto;
+  padding-bottom: 1em;
 }
 
 #section-2 #section-nav-m img {
@@ -219,7 +250,8 @@ body {
 
 #dealer {
   position: absolute;
-  left: -5rem;
+  /* left: -5rem; */
+  width: 56%;
   margin-top: 2em;
   z-index: -1;
 }
@@ -245,6 +277,7 @@ body {
   position: absolute;
   right: 0;
   z-index: -1;
+  width: 56%;
 }
 
 #pattern-4 {
@@ -592,6 +625,7 @@ body {
 } */
 
 .up-arrow {
+  padding: 0;
   width: 60px;
   height: 60px;
   position: fixed;
@@ -600,9 +634,19 @@ body {
   z-index: 1;
   cursor: pointer;
   bottom: 100px;
+  border: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45);
 }
 
-#myImg:hover {opacity: 0.7;}
+.up-arrow > img {
+  width: 100%;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .custom-modal {
@@ -615,8 +659,8 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -629,14 +673,19 @@ body {
 }
 
 /* Add Animation - Zoom in the Modal */
-.custom-modal-content, #caption {
+.custom-modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* The Close Button */
@@ -659,4 +708,19 @@ body {
 
 #modal-mobile {
   display: none;
+}
+
+.fx-7 {
+  height: 210px !important;
+}
+
+.section-wrapper {
+  scroll-snap-type: y mandatory;
+}
+
+#section-1,
+#section-2,
+#section-3,
+#section-4 {
+  scroll-snap-align: start;
 }

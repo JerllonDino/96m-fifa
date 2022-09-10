@@ -52,9 +52,9 @@
             src="./images/Lighting-Background.jpg"
             id="section-1-background"
           />
-          <div id="gradient-background">
+          <!-- <div id="gradient-background">
             
-          </div>
+          </div> -->
         </div>
 
         <!-- <div class="container" id="main-container""> -->
@@ -88,10 +88,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Category</a>
+                  <a class="nav-link text-light" href="#">Lucky Spin</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Contact</a>
+                  <a class="nav-link text-light" href="#">Fifa 2022</a>
                 </li>
               </ul>
               <button type="button" class="text-white ms-5 orange-theme-btn">
@@ -146,7 +146,7 @@
           data-anchor="section2"
           class="section d-flex flex-column my-5"
         >
-          <h3 class="text-light mb-5 container" data-aos="fade-up">
+          <h3 class="text-light mb-5" data-aos="fade-up">
             Three simple steps and the bonus is yours!
           </h3>
           <div
@@ -199,7 +199,7 @@
           <!-- <div class="container d-flex flex-column justify-content-center"> -->
           <div class="row">
             <div class="col col-6 col-md-7 col-lg-7"></div>
-            <div class="col col-6 col-md-5 col-lg-5">
+            <div class="col col-6 col-md-5 col-lg-5 lucky-spin-text-con">
               <h1 class="display-1 text-light header-text main-header-text">
                 <span class="orange-theme">LUCKY</span> SPIN
               </h1>
@@ -221,7 +221,7 @@
                 <img src="./images/Free-spin-banner.png" alt="" />
               </a>
 
-              <button
+              <!-- <button
                 type="button"
                 class="text-light align-self-start orange-theme-btn"
                 style="
@@ -231,7 +231,7 @@
                 "
               >
                 <h5 class="mb-0">SPIN WHEEL</h5>
-              </button>
+              </button> -->
             </div>
           </div>
           <!-- </div> -->
@@ -423,7 +423,7 @@
           </div>
         </div>
         <img id="pattern-1" src="./images/Pattern-1.png" alt="" />
-        <div class="spacer"></div>
+        <div class="spacer fx-7"></div>
         <div id="section-7" class="d-flex align-items-center">
           <div class="container">
             <div class="row">
@@ -680,7 +680,8 @@
       id="up-arrow"
       onclick="jumpToNextSection('absolute-background')"
     >
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      <!-- <i class="fa fa-arrow-up" aria-hidden="true"></i> -->
+      <img src="./images/scroll-up.png" alt="">
     </button>
 
     <script src="./js/jquery-3.3.1.min.js"></script>
@@ -709,14 +710,6 @@
     <script src="./js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script>
-      var txtsHere = [
-        "HUDDERSFIELD TOWN FC",
-        "VALENCIA CF",
-        "ATHLETIC CLUB",
-        "VILLARREAL CF",
-        "ELCHE CF",
-        "RCD MALLORCA",
-      ];
       var sections = [
         "section-1",
         "section-2",
@@ -730,14 +723,24 @@
 
       var modalClaimLink = "https://google.com/"; // Replaceable link
 
-      var dateTime = 1664388376; // Countdown Date
+      var dateTime = "2022-21-11 14:00:00"; // Countdown Date (Format: "YYYY-DD-MM hh")
 
-      // $('#custCarousel').on('slid.bs.carousel', function () {
+      const linksGlobal = {
+        WATCH_VIDEO: "https://www.youtube.com/watch?v=kDTygtM2bUM&t=2s",
+        CONTACT: "https://ndskwoi.com/chatwindow.aspx?siteId=5000379&chatGroup=4&planId=966a3201-43cf-431c-b94e-a0e1380086f0#"
+      }
 
-      //     currentIndex = $('div.active').index()
+      const linksEN = {
+        JOIN: "https://www.96mgo.com/en-my/register/?affid=153",
+        HOME: "https://www.96mgo.com/en-my/home/?affid=153",
+        CATEGORY: "https://www.96mgo.com/en-my/promotion/?affid=153",
+      }
 
-      //     $('#txtchangehere').text('' + txtsHere[currentIndex])
-      // })
+      const linksCN = {
+        JOIN: "https://www.96mgo.com/zh-my/register/?affid=153",
+        HOME: "https://www.96mgo.com/zh-my/home/?affid=153",
+        CATEGORY: "https://www.96mgo.com/zh-my/promotion/?affid=153",
+      }
 
       AOS.init({
         startEvent: "DOMContentLoaded",
@@ -805,6 +808,14 @@
           .scrollIntoView({ block: "start", behavior: "smooth" });
       }
 
+      // Redirects
+      $(".join-now").click(() => window.open(linksEN.JOIN, '_blank'));
+      $(".orange-theme-btn").click(() => window.open(linksEN.JOIN, '_blank'));
+      $(".nav-home").click(() => window.open(linksEN.HOME, '_blank'));
+      $(".nav-category").click(() => window.open(linksEN.CATEGORY, '_blank'));
+      $(".nav-contact").click(() => window.open(linksGlobal.CONTACT, '_blank'));
+      $("#watch-video").click(() => window.open(linksGlobal.WATCH_VIDEO, '_blank'));
+
       $(document).ready(function() {
         console.log(this.documentElement.clientHeight);
       });
@@ -853,7 +864,7 @@
       
       const getDiff = () => {
         var now = moment();
-        var expire = moment.unix(dateTime);
+        var expire = moment(dateTime, "YYYY-DD-MM hh:mm:ss");
         // get the difference between the moments
         const diff = expire.diff(now);
 
@@ -870,7 +881,7 @@
 
       const repeater = setInterval(() => {
         getDiff();
-      }, 60000);
+      }, 1000);
     </script>
   </body>
 </html>
