@@ -251,7 +251,7 @@ body {
 #dealer {
   position: absolute;
   /* left: -5rem; */
-  width: 56%;
+  width: 53%;
   margin-top: 2em;
   z-index: -1;
 }
