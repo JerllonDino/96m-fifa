@@ -126,7 +126,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #dealer {
-    width: 110%;
+    width: 108%;
     margin-top: 1em;
     left: -20%;
   }
@@ -136,13 +136,21 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* justify-content: flex-end !important; */
   }
 
+  #section-3 .header-text{
+    font-size: 5vw !important;
+  }
+
+  #section-3 .main-header-text{
+    font-size: 5vw !important;
+  }
+
   #section-3 .row {
     margin-top: 120% !important;
   }
-
+/* 
   #section-3 .header-text {
     font-size: 7vw !important;
-  }
+  } */
 
   #section-3 .mb-4 {
     font-size: 6vw !important;
@@ -277,7 +285,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-6 #country-groups-m {
-    display: flex;
+    display: unset;
   }
 
   #section-7 {
@@ -377,6 +385,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 1.8em !important;
   }
 
+  .header-text-cn {
+    font-size: 1.6em !important;
+  }
+
   #section-1 > div > h6 {
     font-size: x-large !important;
     margin-bottom: 1.3em !important;
@@ -434,7 +446,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #dealer {
-    width: 110%;
+    width: 108%;
     margin-top: 1em;
     left: -20%;
   }
@@ -444,13 +456,27 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* justify-content: flex-end !important; */
   }
 
+  #section-3 h1 .header-text{
+    font-size: 5vw !important;
+  }
+  #section-3 .main-header-text{
+    font-size: 4vw !important;
+  }
+
+  #section-3 h1 .header-text-cn{
+    font-size: 5vw !important;
+  }
+  #section-3 .main-header-text-cn{
+    font-size: 4vw !important;
+  }
+
   #section-3 .row {
     margin-top: 90vh !important;
   }
 
-  #section-3 .header-text {
+  /* #section-3 .header-text {
     font-size: 7vw !important;
-  }
+  } */
 
   #section-3 .mb-4 {
     font-size: 6vw !important;
@@ -589,7 +615,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-6 #country-groups-m {
-    display: flex;
+    display: unset;
     margin-bottom: unset;
   }
 
@@ -638,8 +664,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     width: 10%;
   }
   #actor-1 {
-    width: 90%;
-    right: -15%;
+    width: 85%;
+    right: -20%;
   }
 
   #sticky-note {
@@ -669,6 +695,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .header-text {
     letter-spacing: 0.2px;
     font-size: 6vw !important;
+  }
+
+  .header-text-cn {
+    letter-spacing: 0.2px;
+    font-size: 3.5vw !important;
   }
 
   #section-1 h1 {
@@ -707,8 +738,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #dealer {
-    left: -30vw;
-    width: 90%;
+    width: 80%;
+    left: -20%;
   }
 
   #section-3 {
@@ -716,8 +747,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 20vh !important;
   }
 
-  #section-3 h1{
+  #section-3 h1 .header-text{
     font-size: 5vw !important;
+  }
+  #section-3 .main-header-text{
+    font-size: 4vw !important;
+  }
+
+  #section-3 h1 .header-text-cn{
+    font-size: 5vw !important;
+  }
+  #section-3 .main-header-text-cn{
+    font-size: 3vw !important;
   }
 
   #section-3 h6{
@@ -737,8 +778,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #football {
-    width: 90%;
-    right: -20vw !important;
+    width: 80%;
+    right: -20% !important;
   }
 
   #section-4 {
@@ -747,7 +788,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-4 h1 {
-    font-size: 5vw !important;
+    font-size: 4vw !important;
   }
 
   #section-4 h6 {
@@ -811,7 +852,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-6 #country-groups-m {
-    display: flex;
+    display: unset;
     margin-bottom: unset;
   }
 
@@ -849,8 +890,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   #actor-1 {
     /* top: 1%; */
-    width: 90%;
-    right: -15%;
+    width: 70%;
+    /* right: -5%; */
   }
 
   /* #gradient-background {
@@ -869,6 +910,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .header-text {
     letter-spacing: 0.2px;
     font-size: 4vw !important;
+  }
+
+  .header-text-cn {
+    letter-spacing: 0.2px;
+    font-size: 3.4vw !important;
   }
 
   #section-1 > div > h6 {
@@ -922,9 +968,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #dealer {
-    width: 80%;
+    width: 70%;
     margin-top: 1em;
-    left: -25%;
+    left: -15%;
   }
 
   #section-3 {
@@ -934,6 +980,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   #section-3 .header-text {
     font-size: 5vw !important;
+  }
+
+  #section-3 .main-header-text-cn {
+    font-size: 4vw !important;
   }
 
   #section-3 .mb-4 {
@@ -958,8 +1008,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
   #football {
-    width: 80%;
-    right: -20%;
+    width: 70%;
+    right: -15%;
   }
 
   #section-4 {
@@ -1016,9 +1066,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-bottom: 5vh !important;
   }
 
-  #section-6 #country-groups img {
+  /* #section-6 #country-groups img {
     width: 100%;
-  }
+  } */
 
   #section-7 {
     min-height: 450px; 
@@ -1041,7 +1091,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1599px) {
   #actor-1 {
     /* top: 1%; */
     width: 70%;
@@ -1057,6 +1107,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   .header-text {
+    letter-spacing: 0.2px;
+    font-size: 4vw !important;
+  }
+
+  .header-text-cn {
     letter-spacing: 0.2px;
     font-size: 4vw !important;
   }
@@ -1112,9 +1167,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #dealer {
-    width: 80%;
+    width: 65%;
     margin-top: 5em;
-    left: -25%;
+    left: -10%;
   }
 
   #section-3 {
@@ -1127,11 +1182,19 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-3 .header-text {
-    font-size: 5vw !important;
+    font-size: 3.2vw !important;
+  }
+
+  #section-3 .main-header-text-cn {
+    font-size: 3vw !important;
+  }
+
+  #section-3 .header-text-cn {
+    font-size: 3.2vw !important;
   }
 
   #section-3 .mb-4 {
-    font-size: 4vw !important;
+    /* font-size: 4vw !important; */
     margin-bottom: 2vh !important;
   }
 
@@ -1151,13 +1214,21 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #football {
-    width: 80%;
-    right: -20%;
+    width: 65%;
+    right: -5%;
   }
 
   #section-4 {
     /* padding-top: 100vh !important; */
     justify-content: center !important;
+  }
+
+  #section-4 .header-text-cn {
+    font-size: 3vw !important;
+  }
+
+  #section-4 .main-header-text-cn {
+    font-size: 3.5vw !important;
   }
 
   #section-4 .display-1 {
@@ -1209,9 +1280,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-bottom: 5vh !important;
   }
 
-  #section-6 #country-groups img {
-    width: 100%;
-  }
+  /* #section-6 #country-groups img {
+    width: 80%;
+  } */
 
   #section-7 {
     min-height: 600px; 
@@ -1251,17 +1322,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   #dealer {
     /* left: -15vw !important; */
+    width: 60% !important;
   }
 
   #pattern-1 {
     bottom: 50vh !important;
   }
-}
-
-@media (min-width: 1900px) {
-  /* #gradient-background {
-    height: 550vh;
-  } */
 }
 
 /*
@@ -1363,7 +1429,20 @@ Custom media queries
   }
 }
 
-@media screen and (max-width: 550px) and (min-width: 321px) {
+@media screen and (max-width: 576px) and (min-width: 321px) {
+  .header-text-cn {
+    font-size: 6vw !important;
+  }
+
+  .header-text {
+    font-size: 6vw !important;
+  }
+
+  #section-3 .main-header-text-cn {
+    font-size: 4.5vw !important;
+    line-height: unset;
+  }
+
   .sec-8 {
     position: relative;
     justify-content: unset;
@@ -1483,11 +1562,11 @@ Custom media queries
  }
 
  @media screen and ( max-width: 1300px) and (min-width: 900px) {
-  .custom-modal-content {
+  /* .custom-modal-content {
     width: 40%;
-  }
+  } */
 
-  #actor-1, #dealer, #football {
+  /* #actor-1, #dealer, #football {
     width: 60%;
   }
 
@@ -1497,7 +1576,7 @@ Custom media queries
 
   #football {
     right: -5%;
-  }
+  } */
 
   .container {
     max-width: 980px;
@@ -1567,4 +1646,22 @@ Custom media queries
   .custom-modal-content {
     width: 40%;
   }
+ }
+
+ @media screen and (min-width: 2000px) {
+  .spacer-sm {
+    height: 5vh;
+  }
+
+  #section-5 #pattern-3 {
+    right: -30%;
+  }
+
+  .background-texture {
+    width: 80%;
+  }
+
+  /* #pattern-2 {
+    width: 20% !important;
+  } */
  }

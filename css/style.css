@@ -70,6 +70,8 @@ body {
   src: url("../font/GlowSansSC-Normal-Bold.otf");
 }
 
+.carousel-inner > .carousel-item img {margin: auto}
+
 #fifa-wrapper {
   position: relative;
   padding: 0;
@@ -160,7 +162,16 @@ body {
   letter-spacing: -1.5px;
 }
 
+/* .header-text-cn {
+  letter-spacing: -1.5px;
+} */
+
 .main-header-text {
+  font-weight: 750;
+  line-height: 0.8;
+}
+
+.main-header-text-cn {
   font-weight: 750;
   line-height: 0.8;
 }
@@ -251,7 +262,7 @@ body {
 #dealer {
   position: absolute;
   /* left: -5rem; */
-  width: 53%;
+  width: 51%;
   margin-top: 2em;
   z-index: -1;
 }
@@ -263,6 +274,14 @@ body {
 #section-4 {
   height: 100vh;
   /* margin: 20em 0 0 0; */
+}
+
+#section-4 .main-header-text-cn {
+  font-size: 3.5vw;
+}
+
+#section-4 .header-text-cn {
+  font-size: 3vw;
 }
 
 .spacer {
@@ -336,44 +355,72 @@ body {
   z-index: -1;
 }
 
-#section-6 #country-groups-m {
-  display: none;
-  margin: 0 auto;
-  grid-auto-flow: column;
-  gap: 1em;
-  /* height: calc(180px + 1rem); */
-  padding: 1em;
-  /* max-width: 100; */
-  overflow-y: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  margin-bottom: 10vh;
-  overflow-x: auto;
+#section-6 #country-groups img {
+  max-width: 80%;
 }
 
-#country-groups-m > a {
-  scroll-snap-align: start;
+#section-6 #country-groups .row .col {
+  display: flex;
+  justify-content: center;
+}
+
+#section-6 #country-groups-m {
+  display: none;
+  margin-bottom: 10vh;
+  width: 100%;
+}
+
+#section-6 #country-groups-m .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: visible;
+}
+
+#section-6 #country-groups-m .swiper-slide img {
+  display: block;
+  width: 80%;
+  object-fit: cover;
+}
+
+#section-6 #country-groups-m .swiper-pagination-bullet {
+  background-color: rgb(142, 8, 59);
+}
+
+/* #section-6 #country-groups-m {
+  display: none;
+  margin-bottom: 10vh;
+  width: 80%;
 }
 
 #country-groups-m img {
+  max-width: 100%;
+}
+
+#country-groups-m .carousel-image-wrapper {
   width: 100%;
-  max-width: none;
-  object-fit: contain;
-  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
-#section-6 #country-groups-m img {
-  width: 80%;
-  /* margin-left: 1em; */
-}
-
-#section-6 #country-groups-m #country-group-last {
-  /* margin-right: 1em; */
-}
+#country-groups-m .carousel-indicators {
+  bottom: -15%;
+} */
 
 #triangle-texture {
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 
 .background-texture {
@@ -385,8 +432,9 @@ body {
 
 #background-textures #pattern-2 {
   position: absolute;
-  width: 24%;
+  /* width: 24%; */
   left: -10em;
+  z-index: 1;
 }
 
 #section-7 {

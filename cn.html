@@ -26,7 +26,10 @@
 
     <link href="./css/style.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="./css/animate.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/carousel.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/media-queries.css" />
   </head>
 
@@ -52,9 +55,9 @@
             src="./images/Lighting-Background.jpg"
             id="section-1-background"
           />
-          <div id="gradient-background">
-            <img id="pattern-1" src="./images/Pattern-1.png" alt="" />
-          </div>
+          <!-- <div id="gradient-background">
+            
+          </div> -->
         </div>
 
         <!-- <div class="container" id="main-container""> -->
@@ -88,10 +91,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Category</a>
+                  <a class="nav-link text-light" href="#">Lucky Spin</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Contact</a>
+                  <a class="nav-link text-light" href="#">Fifa 2022</a>
                 </li>
               </ul>
               <button type="button" class="text-white ms-5 orange-theme-btn">
@@ -102,6 +105,7 @@
         </nav>
         <img
           data-aos="fade-left"
+          data-aos-delay="300"
           src="./images/Jackywu.png"
           alt="Jackywu"
           id="actor-1"
@@ -113,30 +117,28 @@
           class="section d-flex flex-column"
           data-anchor="section1"
         >
-          <div class="my-auto container" data-aos="fade-right">
-            <h1 class="display-1 text-light header-text main-header-text">
-              ASIA <span class="orange-theme">NO.1</span>
-            </h1>
+          <div
+            class="my-auto container"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h1
-              class="display-1 text-light mb-4 header-text"
-              style="font-weight: 750"
-            >
-              TRUSTED BRAND
-            </h1>
-
-            <h6
-              class="display-6 text-light"
-              style="margin-bottom: 7rem"
+              class="display-1 text-light header-text-cn main-header-text-cn"
+              style="margin-bottom: 5vh"
             >
               亚洲第一信任品牌
-            </h6>
+            </h1>
+
+            <!-- <h6 class="display-6 text-light" style="margin-bottom: 7rem">
+              亚洲第一信任品牌
+            </h6> -->
 
             <button
               type="button"
               id="watch-video"
               class="d-flex align-self-start align-items-center"
             >
-              <h5 class="mb-0 me-3">WATCH VIDEO</h5>
+              <h5 class="mb-0 me-3">观看视频</h5>
               <img src="./images/play-button.png" style="width: 55px" alt="" />
             </button>
           </div>
@@ -147,7 +149,7 @@
           class="section d-flex flex-column my-5"
         >
           <h3 class="text-light mb-5 container" data-aos="fade-up">
-            Three simple steps and the bonus is yours!
+            三个简单步骤让你轻松领取您应得的奖金
           </h3>
           <div
             id="section-nav"
@@ -155,30 +157,30 @@
             data-aos="fade-up"
           >
             <a href="#section-3"
-              ><img src="./images/Step-banner-1.png" alt=""
+              ><img src="./images/Step-banner-1_cn.png" alt=""
             /></a>
             <a href="#section-4"
-              ><img src="./images/Step-banner-2.png" alt=""
+              ><img src="./images/Step-banner-2_cn.png" alt=""
             /></a>
             <a href="#spacer-section-5"
-              ><img src="./images/Step-banner-3.png" alt=""
+              ><img src="./images/Step-banner-3_cn.png" alt=""
             /></a>
           </div>
-          <div id="section-nav-m" class="d-flex">
+          <div id="section-nav-m">
             <img
               onclick="jumpToNextSection('section-3')"
-              src="./images/Step-banner-1.png"
+              src="./images/Step-banner-1_cn.png"
               alt=""
             />
             <img
               onclick="jumpToNextSection('section-4')"
-              src="./images/Step-banner-2.png"
+              src="./images/Step-banner-2_cn.png"
               alt=""
             />
             <img
               onclick="jumpToNextSection('section-5')"
               id="section-nav-end"
-              src="./images/Step-banner-3.png"
+              src="./images/Step-banner-3_cn.png"
               alt=""
             />
           </div>
@@ -199,29 +201,29 @@
           <!-- <div class="container d-flex flex-column justify-content-center"> -->
           <div class="row">
             <div class="col col-6 col-md-7 col-lg-7"></div>
-            <div class="col col-6 col-md-5 col-lg-5">
-              <h1 class="display-1 text-light header-text main-header-text">
-                <span class="orange-theme">LUCKY</span> SPIN
-              </h1>
+            <div class="col col-6 col-md-5 col-lg-5 lucky-spin-text-con">
               <h1
-                class="display-1 text-light header-text mb-4"
+                class="display-4 text-light main-header-text-cn"
                 style="font-weight: 750"
               >
-                WAITING YOU
+                扭转Free Spin赢大钱
               </h1>
-
-              <h6
-                class="display-6 text-light"
-                style="margin-bottom: 3rem"
+              <!-- <h1
+                class="display-4 text-light header-text-cn mb-4"
+                style="font-weight: 750"
               >
+                现在就玩
+              </h1> -->
+
+              <h6 class="display-6 text-light" style="margin-bottom: 3rem">
                 时来运转, 等你哟!
               </h6>
 
               <a href="#" id="free-spin-banner">
-                <img src="./images/Free-spin-banner.png" alt="" />
+                <img src="./images/Free-spin-banner-cn.png" alt="" />
               </a>
 
-              <button
+              <!-- <button
                 type="button"
                 class="text-light align-self-start orange-theme-btn"
                 style="
@@ -230,8 +232,8 @@
                   margin-top: 7em;
                 "
               >
-                <h5 class="mb-0">SPIN WHEEL</h5>
-              </button>
+                <h5 class="mb-0">现在就玩</h5>
+              </button> -->
             </div>
           </div>
           <!-- </div> -->
@@ -251,29 +253,29 @@
           class="section d-flex flex-column justify-content-center container"
           data-aos="fade-right"
         >
-          <h1 class="display-1 text-light header-text main-header-text">
-            RISK-<span class="orange-theme">FREE</span>
-          </h1>
           <h1
-            class="display-1 text-light mb-4 header-text"
+            class="display-3 text-light header-text-cn main-header-text-cn"
             style="font-weight: 750"
           >
-            ON FIRST BET
+            想要零风险,
+          </h1>
+          <h1
+            class="display-3 text-light header-text-cn"
+            style="font-weight: 750; margin-bottom: 4rem"
+          >
+            必领96M无风险首投奖金
           </h1>
 
-          <h6
-            class="display-6 text-light"
-            style="margin-bottom: 7rem"
-          >
+          <!-- <h6 class="display-6 text-light" style="margin-bottom: 7rem">
             您的首投绝无风险
-          </h6>
+          </h6> -->
 
           <button
             type="button"
             class="text-light align-self-start orange-theme-btn"
             style="padding: 1.3rem 4.5em; border-radius: 25px"
           >
-            <h5 class="mb-0">BET NOW</h5>
+            <h5 class="mb-0">现在投注</h5>
           </button>
         </div>
         <div class="spacer"></div>
@@ -295,22 +297,22 @@
             class="d-flex flex-column align-items-center"
             data-aos="fade-down"
           >
-            <h1 class="display-1 text-light header-text main-header-text">
-              FIFA WORLD CUP
+            <h1 class="display-1 text-light header-text-cn main-header-text-cn">
+              2022卡塔尔世界杯
             </h1>
             <!-- <h1
-            class="display-1 text-light mb-4 header-text"
+            class="display-1 text-light mb-4 header-text-cn"
             style="font-weight: 750"
           >
             Qatar2022
           </h1> -->
-            <img src="./images/qatar-olympic-logo.png" id="qatar" alt="" />
+            <!-- <img src="./images/qatar-olympic-logo.png" id="qatar" alt="" /> -->
             <h5
               id="timer-label"
               class="display-5 text-light mb-4 fw-bold"
               data-aos="fade-down"
             >
-              Tournament starts in
+              卡塔尔世界杯倒计时
             </h5>
           </div>
           <div
@@ -371,71 +373,88 @@
         <div class="spacer-sm"></div>
         <div id="section-6" class="d-flex flex-column align-items-center">
           <h5 class="display-5 fw-normal mb-5" style="color: #ef1550">
-            Final Draw
+            小组赛
           </h5>
-          <div id="country-groups" class="container">
+          <div id="country-groups" class="container-xs">
             <div class="row mt-3">
               <div class="col col-6">
-                <img src="./images/FIFA-group_A.png" alt="" />
+                <img src="./images/FIFA-group_A-cn.png" alt="" />
               </div>
               <div class="col col-6">
-                <img src="./images/FIFA-group_B.png" alt="" />
+                <img src="./images/FIFA-group_B-cn.png" alt="" />
               </div>
             </div>
             <div class="row mt-3">
               <div class="col col-6">
-                <img src="./images/FIFA-group_C.png" alt="" />
+                <img src="./images/FIFA-group_C-cn.png" alt="" />
               </div>
               <div class="col col-6">
-                <img src="./images/FIFA-group_D.png" alt="" />
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col col-6">
-                <img src="./images/FIFA-group_E.png" alt="" />
-              </div>
-              <div class="col col-6">
-                <img src="./images/FIFA-group_F.png" alt="" />
+                <img src="./images/FIFA-group_D-cn.png" alt="" />
               </div>
             </div>
             <div class="row mt-3">
               <div class="col col-6">
-                <img src="./images/FIFA-group_G.png" alt="" />
+                <img src="./images/FIFA-group_E-cn.png" alt="" />
               </div>
               <div class="col col-6">
-                <img src="./images/FIFA-group_H.png" alt="" />
+                <img src="./images/FIFA-group_F-cn.png" alt="" />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-6">
+                <img src="./images/FIFA-group_G-cn.png" alt="" />
+              </div>
+              <div class="col col-6">
+                <img src="./images/FIFA-group_H-cn.png" alt="" />
               </div>
             </div>
           </div>
-          <div id="country-groups-m">
-            <a href="#"></a><img src="./images/FIFA-group_A.png" alt="" /></a>
-            <a href="#"></a><img src="./images/FIFA-group_B.png" alt="" /></a>
-            <a href="#"></a><img src="./images/FIFA-group_C.png" alt="" /></a>
-            <a href="#"></a><img src="./images/FIFA-group_D.png" alt="" /></a>
-            <a href="#"></a><img src="./images/FIFA-group_E.png" alt="" /></a>
-            <a href="#"></a><img src="./images/FIFA-group_F.png" alt="" /></a>
-            <a href="#"></a><img src="./images/FIFA-group_G.png" alt="" /></a>
-            <a href="#"></a><img
-              id="country-group-last"
-              src="./images/FIFA-group_H.png"
-              alt=""
-            /></a>
+          <div class="swiper" id="country-groups-m">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_A-cn.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_B-cn.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_C-cn.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_D-cn.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_E-cn.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_F-cn.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_G-cn.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/FIFA-group_H-cn.png" alt="" />
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-        <div class="spacer"></div>
+        <img id="pattern-1" src="./images/Pattern-1.png" alt="" />
+        <div class="spacer fx-7"></div>
         <div id="section-7" class="d-flex align-items-center">
           <div class="container">
             <div class="row">
               <div
                 class="col col-8 col-md-7 col-lg-6 col-xl-6 d-flex flex-column justify-content-center"
               >
-                <h1 class="display-1 text-light mb-4 header-text fw-bold">
-                  MATCHES & NEWS
+                <h1 class="display-2 text-light mb-4 header-text-cn fw-bold">
+                  世界杯赛前最新消息和动态
                 </h1>
                 <div style="width: 80%">
-                  <h2 class="text-light mb-4 header-text">
-                    View all the matches, news and teams ahead of the FIFA World
-                    Cup Qatar 2022
+                  <h2 class="text-light mb-4 header-text-cn">
+                    抢在世界杯开幕之前一晓各个参赛国的最新消息和动态
                   </h2>
                 </div>
               </div>
@@ -446,10 +465,10 @@
               style="
                 padding: 1.3rem 4.5em;
                 border-radius: 25px;
-                margin-top: 7em;
+                margin-top: 5em;
               "
             >
-              <h5 class="mb-0">BET NOW</h5>
+              <h5 class="mb-0">现在投注</h5>
             </button>
           </div>
         </div>
@@ -595,15 +614,15 @@
           <div class="nav-content">
             <nav role="navigation" id="nav">
               <ul id="lang-list">
-                <li onclick="replaceLabelVal('English')">English</li>
                 <li onclick="replaceLabelVal('Chinese')">中文</li>
+                <li onclick="replaceLabelVal('English')">English</li>
               </ul>
               <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
               <label
                 for="mainNavButton"
                 id="selected-lang"
                 onclick="toggleListDisplay()"
-                >English</label
+                >Chinese</label
               >
               <span class="green-dot"></span>
             </nav>
@@ -640,7 +659,7 @@
                 for="mainNavButton"
                 id="selected-lang"
                 onclick="toggleListDisplay()"
-                >English</label
+                >Chinese</label
               >
               <span class="green-dot"></span>
             </nav>
@@ -679,43 +698,29 @@
       id="up-arrow"
       onclick="jumpToNextSection('absolute-background')"
     >
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      <!-- <i class="fa fa-arrow-up" aria-hidden="true"></i> -->
+      <img src="./images/scroll-up.png" alt="" />
     </button>
 
     <script src="./js/jquery-3.3.1.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script> -->
     <script src="./js/jquery-migrate-3.0.0.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script> -->
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/jquery.backstretch.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script>
-      var txtsHere = [
-        "HUDDERSFIELD TOWN FC",
-        "VALENCIA CF",
-        "ATHLETIC CLUB",
-        "VILLARREAL CF",
-        "ELCHE CF",
-        "RCD MALLORCA",
-      ];
       var sections = [
         "section-1",
         "section-2",
@@ -729,14 +734,25 @@
 
       var modalClaimLink = "https://google.com/"; // Replaceable link
 
-      var dateTime = 1664388376; // Countdown Date
+      var dateTime = "2022-21-11 14:00:00"; // Countdown Date (Format: "YYYY-DD-MM hh")
 
-      // $('#custCarousel').on('slid.bs.carousel', function () {
+      const linksGlobal = {
+        WATCH_VIDEO: "https://www.youtube.com/watch?v=kDTygtM2bUM&t=2s",
+        CONTACT:
+          "https://ndskwoi.com/chatwindow.aspx?siteId=5000379&chatGroup=4&planId=966a3201-43cf-431c-b94e-a0e1380086f0#",
+      };
 
-      //     currentIndex = $('div.active').index()
+      const linksEN = {
+        JOIN: "https://www.96mgo.com/en-my/register/?affid=153",
+        HOME: "https://www.96mgo.com/en-my/home/?affid=153",
+        CATEGORY: "https://www.96mgo.com/en-my/promotion/?affid=153",
+      };
 
-      //     $('#txtchangehere').text('' + txtsHere[currentIndex])
-      // })
+      const linksCN = {
+        JOIN: "https://www.96mgo.com/zh-my/register/?affid=153",
+        HOME: "https://www.96mgo.com/zh-my/home/?affid=153",
+        CATEGORY: "https://www.96mgo.com/zh-my/promotion/?affid=153",
+      };
 
       AOS.init({
         startEvent: "DOMContentLoaded",
@@ -748,30 +764,22 @@
         */
       new WOW().init();
 
-      /*
-            Carousel
-        */
-
-      $("#country-groups-m").on("slide.bs.carousel", function (e) {
-        /*
-                CC 2.0 License Iatek LLC 2018 - Attribution required
-            */
-        var $e = $(e.relatedTarget);
-        var idx = $e.index();
-        var itemsPerSlide = 3;
-        var totalItems = $(".carousel-item").length;
-
-        if (idx >= totalItems - (itemsPerSlide - 1)) {
-          var it = itemsPerSlide - (totalItems - idx);
-          for (var i = 0; i < it; i++) {
-            // append slides to end
-            if (e.direction == "left") {
-              $(".carousel-item").eq(i).appendTo(".carousel-inner");
-            } else {
-              $(".carousel-item").eq(0).appendTo(".carousel-inner");
-            }
-          }
-        }
+      var swiper = new Swiper("#country-groups-m", {
+        spaceBetween: 20,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
 
       // Toggle list display
@@ -803,6 +811,20 @@
           .getElementById(id)
           .scrollIntoView({ block: "start", behavior: "smooth" });
       }
+
+      // Redirects
+      $(".join-now").click(() => window.open(linksEN.JOIN, "_blank"));
+      $(".orange-theme-btn").click(() => window.open(linksEN.JOIN, "_blank"));
+      $(".nav-home").click(() => window.open(linksEN.HOME, "_blank"));
+      $(".nav-category").click(() => window.open(linksEN.CATEGORY, "_blank"));
+      $(".nav-contact").click(() => window.open(linksGlobal.CONTACT, "_blank"));
+      $("#watch-video").click(() =>
+        window.open(linksGlobal.WATCH_VIDEO, "_blank")
+      );
+
+      $(document).ready(function () {
+        console.log(this.documentElement.clientHeight);
+      });
 
       $("#sticky-note-close").click(function () {
         $("#sticky-note").fadeOut(300);
@@ -845,10 +867,9 @@
         modal.style.display = "none";
       };
 
-      
       const getDiff = () => {
         var now = moment();
-        var expire = moment.unix(dateTime);
+        var expire = moment(dateTime, "YYYY-DD-MM hh:mm:ss");
         // get the difference between the moments
         const diff = expire.diff(now);
 
@@ -865,7 +886,7 @@
 
       const repeater = setInterval(() => {
         getDiff();
-      }, 60000);
+      }, 1000);
     </script>
   </body>
 </html>
