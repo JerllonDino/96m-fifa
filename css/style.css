@@ -310,9 +310,9 @@ body {
   position: relative;
 }
 
-/* #section-5 #qatar {
-  width: 60%;
-} */
+#section-5 #qatar-cn {
+  margin-top: 1rem;
+}
 
 #section-5 #pattern-3 {
   position: absolute;
