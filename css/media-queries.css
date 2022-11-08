@@ -71,7 +71,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-1 > div > h6 {
-    font-size: x-large !important;
+    font-size: large !important;
     margin-bottom: 1.3em !important;
   }
 
@@ -136,16 +136,25 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* justify-content: flex-end !important; */
   }
 
-  #section-3 .header-text{
-    font-size: 5vw !important;
-  }
-
   #section-3 .main-header-text{
-    font-size: 5vw !important;
+    font-size: 4vw !important;
+    margin-bottom: 2vh !important;
   }
 
   #section-3 .row {
     margin-top: 120% !important;
+  }
+
+  #section-3 h2 {
+    font-size: 4vw !important;
+  }
+
+  #section-3 h2:first-of-type {
+    margin-top: 1rem !important;
+  }
+
+  #section-3 h2:first-of-type + h2 {
+    margin-bottom: 1rem !important;
   }
 /* 
   #section-3 .header-text {
@@ -153,8 +162,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   } */
 
   #section-3 .mb-4 {
-    font-size: 6vw !important;
-    margin-bottom: 10px !important;
+    /* font-size: 6vw !important; */
+    /* margin-bottom: 1vh !important; */
   }
 
   #section-3 .display-6 {
@@ -188,10 +197,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #section-4 {
     padding-top: 60vh !important;
     justify-content: center !important;
-  }
-
-  #section-4 .display-1 {
-    font-size: 8vw !important;
   }
 
   #section-4 .mb-4 {
@@ -356,6 +361,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     width: 20%;
   }
 
+  .fifa-world-cup-logo {
+    margin-bottom: 2vh !important;
+  }
+
   #actor-1 {
     top: 1%;
     width: 110%;
@@ -457,17 +466,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-3 h1 .header-text{
-    font-size: 5vw !important;
+    /* font-size: 5vw !important; */
   }
   #section-3 .main-header-text{
     font-size: 4vw !important;
+    margin-bottom: 3vh !important;
   }
 
-  #section-3 h1 .header-text-cn{
-    font-size: 5vw !important;
-  }
-  #section-3 .main-header-text-cn{
+  #section-3 h2{
     font-size: 4vw !important;
+  }
+
+  #section-3 h2:first-of-type {
+    margin-top: 2rem !important;
+  }
+
+  #section-3 .main-header-text-cn{
+    font-size: 6vw !important;
+    margin-bottom: 2rem;
+  }
+
+  #section-3 .subtitle-cn:first-of-type {
+    margin-top: 2rem !important;
   }
 
   #section-3 .row {
@@ -479,8 +499,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   } */
 
   #section-3 .mb-4 {
-    font-size: 6vw !important;
-    margin-bottom: 10px !important;
+    /* font-size: 6vw !important; */
+    margin-bottom: 1rem !important;
   }
 
   #section-3 .display-6 {
@@ -517,7 +537,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-4 .display-1 {
-    font-size: 8vw !important;
+    margin-top: 10vh !important;
+    font-size: 6vw !important;
   }
 
   #section-4 .mb-4 {
@@ -529,6 +550,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-bottom: 5vh !important;
   }
 
+  #section-4 h2 {
+    margin-bottom: 2rem !important;
+  }
+
+  #section-4 .subtitle1, #section-4 .subtitle2 {
+    font-size: 4vw !important;
+  }
+
   #section-4 button {
     border-radius: 18px !important;
     padding: 0.8em 3em !important;
@@ -536,6 +565,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   #section-4 button h5 {
     font-size: small;
+  }
+
+  #section-4 .subtitle1 {
+    margin-bottom: 2px !important;
   }
 
   #section-5 {
@@ -656,6 +689,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .custom-modal {
     padding-top: unset;
   }
+
+  .socials img, .footer-info img {
+    width: calc(15% - 10px);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -747,18 +784,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 20vh !important;
   }
 
-  #section-3 h1 .header-text{
+  /* #section-3 h1 .header-text{
     font-size: 5vw !important;
   }
   #section-3 .main-header-text{
     font-size: 4vw !important;
-  }
+  } */
 
   #section-3 h1 .header-text-cn{
-    font-size: 5vw !important;
+    font-size: 3vw !important;
   }
   #section-3 .main-header-text-cn{
-    font-size: 3vw !important;
+    font-size: 6vw !important;
   }
 
   #section-3 h6{
@@ -766,8 +803,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-bottom: 3vw !important;
   }
 
-  #section-3 .mb-4{
-    font-size: 4.5vw !important;
+  #section-3 .main-header-text{
+    font-size: 3vw !important;
     margin-bottom: 3vh !important;
   }
 
@@ -788,7 +825,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 
   #section-4 h1 {
-    font-size: 4vw !important;
+    font-size: 5vw !important;
+  }
+
+  #section-4 h2 {
+    font-size: 3vw !important;
+  }
+
+  #section-4 .subtitle1 {
+    margin-top: 2rem !important;
+    margin-bottom: 2px !important;
+    line-height: 1 !important;
   }
 
   #section-4 h6 {
@@ -909,7 +956,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   .header-text {
     letter-spacing: 0.2px;
-    font-size: 4vw !important;
+    font-size: 3.5vw !important;
   }
 
   .header-text-cn {
@@ -978,9 +1025,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     justify-content: center !important;
   }
 
-  #section-3 .header-text {
+  /* #section-3 .header-text {
     font-size: 5vw !important;
-  }
+  } */
 
   #section-3 .main-header-text-cn {
     font-size: 4vw !important;
@@ -1017,17 +1064,22 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     justify-content: center !important;
   }
 
-  #section-4 .display-1 {
+  /* #section-4 .display-1 {
     font-size: 5vw !important;
-  }
+  } */
 
   #section-4 .mb-4 {
     margin-bottom: 2vh !important;
   }
 
-  #section-4 .display-6 {
+  #section-4 h2 {
     font-size: 3vw !important;
     margin-bottom: 5vh !important;
+  }
+
+  #section-4 .subtitle1 {
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
   }
 
   #section-5 {
@@ -1185,9 +1237,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 3.2vw !important;
   }
 
-  #section-3 .main-header-text-cn {
+  /* #section-3 .main-header-text-cn {
     font-size: 3vw !important;
-  }
+  } */
 
   #section-3 .header-text-cn {
     font-size: 3.2vw !important;
@@ -1223,14 +1275,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     justify-content: center !important;
   }
 
-  #section-4 .header-text-cn {
-    font-size: 3vw !important;
-  }
-
-  #section-4 .main-header-text-cn {
-    font-size: 3.5vw !important;
-  }
-
   #section-4 .display-1 {
     font-size: 5vw !important;
   }
@@ -1242,6 +1286,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #section-4 .display-6 {
     font-size: 3vw !important;
     margin-bottom: 5vh !important;
+  }
+
+  #section-4 .header-text-cn {
+    font-size: 3vw !important;
+  }
+
+  #section-4 .main-header-text-cn {
+    font-size: 3.5vw !important;
+  }
+
+  #section-4 .subtitle1 {
+    line-height: 1 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  #section-4 .subtitle1, #section-4 .subtitle2 {
+    font-size: 3vw !important;
   }
 
   #section-5 {
@@ -1322,7 +1384,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   #dealer {
     /* left: -15vw !important; */
-    width: 60% !important;
+    width: 55% !important;
   }
 
   #pattern-1 {
@@ -1429,7 +1491,7 @@ Custom media queries
   }
 }
 
-@media screen and (max-width: 576px) and (min-width: 321px) {
+@media screen and (max-width: 575px) and (min-width: 321px) {
   .header-text-cn {
     font-size: 6vw !important;
   }
@@ -1439,8 +1501,23 @@ Custom media queries
   }
 
   #section-3 .main-header-text-cn {
-    font-size: 4.5vw !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    font-size: 6vw !important;
     line-height: unset;
+  }
+
+  #section-3 .subtitle-cn {
+    font-size: 4vw !important;
+  }
+
+  #section-3 .subtitle-cn:first-of-type {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  #section-3 .subtitle-cn:first-of-type + h2 {
+    margin-bottom: 1rem !important;
   }
 
   .sec-8 {
@@ -1542,6 +1619,35 @@ Custom media queries
   #nav-top {
     width: 20%;
   }
+
+  .fifa-world-cup-logo {
+    margin-bottom: 2vh !important;
+  }
+
+  #section-4 h2 {
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    font-size: 4vw !important;
+  }
+
+  #section-4 .subtitle1 {
+    margin-bottom: 2px !important;
+  }
+
+  #section-4 .subtitle1, #section-4 .subtitle2 {
+    font-size: 4vw !important;
+  }
+
+  #section-4 .subtitle2 {
+    margin-top: 0 !important;
+    margin-bottom: 2rem !important;
+  }
+
+
+  /* #section-4 h2 {
+    font-size: 1rem !important;
+    margin-bottom: 3rem !important;
+  } */
 }
 
 @media screen and (max-width: 1000px) {
