@@ -36,17 +36,12 @@
   <body>
     <div id="fifa-wrapper">
       <div id="sticky-note">
+        <img id="sticky-note-close" src="./images/close-button.png" alt="" />
         <img
-          onclick="console.log('close')"
-          id="sticky-note-close"
-          src="./images/close-button.png"
-          alt=""
-        />
-        <img
-          onclick="jumpToNextSection('section-5')"
           id="sticky-image"
           src="./images/Sticky-note_animation.gif"
           alt=""
+          class="join-now"
         />
       </div>
       <div class="section-wrapper">
@@ -55,21 +50,11 @@
             src="./images/Lighting-Background.jpg"
             id="section-1-background"
           />
-          <!-- <div id="gradient-background">
-            
-          </div> -->
         </div>
 
-        <!-- <div class="container" id="main-container""> -->
         <nav class="navbar navbar-expand mt-3">
           <div class="container">
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="me-auto"
-              id="nav-logo"
-            >
+            <a href="#" class="me-auto jump-home" id="nav-logo">
               <img src="./images/Logo.svg" alt="" />
             </a>
             <button
@@ -86,18 +71,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link text-light nav-home" aria-current="page" href="#"
+                  <a
+                    class="nav-link jump-home text-light"
+                    aria-current="page"
+                    href="#"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light nav-" href="#">Predict & Win</a>
+                  <a class="nav-link jump-section3 text-light" href="#"
+                    >Predict & Win</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">FIFA 2022</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="en-myr.html">MYR</a>
+                  <a class="nav-link text-light jump-section5-spacer" href="#"
+                    >FIFA 2022</a
+                  >
                 </li>
                 <!-- <li class="nav-item dropdown">
                   <a
@@ -116,6 +105,23 @@
                   </ul>
                 </li> -->
               </ul>
+              <div class="btn-group">
+                <ul class="dropdown-menu" style="margin-top: 1vh;">
+                  <li><a class="dropdown-item" href="#">SGD</a></li>
+                  <li><a class="dropdown-item" href="en-myr.html">MYR</a></li>
+                </ul>
+              </div>
+              <button
+                class="btn dropdown-toggle dropdown-toggle-split text-light"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border: none"
+              >
+                SGD
+              </button>
               <button type="button" class="text-white ms-5 orange-theme-btn">
                 JOIN NOW
               </button>
@@ -178,34 +184,29 @@
             class="d-flex flex-row justify-content-between container"
             data-aos="fade-up"
           >
-            <a href="#section-3">
+            <a href="#" class="jump-section3">
               <img src="./images/Step-banner-1.png" alt="" />
-              <!-- <div class="step-banner" id="register">
-              <img src="./images/register.png" alt="">
-              <h1>Register</h1>
-              <p>Create an account with the help of our 24/7 professional Customer Service Representative</p>
-            </div> -->
             </a>
-            <a href="#section-4"
+            <a href="#" class="jump-section4"
               ><img src="./images/Step-banner-2.png" alt=""
             /></a>
-            <a href="#spacer-section-5"
+            <a href="#" class="jump-section5-spacer"
               ><img src="./images/Step-banner-3.png" alt=""
             /></a>
           </div>
           <div id="section-nav-m">
             <img
-              onclick="jumpToNextSection('section-3')"
+              class="jump-section3"
               src="./images/Step-banner-1.png"
               alt=""
             />
             <img
-              onclick="jumpToNextSection('section-4')"
+              class="jump-section4"
               src="./images/Step-banner-2.png"
               alt=""
             />
             <img
-              onclick="jumpToNextSection('section-5')"
+              class="jump-section5"
               id="section-nav-end"
               src="./images/Step-banner-3.png"
               alt=""
@@ -237,14 +238,17 @@
               >
                 AND WIN
               </h3> -->
-              <img class="fifa-world-cup-logo" src="./images/fifa-worldcup-logo_white.svg"/>
+              <img
+                class="fifa-world-cup-logo"
+                src="./images/fifa-worldcup-logo_white.svg"
+              />
 
-              <!-- <h2 class="text-light" style="margin-top: 3rem;">
-                Who will win
+              <h2 class="text-light" style="margin-top: 1rem;">
+                Who is the winner of
               </h2>
               <h2 class="text-light" style="margin-bottom: 2rem">
                 FIFA World Cup 2022?
-              </h2> -->
+              </h2>
 
               <a href="#" id="free-spin-banner">
                 <img src="./images/FIFA-winner-banner_en.png" alt="" />
@@ -551,15 +555,15 @@
           <div class="footer-grid" style="margin-top: 1.5rem">
             <div class="footer-nav nav-links">
               <ol>
-                <li><a href="https://www.96m.com/">Home</a> &nbsp; |</li>
+                <li><a href="#" class="nav-home">Home</a> &nbsp; |</li>
                 <li>
-                  <a href="https://www.96m.com/en-my/info-centre/faq#general"
+                  <a href="#" class="nav-home"
                     >About</a
                   >
                   &nbsp; |
                 </li>
                 <li>
-                  <a href="https://www.96m.com/en-my/contact">Contact Us</a>
+                  <a href="#" class="nav-home">Contact Us</a>
                   &nbsp; |
                 </li>
               </ol>
@@ -638,7 +642,7 @@
                 <li onclick="replaceLabelVal('English')">English</li>
                 <li onclick="replaceLabelVal('Chinese')">中文</li>
               </ul>
-              <!-- <input class="trigger" type="checkbox" id="mainNavButton" onclick="myFunction()"> -->
+
               <label
                 for="mainNavButton"
                 id="selected-lang"
@@ -714,11 +718,7 @@
       />
     </div>
 
-    <button
-      class="up-arrow rounded-circle"
-      id="up-arrow"
-      onclick="jumpToNextSection('absolute-background')"
-    >
+    <button class="up-arrow rounded-circle jump-home" id="up-arrow">
       <!-- <i class="fa fa-arrow-up" aria-hidden="true"></i> -->
       <img src="./images/scroll-up.png" alt="" />
     </button>
@@ -764,15 +764,17 @@
       };
 
       const linksEN = {
-        JOIN: "https://www.96mgo.com/en-my/register/?affid=153",
-        HOME: "https://www.96mgo.com/en-my/home/?affid=153",
-        CATEGORY: "https://www.96mgo.com/en-my/promotion/?affid=153",
+        JOIN: "https://96msoccer.com",
+        HOME: "https://96msoccer.com",
+        CATEGORY: "",
+        ABOUT: ""
       };
 
       const linksCN = {
-        JOIN: "https://www.96mgo.com/zh-my/register/?affid=153",
-        HOME: "https://www.96mgo.com/zh-my/home/?affid=153",
-        CATEGORY: "https://www.96mgo.com/zh-my/promotion/?affid=153",
+        JOIN: "https://96msoccer.com",
+        HOME: "https://96msoccer.com",
+        CATEGORY: "",
+        ABOUT: ""
       };
 
       AOS.init({
@@ -834,26 +836,68 @@
       }
 
       // Redirects
-      $(".join-now").click(() => window.open(linksEN.JOIN, "_blank"));
-      $(".orange-theme-btn").click(() => window.open(linksEN.JOIN, "_blank"));
-      $(".nav-home").click(() => window.open(linksEN.HOME, "_blank"));
-      $(".nav-category").click(() => window.open(linksEN.CATEGORY, "_blank"));
-      $(".nav-contact").click(() => window.open(linksGlobal.CONTACT, "_blank"));
-      $("#watch-video").click(() =>
-        window.open(linksGlobal.WATCH_VIDEO, "_blank")
-      );
+      $(".join-now, .orange-theme-btn").click((e) => {
+        e.preventDefault();
+        window.open(linksEN.JOIN, "_blank");
+      });
+      $(".nav-home").click((e) => {
+        e.preventDefault();
+        window.open(linksEN.HOME, "_blank");
+      });
+      $(".nav-category").click((e) => {
+        e.preventDefault();
+        window.open(linksEN.CATEGORY, "_blank");
+      });
+      $(".nav-contact").click((e) => {
+        e.preventDefault();
+        window.open(linksGlobal.CONTACT, "_blank");
+      });
+      $("#watch-video").click((e) => {
+        e.preventDefault();
+        window.open(linksGlobal.WATCH_VIDEO, "_blank");
+      });
+
+      // jump classes
+      $(".jump-home").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("absolute-background");
+      });
+      $(".jump-section1").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-1");
+      });
+      $(".jump-section2").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-2");
+      });
+      $(".jump-section3").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-3");
+      });
+      $(".jump-section4").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-4");
+      });
+      $(".jump-section5").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-5");
+      });
+      $(".jump-section5-spacer").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("spacer-section-5");
+      });
 
       $(document).ready(function () {
-        console.log(this.documentElement.clientHeight);
+        // console.log(this.documentElement.clientHeight);
       });
 
       $("#sticky-note-close").click(function () {
         $("#sticky-note").fadeOut(300);
       });
 
-      $("#sticky-image").click(function () {
-        jumpToNextSection("section-5");
-      });
+      // $("#sticky-image").click(function () {
+      //   jumpToNextSection("section-5");
+      // });
 
       $(window).scroll(function (event) {
         var st = $(this).scrollTop();
@@ -861,7 +905,7 @@
           document.documentElement.clientHeight || 0,
           window.innerHeight || 0
         );
-        console.log(vh);
+        // console.log(vh);
         if (st > (vh + 100) / 2) {
           // document.getElementById("up-arrow").style.display = "block";
           $("#up-arrow").fadeIn(300);

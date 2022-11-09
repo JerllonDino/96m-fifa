@@ -36,15 +36,10 @@
   <body>
     <div id="fifa-wrapper">
       <div id="sticky-note">
+        <img id="sticky-note-close" src="./images/close-button.png" alt="" />
         <img
-          onclick="console.log('close')"
-          id="sticky-note-close"
-          src="./images/close-button.png"
-          alt=""
-        />
-        <img
-          onclick="jumpToNextSection('section-5')"
           id="sticky-image"
+          class="nav-home"
           src="./images/Sticky-note_animation_cn.gif"
           alt=""
         />
@@ -63,13 +58,7 @@
         <!-- <div class="container" id="main-container""> -->
         <nav class="navbar navbar-expand mt-3">
           <div class="container">
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="me-auto"
-              id="nav-logo"
-            >
+            <a href="#" class="jump-home" id="nav-logo">
               <img src="./images/Logo.svg" alt="" />
             </a>
             <button
@@ -86,20 +75,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link nav-home text-light" aria-current="page" href="#"
+                  <a
+                    class="nav-link jump-home text-light"
+                    aria-current="page"
+                    href="#"
                     >主页</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">猜波赢奖</a>
+                  <a class="nav-link jump-section3 text-light" href="#"
+                    >猜波赢奖</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">2022 世界杯</a>
+                  <a class="nav-link jump-section5-spacer text-light" href="#"
+                    >2022 世界杯</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="cn.html">SGD</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
+                <!-- <li class="dropdown">
                   <a
                     class="nav-link dropdown-toggle text-light"
                     href="#"
@@ -108,16 +101,34 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    MYR
+                    SGD
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">MYR</a></li>
-                    <li><a class="dropdown-item" href="cn.html">SGD</a></li>
+                    <li><a class="dropdown-item" href="#">SGD</a></li>
+                    <li><a class="dropdown-item" href="cn-myr.html">MYR</a></li>
                   </ul>
                 </li> -->
               </ul>
+              <div class="btn-group">
+                <ul class="dropdown-menu" style="margin-top: 1vh">
+                  <li><a class="dropdown-item" href="#">MYR</a></li>
+                  <li><a class="dropdown-item" href="cn.html">SGD</a></li>
+                </ul>
+              </div>
+              <button
+                class="btn dropdown-toggle dropdown-toggle-split text-light"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border: none"
+              >
+                MYR
+              </button>
+
               <button type="button" class="text-white ms-5 orange-theme-btn">
-                2022 世界杯
+                立即注册
               </button>
             </div>
           </div>
@@ -178,29 +189,29 @@
             class="d-flex flex-row justify-content-between container"
             data-aos="fade-up"
           >
-            <a href="#section-3"
+            <a href="#" class="jump-section3"
               ><img src="./images/Step-banner-1_cn.png" alt=""
             /></a>
-            <a href="#section-4"
+            <a href="#" class="jump-section4"
               ><img src="./images/Step-banner-2_cn.png" alt=""
             /></a>
-            <a href="#spacer-section-5"
+            <a href="#" class="jump-section5-spacer"
               ><img src="./images/Step-banner-3_cn.png" alt=""
             /></a>
           </div>
           <div id="section-nav-m">
             <img
-              onclick="jumpToNextSection('section-3')"
+              class="jump-section3"
               src="./images/Step-banner-1_cn.png"
               alt=""
             />
             <img
-              onclick="jumpToNextSection('section-4')"
+            class="jump-football"
               src="./images/Step-banner-2_cn.png"
               alt=""
             />
             <img
-              onclick="jumpToNextSection('section-5')"
+            class="jump-section5"
               id="section-nav-end"
               src="./images/Step-banner-3_cn.png"
               alt=""
@@ -232,17 +243,19 @@
                   <span class="orange-theme">猜波</span>赢奖
                 </h1>
 
-                <img class="fifa-world-cup-logo" src="./images/fifa-worldcup-logo_white.svg"/>
+                <img
+                  class="fifa-world-cup-logo"
+                  src="./images/fifa-worldcup-logo_white.svg"
+                />
 
-                <!-- <h2 class="text-light subtitle-cn" style="margin-top: 3rem">
-                  谁会成为 2022 世界杆 
+                <h2 class="text-light subtitle-cn" style="margin-top: 1rem">
+                  谁会成为 2022 世界杆
                 </h2>
                 <h2 class="text-light subtitle-cn" style="margin-bottom: 2rem">
                   的大臝家？
-                </h2> -->
+                </h2>
               </div>
 
-              
               <a href="#" id="free-spin-banner">
                 <img src="./images/FIFA-winner-banner_cn-myr.png" alt="" />
               </a>
@@ -256,7 +269,7 @@
                   margin-top: 4em;
                 "
               >
-                <h5 class="mb-0">马上参加</h5>
+                <h5 class="mb-0">立即注册</h5>
               </button>
             </div>
           </div>
@@ -290,10 +303,7 @@
           >
             赢你拿，输我赔！
           </h2>
-          <h2
-            class="text-light subtitle2"
-            style="margin-bottom: 7rem"
-          >
+          <h2 class="text-light subtitle2" style="margin-bottom: 7rem">
             我们替您承担风险!
           </h2>
 
@@ -302,7 +312,7 @@
             class="text-light align-self-start orange-theme-btn"
             style="padding: 1.3rem 4.5em; border-radius: 25px"
           >
-            <h5 class="mb-0">现在投注</h5>
+            <h5 class="mb-0">立即下注</h5>
           </button>
         </div>
         <div class="spacer"></div>
@@ -498,7 +508,7 @@
                 margin-top: 5em;
               "
             >
-              <h5 class="mb-0">现在投注</h5>
+              <h5 class="mb-0">立即注册</h5>
             </button>
           </div>
         </div>
@@ -560,15 +570,13 @@
           <div class="footer-grid" style="margin-top: 1.5rem">
             <div class="footer-nav nav-links">
               <ol>
-                <li><a href="https://www.96m.com/">Home</a> &nbsp; |</li>
+                <li><a href="#" class="nav-home">Home</a> &nbsp; |</li>
                 <li>
-                  <a href="https://www.96m.com/en-my/info-centre/faq#general"
-                    >About</a
-                  >
+                  <a href="#" class="nav-home">About</a>
                   &nbsp; |
                 </li>
                 <li>
-                  <a href="https://www.96m.com/en-my/contact">Contact Us</a>
+                  <a href="#" class="nav-home">Contact Us</a>
                   &nbsp; |
                 </li>
               </ol>
@@ -723,11 +731,7 @@
       />
     </div>
 
-    <button
-      class="up-arrow rounded-circle"
-      id="up-arrow"
-      onclick="jumpToNextSection('absolute-background')"
-    >
+    <button class="up-arrow rounded-circle jump-home" id="up-arrow">
       <!-- <i class="fa fa-arrow-up" aria-hidden="true"></i> -->
       <img src="./images/scroll-up.png" alt="" />
     </button>
@@ -773,15 +777,17 @@
       };
 
       const linksEN = {
-        JOIN: "https://www.96mgo.com/en-my/register/?affid=153",
-        HOME: "https://www.96mgo.com/en-my/home/?affid=153",
-        CATEGORY: "https://www.96mgo.com/en-my/promotion/?affid=153",
+        JOIN: "https://96mgogo.com",
+        HOME: "https://96mgogo.com",
+        CATEGORY: "",
+        ABOUT: "",
       };
 
       const linksCN = {
-        JOIN: "https://www.96mgo.com/zh-my/register/?affid=153",
-        HOME: "https://www.96mgo.com/zh-my/home/?affid=153",
-        CATEGORY: "https://www.96mgo.com/zh-my/promotion/?affid=153",
+        JOIN: "https://96mgogo.com",
+        HOME: "https://96mgogo.com",
+        CATEGORY: "",
+        ABOUT: "",
       };
 
       AOS.init({
@@ -843,26 +849,72 @@
       }
 
       // Redirects
-      $(".join-now").click(() => window.open(linksCN.JOIN, "_blank"));
-      $(".orange-theme-btn").click(() => window.open(linksCN.JOIN, "_blank"));
-      $(".nav-home").click(() => window.open(linksCN.HOME, "_blank"));
-      $(".nav-category").click(() => window.open(linksCN.CATEGORY, "_blank"));
-      $(".nav-contact").click(() => window.open(linksGlobal.CONTACT, "_blank"));
-      $("#watch-video").click(() =>
-        window.open(linksGlobal.WATCH_VIDEO, "_blank")
-      );
+      $(".join-now, .orange-theme-btn").click((e) => {
+        e.preventDefault();
+        window.open(linksEN.JOIN, "_blank");
+      });
+      $(".nav-home").click((e) => {
+        e.preventDefault();
+        window.open(linksEN.HOME, "_blank");
+      });
+      $(".nav-category").click((e) => {
+        e.preventDefault();
+        window.open(linksEN.CATEGORY, "_blank");
+      });
+      $(".nav-contact").click((e) => {
+        e.preventDefault();
+        window.open(linksGlobal.CONTACT, "_blank");
+      });
+      $("#watch-video").click((e) => {
+        e.preventDefault();
+        window.open(linksGlobal.WATCH_VIDEO, "_blank");
+      });
+
+      // jump classes
+      $(".jump-home").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("absolute-background");
+      });
+      $(".jump-section1").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-1");
+      });
+      $(".jump-section2").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-2");
+      });
+      $(".jump-section3").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-3");
+      });
+      $(".jump-section4").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-4");
+      });
+      $(".jump-section5").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("section-5");
+      });
+      $(".jump-section5-spacer").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("spacer-section-5");
+      });
+      $(".jump-football").click((e) => {
+        e.preventDefault();
+        jumpToNextSection("football");
+      });
 
       $(document).ready(function () {
-        console.log(this.documentElement.clientHeight);
+        // console.log(this.documentElement.clientHeight);
       });
 
       $("#sticky-note-close").click(function () {
         $("#sticky-note").fadeOut(300);
       });
 
-      $("#sticky-image").click(function () {
-        jumpToNextSection("section-5");
-      });
+      // $("#sticky-image").click(function () {
+      //   jumpToNextSection("section-5");
+      // });
 
       $(window).scroll(function (event) {
         var st = $(this).scrollTop();
@@ -870,7 +922,7 @@
           document.documentElement.clientHeight || 0,
           window.innerHeight || 0
         );
-        console.log(vh);
+        // console.log(vh);
         if (st > (vh + 100) / 2) {
           // document.getElementById("up-arrow").style.display = "block";
           $("#up-arrow").fadeIn(300);
