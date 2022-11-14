@@ -327,6 +327,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     overflow-y: auto;
   }
 
+  .footer-text {
+    display: none;
+  }
+
+  /* .sec-8 {
+    display: none;
+  }
+
+  .sec-8-m {
+    display: flex;
+  } */
+
   .custom-modal {
     padding-top: unset;
   }
@@ -685,6 +697,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     width: 70%;
     overflow-y: auto;
   }
+  
+  .footer-text {
+    display: none;
+  }
+
+  /* .sec-8 {
+    display: none;
+  }
+
+  .sec-8-m {
+    display: flex;
+  } */
 
   .custom-modal {
     padding-top: unset;
@@ -1522,23 +1546,35 @@ Custom media queries
 
   .sec-8 {
     position: relative;
-    justify-content: unset;
+    /* justify-content: unset; */
   }
 
-  .sec-8 p {
+  .sec-8 p{
     font-size: 9px;
     margin-left: 20px;
   }
+
+  /* .sec-8-m p {
+    font-size: small;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  } */
 
   .sec-8 img {
     width: 18px;
     margin: 0 1px;
   }
 
+  /* .sec-8-m img {
+    width: 18px;
+    margin: 0 1px;
+  } */
+
   .sec-8 .nav-content {
-    position: absolute;
-    right: 30px;
+    position: relative;
+    /* right: 30px; */
   }
+
   #nav ul {
     /* display: block; */
     bottom: 30px;
@@ -1656,7 +1692,7 @@ Custom media queries
     height: 50px;
     margin-top: -18px;
   }
-  #lang-list {
+  #lang-list, #lang-list-m {
     display: none;
   }
 }
