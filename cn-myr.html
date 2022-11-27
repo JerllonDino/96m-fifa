@@ -852,6 +852,22 @@
           .scrollIntoView({ block: "start", behavior: "smooth" });
       }
 
+      var getUrlParameter = function getUrlParameter(sParam) {
+          var sPageURL = window.location.search.substring(1),
+              sURLVariables = sPageURL.split('&'),
+              sParameterName,
+              i;
+
+          for (i = 0; i < sURLVariables.length; i++) {
+              sParameterName = sURLVariables[i].split('=');
+
+              if (sParameterName[0] === sParam) {
+                  return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+              }
+          }
+          return false;
+      };
+
       // Redirects
       $(".join-now, .orange-theme-btn").click((e) => {
         e.preventDefault();
@@ -909,7 +925,11 @@
       });
 
       $(document).ready(function () {
-        // console.log(this.documentElement.clientHeight);
+        const affid = getUrlParameter("affid");
+        if(affid){
+          linksCN.HOME = `${linksEN.HOME}?affid=${affid}`;
+          linksCN.JOIN = `${linksEN.JOIN}?affid=${affid}`;
+        }
       });
 
       $("#sticky-note-close").click(function () {

@@ -766,14 +766,14 @@
           "https://ndskwoi.com/chatwindow.aspx?siteId=5000379&chatGroup=4&planId=966a3201-43cf-431c-b94e-a0e1380086f0#",
       };
 
-      const linksEN = {
+      var linksEN = {
         JOIN: "https://96msoccer.com",
         HOME: "https://96msoccer.com",
         CATEGORY: "",
         ABOUT: "",
       };
 
-      const linksCN = {
+      var linksCN = {
         JOIN: "https://96msoccer.com",
         HOME: "https://96msoccer.com",
         CATEGORY: "",
@@ -838,9 +838,26 @@
           .scrollIntoView({ block: "start", behavior: "smooth" });
       }
 
+      var getUrlParameter = function getUrlParameter(sParam) {
+          var sPageURL = window.location.search.substring(1),
+              sURLVariables = sPageURL.split('&'),
+              sParameterName,
+              i;
+
+          for (i = 0; i < sURLVariables.length; i++) {
+              sParameterName = sURLVariables[i].split('=');
+
+              if (sParameterName[0] === sParam) {
+                  return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+              }
+          }
+          return false;
+      };
+
       // Redirects
       $(".join-now, .orange-theme-btn").click((e) => {
         e.preventDefault();
+        
         window.open(linksEN.JOIN, "_blank");
       });
       $(".nav-home").click((e) => {
@@ -891,7 +908,11 @@
       });
 
       $(document).ready(function () {
-        // console.log(this.documentElement.clientHeight);
+        const affid = getUrlParameter("affid");
+        if(affid){
+          linksEN.HOME = `${linksEN.HOME}?affid=${affid}`;
+          linksEN.JOIN = `${linksEN.JOIN}?affid=${affid}`;
+        }
       });
 
       $("#sticky-note-close").click(function () {
