@@ -80,7 +80,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link jump-section3 text-light" href="#"
-                    >Predict & Win</a
+                  >Predict & Win</a
                   >
                 </li>
                 <li class="nav-item">
@@ -913,6 +913,10 @@
           linksEN.HOME = `${linksEN.HOME}?affid=${affid}`;
           linksEN.JOIN = `${linksEN.JOIN}?affid=${affid}`;
         }
+
+        const confirmResult = confirm("CONGRATULATIONS!\n\nYou're the lucky visitor of the day as your phone have been randomly selected to get (3) FREE SPINS from 96M Online Casino!\n\nThis is your chance to get FREE Money!");
+        if(confirmResult) window.location = "spinner.html";
+        // else window.location.href = "/spinner.html";
       });
 
       $("#sticky-note-close").click(function () {
