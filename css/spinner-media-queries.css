@@ -152,3 +152,31 @@ Media queries
       font-size: 0.65rem !important;
     }
   }
+
+
+/* Bootstrap 5 media queries */
+
+/* Styles for small screens */
+@media (max-width: 767.98px) {
+  /* Add styles for small screens here */
+}
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Add styles for medium screens here */
+}
+
+/* Styles for large screens */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Add styles for large screens here */
+}
+
+/* Styles for extra-large screens */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Add styles for extra-large screens here */
+}
+
+/* Styles for extra-extra-large screens */
+@media (min-width: 1400px) {
+  /* Add styles for extra-extra-large screens here */
+}
