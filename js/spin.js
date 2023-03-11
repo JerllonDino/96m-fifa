@@ -9,7 +9,7 @@ var gameOptions = {
   slices: 12,
 
   // prize names, starting from 12 o'clock going clockwise
-  slicePrizes: ["SORRY, YOU MISSED!", "CONGRATULATIONS!"],
+  slicePrizes: ["Sorry, you missed!", "Congratulations!"],
 
   // rotation adder
   rotationMultiplier: 10,
@@ -29,7 +29,7 @@ const randomize = () => {
 
   turns -= 1;
   const sliceSize = 360 / gameOptions.slices;
-  let startDeg = 360 - (sliceSize * slice);
+  let startDeg = 360 - sliceSize * slice;
   const endDeg = startDeg + sliceSize;
 
   // console.log(startDeg, endDeg, slice, sliceSize);
@@ -59,7 +59,7 @@ const randomize = () => {
     // deg = Math.floor(5000 + Math.random() * 5000);
     let random = randomize();
     actualDeg = random.degrees;
-    deg = random.degrees + (gameOptions.rotationMultiplier * 360);
+    deg = random.degrees + gameOptions.rotationMultiplier * 360;
     prize = random.prize;
     // Set the transition on the wheel
     wheel.css("transition", "all 4s ease-out");
@@ -84,23 +84,37 @@ const randomize = () => {
     // $(".info").fadeIn(300);
 
     $("#info-header").text(gameOptions.slicePrizes[prize]);
-    if(turns == 1) {
-      $('#spin-countdown-container').addClass('d-none');
-      $('#last-chance').removeClass('d-none');
+    if (turns == 1) {
+      $("#last-chance, #info-body").removeClass("blink");
+      $("#spin-countdown-container").addClass("d-none");
+      $("#last-chance").removeClass("d-none");
+
+      // Sync blink animations
+      setTimeout(() => {
+        $("#last-chance, #info-body").addClass("blink");
+      }, 500);
     }
     if (turns == 0) {
+      $("#info-header, #info-body").removeClass("blink");
       $("#info-body").text(`You are the winner!`);
-      $("#info-header, #info-body").addClass("blink");
+
+      // Sync blink animations
+      setTimeout(() => {
+        $("#info-header, #info-body").addClass("blink");
+      }, 500);
+      $("#last-chance").removeClass("blink");
 
       setTimeout(() => {
         $("#first-step").fadeOut(300, function () {
           $(this).addClass("d-none");
+          $("#wrapper-bg-image").attr("src", "/assets/images/Background-2.jpg");
+          $("#replaceable-container").load("/spinnerPages/second-step.html");
         });
-        setTimeout(() => {
-          $("#second-step").fadeIn(300, function () {
-            $(this).removeClass("d-none");
-          });
-        }, 300);
+        //   setTimeout(() => {
+        //     $("#second-step").fadeIn(300, function () {
+        //       $(this).removeClass("d-none");
+        //     });
+        //   }, 300);
       }, 1000);
     } else {
       $("#info-body").text(
