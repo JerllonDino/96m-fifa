@@ -119,17 +119,45 @@ body {
   font-family: RaceSport, sans-serif;
 }
 
+.fs-fixed-xxl {
+  /* font-size: 16px !important; */
+  font-size: 1.4rem;
+}
+
+.fs-fixed-xl {
+  /* font-size: 16px !important; */
+  font-size: 1.3rem;
+}
+
+.fs-fixed-lg {
+  /* font-size: 16px !important; */
+  font-size: 1.2rem;
+}
+
 .fs-fixed-md {
-  font-size: 13px !important;
+  /* font-size: 13px !important; */
+  font-size: 1rem;
 }
 
 .fs-fixed-sm {
-  font-size: 11px !important;
+  /* font-size: 11px !important; */
+  font-size: 0.75rem !important;
 }
 
 .fs-fixed-xs {
-  font-size: 9px !important;
+  /* font-size: 9px !important; */
+  font-size: 0.65rem !important;
 }
+
+.fs-fixed-xxs {
+  /* font-size: 9px !important; */
+  font-size: 0.5rem !important;
+}
+
+/* #first-step {
+  margin-top: 5vh;
+  margin-top: clamp(5vh, 5vh, 7vh);
+} */
 
 .fw-custom-light {
   font-weight: 100 !important;
@@ -138,6 +166,7 @@ body {
 .row-wrapper {
   overflow-x: hidden;
   max-width: 1550px;
+  min-height: min(1170px, 100vh);
   margin-left: auto;
   margin-right: auto;
 }
@@ -299,35 +328,34 @@ body {
     rgba(148, 204, 255, 1) 80%,
     rgba(4, 26, 218, 1) 100%
   ) !important;
+  animation: pulse-white 1.5s infinite, wiggle 1.5s infinite;
 }
 
 .spin-countdown {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .timer-number {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: white;
 }
 
 .timer-number img {
-  width: 50%;
+  width: 80%;
 }
 
 .timer-number span {
   position: absolute;
-  align-self: center;
 }
 
-.spin-countdown h6 {
+.spin-countdown p {
   font-family: SFProDisplay-Semibold, sans-serif;
-}
-
-.spin-countdown img {
-  width: 50%;
 }
 
 .info {
@@ -364,6 +392,8 @@ body {
 }
 
 #spin {
+  position: absolute;
+  bottom: 6%;
   animation: pulse-orange 1.5s infinite, wiggle 1.5s infinite;
 }
 
@@ -607,8 +637,10 @@ input {
 } */
 
 .spin-wrapper {
-  width: 100%;
-  position: relative;
+  position: absolute;
+  width: 60%;
+  /* position: relative; */
+  bottom: 16%;
   display: flex;
   justify-content: center;
 }

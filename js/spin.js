@@ -2,8 +2,6 @@ function randomNumberRange(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var turns = 3;
-
 var gameOptions = {
   // slices (prizes) placed in the wheel
   slices: 12,
@@ -48,6 +46,7 @@ const randomize = () => {
   let prize;
 
   startButton.on("click", () => {
+    if (!canSpin) return alert("You didn't spin the wheel in time!");
     // Clear interval of the repeater
     clearInterval(repeater);
     isClicked = true;
@@ -105,7 +104,7 @@ const randomize = () => {
       $("#last-chance").removeClass("blink");
 
       setTimeout(() => {
-        $("#first-step").fadeOut(300, function () {
+        $(".first-step").fadeOut(300, function () {
           $(this).addClass("d-none");
           $("#wrapper-bg-image").attr("src", "/assets/images/Background-2.jpg");
           $("#replaceable-container").load("/spinnerPages/second-step.html");

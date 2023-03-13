@@ -7,7 +7,11 @@
     <title>Spin to Win</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="./css/spinner-styles.css" rel="stylesheet" type="text/css" />
-    <!-- <link rel="stylesheet" href="./css/media-queries.css"> -->
+    <link
+      href="./css/spinner-media-queries.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="./css/spinner-animations.css" />
     <script src="./js/jquery.js"></script>
     <!-- <script src="./js/phaser.js"></script> -->
@@ -27,7 +31,7 @@
     <div id="background-container"></div>
     <div class="row-wrapper">
       <div class="row d-flex justify-content-center">
-        <div class="col col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-4">
+        <div class="col col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4" id="column-wrapper">
           <div class="wrapper">
             <img src="/assets/images/Background.jpg" id="wrapper-bg-image" />
             <div class="content-wrapper d-flex flex-column align-items-center">
@@ -37,46 +41,63 @@
                 alt=""
                 id="logo-img"
               />
-              <span class="text-white fw-light header-texts sf-pro-semibold">
+              <span
+                class="text-white fw-light header-texts sf-pro-semibold fs-fixed-md mb-1"
+              >
                 Today Only: Malaysia
               </span>
 
-              <h5 class="text-white mt-1 header-texts sf-pro-heavy">
+              <h5 class="text-white mt-1 header-texts sf-pro-heavy fs-fixed-lg">
                 Claim (3) Free Spins Below
               </h5>
-              <h5 class="text-white header-texts sf-pro-heavy" id="spin-expiry">
+              <h5
+                class="text-white header-texts sf-pro-heavy fs-fixed-lg"
+                id="spin-expiry"
+              >
                 Spin Before
               </h5>
 
               <div id="spin-countdown-container" class="container mt-2">
-                <div class="row d-flex justify-content-center">
+                <div
+                  class="row d-flex justify-content-center align-items-center"
+                >
                   <div class="col col-8">
                     <div class="row justify-content-center">
-                      <div class="spin-countdown px-0 col-3">
+                      <div class="spin-countdown p-0 col col-3">
                         <div class="timer-number">
                           <img src="/assets/images/Timer.png" />
-                          <span class="race-sport" id="timer-day">0</span>
+                          <span class="race-sport fs-fixed-lg" id="timer-day"
+                            >0</span
+                          >
                         </div>
                         <p class="text-white fs-fixed-sm mt-1">Days</p>
                       </div>
-                      <div class="spin-countdown px-0 col-3">
+                      <div class="spin-countdown p-0 col col-3">
                         <div class="timer-number">
                           <img src="/assets/images/Timer.png" />
-                          <span class="race-sport" id="timer-hour">0</span>
+                          <span class="race-sport fs-fixed-lg" id="timer-hour"
+                            >0</span
+                          >
                         </div>
                         <p class="text-white fs-fixed-sm mt-1">Hours</p>
                       </div>
-                      <div class="spin-countdown px-0 col-3">
+                      <div class="spin-countdown p-0 col col-3">
                         <div class="timer-number">
                           <img src="/assets/images/Timer.png" />
-                          <span class="race-sport" id="timer-minutes"></span>
+                          <span
+                            class="race-sport fs-fixed-lg"
+                            id="timer-minutes"
+                          ></span>
                         </div>
                         <p class="text-white fs-fixed-sm mt-1">Minutes</p>
                       </div>
-                      <div class="spin-countdown px-0 col-3">
+                      <div class="spin-countdown p-0 col col-3">
                         <div class="timer-number">
                           <img src="/assets/images/Timer.png" />
-                          <span class="race-sport" id="timer-seconds"></span>
+                          <span
+                            class="race-sport fs-fixed-lg"
+                            id="timer-seconds"
+                          ></span>
                         </div>
                         <p class="text-white fs-fixed-sm mt-1">Sec</p>
                       </div>
@@ -100,7 +121,7 @@
 
               <small
                 id="limited-container"
-                class="text-white text-center my-2 sf-pro-regular fs-fixed-xs"
+                class="text-white text-center my-2 sf-pro-regular fs-fixed-xxs"
                 >*Limited to Malaysia citizens or permanent residents
                 only</small
               >
@@ -110,18 +131,18 @@
                   <div class="col col-8">
                     <div class="info flex-column">
                       <h6
-                        class="text-blue mt-0 blink sf-pro-heavy fs-fixed-md"
+                        class="text-blue mt-0 blink sf-pro-heavy fs-fixed-sm"
                         id="info-header"
                       >
                         You have (3) Free Spins!
                       </h6>
                       <small
-                        class="text-blue sf-pro-semibold mt-2 blink fs-fixed-sm"
+                        class="text-blue sf-pro-semibold mt-2 blink fs-fixed-xs"
                         id="info-body"
                         >Test your luck to win 288% Magnificent</small
                       >
                       <small
-                        class="text-blue sf-pro-semibold blink fs-fixed-sm"
+                        class="text-blue sf-pro-semibold blink fs-fixed-xs"
                         id="info-welcome"
                         >Welcome Bonus Challenge on 96M!</small
                       >
@@ -133,36 +154,23 @@
                 class="w-100 d-flex flex-column align-items-center"
                 id="replaceable-container"
               >
-                <div
+                <!-- <div
                   id="first-step"
-                  class="w-100 d-flex flex-column align-items-center mt-5"
+                  class="w-100 d-flex flex-column align-items-center"
                 >
                   <div class="row d-flex justify-content-center">
                     <div
                       class="col-8 d-flex flex-column justify-content-center px-3"
                     >
-                      <!-- <div id="dwheel" class="dwheel mt-4"></div> -->
-                      <div class="spin-wrapper">
-                        <img
-                          class="wheel-underlay"
-                          src="/assets/images/SpinnerUnderlay.png"
-                        />
-                        <img class="wheel" src="/assets/images/Spinner-2.png" />
-                        <img
-                          class="marker"
-                          src="/assets/images/SpinnerArrow.png"
-                        />
-                        <!-- <img class="button" src="button.png" /> -->
-                      </div>
                       <button
-                        class="text-white orange-theme-btn mt-4 ps-5 pe-5 align-self-center sf-pro-heavy"
+                        class="text-white orange-theme-btn mt-5 ps-5 pe-5 align-self-center sf-pro-heavy"
                         id="spin"
                       >
                         <small> Spin </small>
                       </button>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
 
               <!-- <div
@@ -195,11 +203,8 @@
                   </div>
                 </div>
               </div> -->
-
               <div id="progress" class="w-75 d-none">
-                <h5
-                  class="text-white text-center fw-bold mt-2"
-                >
+                <h5 class="text-white text-center fw-bold mt-2">
                   Checking answers, please wait...
                 </h5>
                 <div class="progress mt-4">
@@ -213,6 +218,22 @@
                   ></div>
                 </div>
               </div>
+
+              <div class="spin-wrapper first-step">
+                <img
+                  class="wheel-underlay"
+                  src="/assets/images/SpinnerUnderlay.png"
+                />
+                <img class="wheel" src="/assets/images/Spinner-2.png" />
+                <img class="marker" src="/assets/images/SpinnerArrow.png" />
+                <!-- <img class="button" src="button.png" /> -->
+              </div>
+              <button
+                class="text-white orange-theme-btn mt-5 ps-5 pe-5 align-self-center sf-pro-heavy first-step"
+                id="spin"
+              >
+                <small> Spin </small>
+              </button>
             </div>
           </div>
         </div>
@@ -236,12 +257,63 @@
           answer: null,
         },
       ];
+      var turns = 3;
+      var canSpin = true;
+
+      var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split("&"),
+          sParameterName,
+          i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+          sParameterName = sURLVariables[i].split("=");
+
+          if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined
+              ? true
+              : decodeURIComponent(sParameterName[1]);
+          }
+        }
+        return false;
+      };
+
+      const getDiff = () => {
+        var now = moment();
+        // get the difference between the moments
+        const diff = expire.diff(now);
+
+        //express as a duration
+        const diffDuration = moment.duration(diff);
+        const minutes = diffDuration.minutes();
+        const seconds = diffDuration.seconds();
+
+        // display
+        $("#timer-minutes").text(minutes);
+        $("#timer-seconds").text(seconds);
+
+        if (minutes == 0 && seconds == 0) {
+          clearInterval(repeater);
+          alert("You didn't spin the wheel in time!");
+          canSpin = false;
+          // TODO: What happens then? perma can't spin? / refresh? / cache based blocked?
+          // location.reload();
+          return;
+        }
+      };
 
       const repeater = setInterval(() => {
         getDiff();
       }, 1000);
 
       $(document).ready(() => {
+        const affid = getUrlParameter("affid");
+        if (affid) {
+          $(document).on("click", ".btn-claim-body", () => {
+            window.location = `https://96medias.com?affid=${affid}`;
+          });
+        }
+
         const startProgress = () => {
           const progressBar = $("#progress .progress .progress-bar");
           const progressStat = 0;
@@ -306,28 +378,6 @@
 
         $(document).on("click", "#question-yes", () => onAnswer(true));
         $(document).on("click", "#question-no", () => onAnswer());
-
-        const getDiff = () => {
-          var now = moment();
-          // get the difference between the moments
-          const diff = expire.diff(now);
-
-          //express as a duration
-          const diffDuration = moment.duration(diff);
-          const minutes = diffDuration.minutes();
-          const seconds = diffDuration.seconds();
-
-          // display
-          $("#timer-minutes").text(minutes);
-          $("#timer-seconds").text(seconds);
-
-          if (minutes == 0 && seconds == 0) {
-            clearInterval(repeater);
-            alert("You didn't spin the wheel in time!");
-            // TODO: What happens then? perma can't spin? / refresh? / cache based blocked?
-            location.reload();
-          }
-        };
 
         getDiff();
       });

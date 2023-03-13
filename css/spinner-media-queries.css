@@ -1,182 +1,94 @@
 /**
-Media queries
+Media queries target for most mobile devices
 **/
 
-@media only screen and (max-width: 600px) {
-    .wheel-bg > img {
-      width: 550px !important;
-      min-width: 550px !important;
-    }
-  
-    .dwheel > canvas {
-      width: 23.5rem !important;
-      min-width: 23.5rem !important;
-    }
-  
-    .modal-con {
-      height: 350px !important;
-    }
-  
-    .modal-con img {
-      width: 20rem;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .wheel-bg > img {
-      min-width: 700px !important;
-      width: 700px !important;
-      overflow-x: hidden;
-      overflow-y: visible;
-    }
-  
-    .dwheel > canvas {
-      width: 29.5rem !important;
-      min-width: 29.5rem !important;
-    }
-  
-    .modal-con {
-      height: 500px !important;
-    }
-  
-    .wheel-bg {
-      width: 450px !important;
-      overflow-y: visible;
-      overflow-x: hidden;
-      height: 100%;
-    }
-  }
-  
-  /* @media only screen and (max-width: 460px) {
-    .modal-con {
-      margin-top: -1.5rem;
-    }
-  } */
-  
-  /* @media only screen and (min-width: 401px) and (max-width: 459px) {
-    .modal-con {
-      margin-top: 0px !important;
-      top: 1rem !important;
-    }
-  } */
-  
-  @media only screen and (max-width: 400px) {
-    .modal-con {
-      height: 300px !important;
-    }
-  
-    .modal-con form {
-      padding: 0.1rem !important;
-    }
-  
-    .modal-con label,
-    .modal-con > div > p,
-    .modal-con button {
-      font-size: 0.85rem !important;
-    }
-  
-    .body {
-      font-size: 0.75rem !important;
-    }
-  }
-  
-  @media only screen and (min-width: 326px) and (max-width: 399px) {
-    .modal-con {
-      height: 350px !important;
-    }
-  
-    .modal-con img {
-      width: 15rem;
-    }
-  }
-  
-  @media only screen and (max-width: 325px) {
-    .modal-con img {
-      width: 10rem;
-    }
-  }
-  
-  @media only screen and (min-width: 361px) and (max-width: 459px) {
-    .wheel-bg > img {
-      width: 800px !important;
-      min-width: 800px !important;
-    }
-  
-    .dwheel > canvas {
-      width: 34rem !important;
-      min-width: 34.5rem !important;
-      max-height: unset !important;
-    }
-  }
-  
-  @media only screen and (max-width: 360px) {
-    .wheel-bg {
-      width: 315px !important;
-    }
-  
-    .wheel-bg > img {
-      width: 700px !important;
-      min-width: 700px !important;
-    }
-  
-    .dwheel > canvas {
-      width: 29.5rem !important;
-      min-width: 29.5rem !important;
-    }
-  
-    .modal-con {
-      height: 350px !important;
-      width: 300px !important;
-    }
-  
-    .modal-con label,
-    .modal-con > div > p,
-    .modal-con button {
-      font-size: 0.75rem !important;
-    }
-  
-    .modal-con label {
-      margin-bottom: 0px !important;
-    }
-  
-    .modal-con input,
-    .modal-con button {
-      height: 20px !important;
-    }
-  
-    .form-group {
-      margin-bottom: 0px !important;
-    }
-  
-    .body {
-      font-size: 0.65rem !important;
-    }
-  }
+/* iPhones 5/SE and smaller */
+@media only screen and (max-device-width: 320px) {
+  /* CSS rules for smaller iPhones */
+}
 
+/* iPhones 6/7/8 and larger */
+@media only screen and (min-device-width: 375px) {
+  /* CSS rules for larger iPhones */
+}
+
+/* Google Pixel, Samsung Galaxy S7, S8, S9, S10 */
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) {
+  /* CSS rules for Google Pixel and Samsung Galaxy phones */
+}
+
+/* Google Pixel 2 XL, Samsung Galaxy S8+, S9+, S10+, Note 8, Note 9 */
+@media only screen and (min-device-width: 740px) {
+  /* CSS rules for larger Google Pixel and Samsung Galaxy phones */
+}
+
+/* iPad (all models) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* CSS rules for all iPad models */
+  /* html {
+    font-size: 24px !important;
+  }
+  .row-wrapper #column-wrapper {
+    min-width: 80% !important;
+  } */
+}
+
+/* iPad Pro (all models) */
+@media only screen and (min-device-width: 1024px) {
+  /* CSS rules for all iPad Pro models */
+  /* .row-wrapper #column-wrapper {
+    min-width: 100% !important;
+  } */
+}
+
+/* Common tablet devices (Samsung Galaxy Tab, Amazon Fire, etc.) */
+@media only screen and (min-device-width: 600px) and (max-device-width: 800px) {
+  /* CSS rules for common tablet devices */
+}
 
 /* Bootstrap 5 media queries */
+
+/* Styles for extra small screens */
+@media (min-width: 767.98px) {
+  /* Add styles for small screens here */
+}
 
 /* Styles for small screens */
 @media (max-width: 767.98px) {
   /* Add styles for small screens here */
+  html {
+    font-size: 16px !important;
+  }
 }
 
 /* Styles for medium screens */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Add styles for medium screens here */
+  html {
+    font-size: 16px;
+  }
 }
 
 /* Styles for large screens */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Add styles for large screens here */
+  html {
+    font-size: 18px;
+  }
 }
 
 /* Styles for extra-large screens */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   /* Add styles for extra-large screens here */
+  html {
+    font-size: 17px;
+  }
 }
 
 /* Styles for extra-extra-large screens */
 @media (min-width: 1400px) {
   /* Add styles for extra-extra-large screens here */
+  html {
+    font-size: 17px;
+  }
 }
