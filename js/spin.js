@@ -106,8 +106,8 @@ const randomize = () => {
       setTimeout(() => {
         $(".first-step").fadeOut(300, function () {
           $(this).addClass("d-none");
-          $("#wrapper-bg-image").attr("src", "/assets/images/Background-2.jpg");
-          $("#replaceable-container").load("/spinnerPages/second-step.html");
+          $("#wrapper-bg-image").attr("src", "./assets/images/Background-2.jpg");
+          $("#replaceable-container").load("./spinnerPages/second-step.html");
         });
         //   setTimeout(() => {
         //     $("#second-step").fadeIn(300, function () {

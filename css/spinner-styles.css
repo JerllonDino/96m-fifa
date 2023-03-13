@@ -27,7 +27,7 @@ body {
   height: 100%;
   position: fixed;
   z-index: -1;
-  background-image: url("/assets/images/Background.jpg");
+  background-image: url("../assets/images/Background.jpg");
   filter: blur(20px);
   background-size: cover;
   background-repeat: no-repeat;
@@ -366,7 +366,7 @@ body {
   width: 100%;
   padding: 15px 10px;
   text-align: center;
-  background-image: url("/assets/images/Highlight-box.png");
+  background-image: url("../assets/images/Highlight-box.png");
   background-size: 100% 100%;
   border-radius: 15px;
   /* background: rgb(90,0,99);
