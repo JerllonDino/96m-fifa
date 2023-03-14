@@ -47,6 +47,10 @@ body {
   background-repeat: no-repeat;
 } */
 
+button {
+  z-index: 11;
+}
+
 @font-face {
   font-family: SFProDisplay-Regular;
   src: url("../font/SFProDisplay-Regular.otf");
@@ -454,171 +458,6 @@ body {
   color: #00ff31 !important;
 }
 
-.modal-con {
-  position: absolute;
-  margin: auto;
-  /* left: 0;
-  right: 0; */
-  top: 0;
-  bottom: 0;
-  width: 400px;
-  height: 350px;
-  z-index: 3000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  flex-flow: column;
-  padding: 2rem;
-  color: aliceblue;
-  font-size: 1rem;
-}
-.modal-con p,
-.modal-con input,
-.modal-con button {
-  width: 100%;
-}
-.modal-con p {
-  margin-block-end: 5px;
-}
-.modal-note {
-  font-size: 0.756rem;
-}
-.modal-con input {
-  height: 23px;
-  border-radius: 5px;
-  border: 0;
-}
-ul {
-  margin-block-end: 0.5rem;
-  margin-block-start: 0.5rem;
-  padding-inline-start: 0;
-  font-size: 0.756rem;
-}
-li {
-  line-height: 0px;
-}
-#submit-info {
-  margin-top: 0.5rem;
-  color: #4a1411;
-  height: 25px;
-  border-radius: 5px;
-  border: 0;
-  margin-left: 0px;
-  margin-right: 0px;
-  font-size: 0.785rem;
-  background: #00ff66;
-  line-height: 1px;
-  font-weight: bold;
-  font-family: "Playfair Display";
-  cursor: pointer;
-}
-#submit-info:hover {
-  background: #eaa54c;
-  color: #ffffff;
-}
-form {
-  display: flex;
-  margin-top: unset;
-  width: 100%;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
-}
-.form-group {
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
-.alert {
-  text-align: center !important;
-  padding: 0px !important;
-  font-size: 0.756rem !important;
-}
-.success-msg {
-  position: absolute;
-  width: 350px;
-  height: 400px;
-  background: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 1rem;
-}
-.success-msg span {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.3;
-}
-.congrats {
-  font-size: 1.5rem !important;
-  font-weight: 600;
-  margin-bottom: 1rem !important;
-}
-.note {
-  margin-bottom: 1rem !important;
-}
-.note,
-.note > span {
-  font-size: 12px !important;
-}
-.note > span {
-  display: inline;
-}
-.note > span:last-child {
-  font-weight: 600;
-  color: red;
-}
-.price {
-  display: inline !important;
-  font-weight: 600;
-}
-.success-img {
-  width: 5rem;
-  margin-bottom: 0.5rem;
-}
-.viber-btn {
-  display: inline;
-  width: 100px;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  color: white;
-  background-color: #665cac;
-  text-align: center;
-}
-.viber-link:hover {
-  text-decoration: none;
-}
-.viber-btn img {
-  margin-right: 0.5rem;
-  width: 20px;
-  height: auto;
-}
-.close-btn {
-  display: inline;
-  width: 100px;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  color: white;
-  background-color: gray;
-  text-align: center;
-}
-.donwload-btn {
-  font-family: "Playfair Display";
-  border: 0;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  background-color: mediumvioletred;
-  color: white;
-  line-height: normal;
-}
-input {
-  padding: 0px 0.75rem !important;
-}
 /* .spin-btn-overlay {
   height: 100%;
   position: absolute;
@@ -695,4 +534,78 @@ input {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+.fireworks {
+  position: absolute;
+  max-width: 50%;
+  z-index: 10;
+  transform: scale(0);
+}
+
+#fireworks1 {
+  bottom: 40%;
+  animation-name: firework;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+#fireworks2 {
+  max-width: 30% !important;
+  bottom: 15%;
+  right: 0;
+  filter: hue-rotate(100deg);
+  animation-name: firework;
+  animation-duration: 1.3s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+.fireworks img {
+  width: 100%;
+}
+
+#you-win {
+  position: absolute;
+  z-index: 11;
+  top: 0%;
+  transform: scale(3.3);
+  text-shadow: 5px 5px 0 #000;
+  animation: youwin 0.5s ease-out, 1s pulse 0.5s infinite;
+}
+
+#you-win h1{
+  margin: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(3.3);
+  }
+  50% {
+    transform: scale(3.6);
+  }
+  100% {
+    transform: scale(3.3);
+  }
+}
+
+@keyframes youwin {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(3.3);
+  }
+}
+
+@keyframes firework {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
