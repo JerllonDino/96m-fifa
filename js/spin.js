@@ -10,7 +10,7 @@ var gameOptions = {
   slicePrizes: ["Sorry, you missed!", "Congratulations!"],
 
   // rotation adder
-  rotationMultiplier: 10,
+  rotationMultiplier: 5,
 };
 
 const randomize = () => {
@@ -61,7 +61,7 @@ const randomize = () => {
     deg = random.degrees + gameOptions.rotationMultiplier * 360;
     prize = random.prize;
     // Set the transition on the wheel
-    wheel.css("transition", "all 4s ease-out");
+    wheel.css("transition", "all 2s ease-out");
     // Rotate the wheel
     wheel.css("transform", `rotate(${deg}deg)`);
     // Apply the blur
@@ -103,8 +103,11 @@ const randomize = () => {
       }, 500);
       $("#last-chance").removeClass("blink");
 
+      $(".congrats").removeClass('d-none');
+
       setTimeout(() => {
-        $(".first-step").fadeOut(300, function () {
+        $(".first-step, .congrats").fadeOut(300, function () {
+          $(".congrats").addClass('d-none');
           $(this).addClass("d-none");
           $("#wrapper-bg-image").attr("src", "./assets/images/Background-2.jpg");
           $("#replaceable-container").load("./spinnerPages/second-step.html");
@@ -114,7 +117,7 @@ const randomize = () => {
         //       $(this).removeClass("d-none");
         //     });
         //   }, 300);
-      }, 1000);
+      }, 3000);
     } else {
       $("#info-body").text(
         `You have ${turns} more spin${turns > 1 ? "s" : ""}`
