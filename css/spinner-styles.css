@@ -45,7 +45,7 @@ button {
 
 @font-face {
   font-family: SFProDisplay-Regular;
-  src: url("../font/SFProDisplay-Regular.otf");
+  src: url("../font/SF-Pro-Display-Regular.otf");
 }
 
 .sf-pro-regular {
@@ -63,7 +63,7 @@ button {
 
 @font-face {
   font-family: SFProDisplay-Medium;
-  src: url("../font/SFProDisplay-Medium.otf");
+  src: url("../font/SF-Pro-Display-Medium.otf");
 }
 
 .sf-pro-medium {
@@ -72,7 +72,7 @@ button {
 
 @font-face {
   font-family: SFProDisplay-Heavy;
-  src: url("../font/SFProDisplay-Heavy.otf");
+  src: url("../font/SF-Pro-Display-Heavy.otf");
 }
 
 .sf-pro-heavy {
@@ -86,24 +86,6 @@ button {
 
 .sf-pro-semibold {
   font-family: SFProDisplay-Semibold, sans-serif;
-}
-
-@font-face {
-  font-family: GlowSansSC-Normal-Regular;
-  src: url("../font/GlowSansSC-Normal-Regular.otf");
-}
-
-.glowsans-normal-regular {
-  font-family: GlowSansSC-Normal-Regular, sans-serif;
-}
-
-@font-face {
-  font-family: GlowSansSC-Normal-Bold;
-  src: url("../font/GlowSansSC-Normal-Bold.otf");
-}
-
-.glowsans-normal-bold {
-  font-family: GlowSansSC-Normal-Bold, sans-serif;
 }
 
 @font-face {
